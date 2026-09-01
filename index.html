@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University of Nebraska Salary Search</title>
+<meta name="description" content="Search public salary records for University of Nebraska system employees by name, title or campus.">
+<meta property="og:title" content="University of Nebraska Salary Search">
+<meta property="og:description" content="Search public salary records for University of Nebraska system employees by name, title or campus.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔎</text></svg>">
+<style>
+:root {
+  --bg-color: #fff;
+  --panel-bg: #fff;
+  --text-color: #333;
+  --muted-color: #666;
+  --heading-color: #111;
+  --link-color: #0366d6;
+  --border-color: #e2e2e2;
+  --row-hover: #f6f8fa;
+  --head-bg: #f8f9fa;
+  --field-bg: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --panel-bg: #1a1a1a;
+    --text-color: #e0e0e0;
+    --muted-color: #9a9a9a;
+    --heading-color: #fff;
+    --link-color: #58a6ff;
+    --border-color: #333;
+    --row-hover: #222;
+    --head-bg: #1e1e1e;
+    --field-bg: #1a1a1a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+  max-width: 1000px;
+}
+h1 { color: var(--heading-color); font-size: 2rem; margin: 0 0 .25rem; }
+a { color: var(--link-color); }
+.note { color: var(--muted-color); font-size: .9rem; margin: 0 0 1.5rem; max-width: 65ch; }
+.controls { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: 1rem; }
+.controls label { display: block; font-size: .8rem; color: var(--muted-color); margin-bottom: .2rem; }
+.field { flex: 1 1 260px; }
+.field.narrow { flex: 0 1 190px; }
+input, select {
+  width: 100%; padding: .6rem .7rem; font-size: 1rem; font-family: inherit;
+  color: var(--text-color); background: var(--field-bg);
+  border: 1px solid var(--border-color); border-radius: 6px; outline: none;
+}
+input:focus, select:focus { border-color: var(--link-color); box-shadow: 0 0 0 3px rgba(3,102,214,.15); }
+#summary { font-size: .9rem; color: var(--muted-color); margin: 0 0 .75rem; min-height: 1.6em; }
+#summary b { color: var(--heading-color); }
+.table-wrap { overflow-x: auto; border: 1px solid var(--border-color); border-radius: 6px; background: var(--panel-bg); }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: .6rem .75rem; text-align: left; border-bottom: 1px solid var(--border-color); font-size: .9rem; vertical-align: top; }
+thead th { background: var(--head-bg); font-weight: 600; white-space: nowrap; position: sticky; top: 0; }
+th.sortable { cursor: pointer; user-select: none; }
+th.sortable:hover { color: var(--link-color); }
+th .arrow { color: var(--muted-color); font-size: .75rem; }
+td.num, th.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+tbody tr.person { cursor: pointer; }
+tbody tr.person:hover { background: var(--row-hover); }
+tbody tr.detail td { color: var(--muted-color); font-size: .82rem; background: var(--row-hover); }
+tbody tr.detail dl { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; margin: 0; }
+tbody tr.detail dt { font-weight: 600; display: inline; }
+tbody tr.detail dd { display: inline; margin: 0 0 0 .35rem; }
+.name { font-weight: 500; }
+#more { margin: 1rem 0 0; }
+button.more {
+  padding: .6rem 1.1rem; font-size: .95rem; font-family: inherit; cursor: pointer;
+  color: var(--text-color); background: var(--panel-bg);
+  border: 1px solid var(--border-color); border-radius: 6px;
+}
+button.more:hover { border-color: var(--link-color); color: var(--link-color); }
+footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-width: 65ch; }
+/* On narrow screens drop the secondary columns so the salary stays on screen;
+   campus/FTE remain visible in the expandable row detail. */
+@media (max-width: 760px) {
+  .col-fte { display: none; }
+}
+@media (max-width: 560px) {
+  body { padding: 1.25rem .75rem 3rem; }
+  h1 { font-size: 1.5rem; }
+  .field, .field.narrow { flex: 1 1 100%; }
+  .col-campus { display: none; }
+  th, td { padding: .55rem .45rem; font-size: .82rem; }
+  tbody tr.detail dl { display: block; }
+  tbody tr.detail dl > div { display: block; }
+}
+</style>
+</head>
+<body>
+
+<h1>University of Nebraska Salary Search</h1>
+<p class="note">
+  Search budgeted salaries for employees across the University of Nebraska system.
+  Type a name, a job title or a campus. Click any row to see the rest of the record.
+</p>
+
+<div class="controls">
+  <div class="field">
+    <label for="q">Search</label>
+    <input id="q" type="search" placeholder="e.g. Rhule, professor, chemistry" autocomplete="off" autofocus>
+  </div>
+  <div class="field narrow">
+    <label for="campus">Campus</label>
+    <select id="campus"><option value="">All campuses</option></select>
+  </div>
+  <div class="field narrow">
+    <label for="sort">Sort by</label>
+    <select id="sort">
+      <option value="salary-desc">Salary, high to low</option>
+      <option value="salary-asc">Salary, low to high</option>
+      <option value="name-asc">Name, A to Z</option>
+      <option value="name-desc">Name, Z to A</option>
+    </select>
+  </div>
+</div>
+
+<p id="summary" role="status" aria-live="polite">Loading salary data…</p>
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th class="sortable" data-key="name" scope="col">Name <span class="arrow"></span></th>
+        <th class="col-campus" scope="col">Campus</th>
+        <th scope="col">Title</th>
+        <th class="num col-fte" scope="col">FTE</th>
+        <th class="sortable num" data-key="salary" scope="col">Salary <span class="arrow"></span></th>
+      </tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+</div>
+<p id="more"></p>
+
+<footer>
+  <p>
+    Salary is the annual amount budgeted for the position at the listed FTE, not
+    take-home pay. It excludes benefits, and for coaches it excludes outside income
+    and incentive clauses. A part-time appointment (FTE below 1.000) is paid that
+    fraction of a full-time salary. Rows named &ldquo;TBD&rdquo; or &ldquo;TBF&rdquo;
+    are budget lines with no employee assigned.
+  </p>
+  <p id="source"></p>
+</footer>
+
+<script>
+(function () {
+  var SOURCE_FILE = 'personnel_data.csv';
+  var PAGE = 100;
+  var all = [], view = [], shown = 0;
+  var qEl = document.getElementById('q');
+  var campusEl = document.getElementById('campus');
+  var sortEl = document.getElementById('sort');
+  var rowsEl = document.getElementById('rows');
+  var summaryEl = document.getElementById('summary');
+  var moreEl = document.getElementById('more');
+
+  // Minimal RFC 4180 parser: handles quoted fields and embedded commas.
+  function parseCSV(text) {
+    var out = [], row = [], field = '', inQuotes = false, i = 0;
+    if (text.charCodeAt(0) === 0xFEFF) text = text.slice(1);
+    while (i < text.length) {
+      var c = text[i];
+      if (inQuotes) {
+        if (c === '"') {
+          if (text[i + 1] === '"') { field += '"'; i += 2; continue; }
+          inQuotes = false; i++; continue;
+        }
+        field += c; i++; continue;
+      }
+      if (c === '"') { inQuotes = true; i++; continue; }
+      if (c === ',') { row.push(field); field = ''; i++; continue; }
+      if (c === '\r') { i++; continue; }
+      if (c === '\n') { row.push(field); out.push(row); row = []; field = ''; i++; continue; }
+      field += c; i++;
+    }
+    if (field !== '' || row.length) { row.push(field); out.push(row); }
+    return out;
+  }
+
+  var money = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+  var count = new Intl.NumberFormat('en-US');
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function build(rows) {
+    var head = rows[0].map(function (h) { return h.trim(); });
+    var idx = {};
+    head.forEach(function (h, i) { idx[h] = i; });
+    var recs = [];
+    for (var r = 1; r < rows.length; r++) {
+      var row = rows[r];
+      if (row.length < head.length || (row.length === 1 && !row[0])) continue;
+      var name = (row[idx['Name']] || '').replace(/\s+/g, ' ').trim();
+      var rec = {
+        name: name,
+        campus: (row[idx['Campus']] || '').trim(),
+        title: (row[idx['Title']] || '').trim(),
+        fte: (row[idx['FTE']] || '').trim(),
+        salary: parseFloat((row[idx['Salary']] || '0').replace(/[^0-9.]/g, '')) || 0
+      };
+      rec.key = (rec.name + ' ' + rec.campus + ' ' + rec.title).toLowerCase();
+      recs.push(rec);
+    }
+    return recs;
+  }
+
+  function median(nums) {
+    if (!nums.length) return 0;
+    var s = nums.slice().sort(function (a, b) { return a - b; });
+    var m = Math.floor(s.length / 2);
+    return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+  }
+
+  function apply() {
+    var terms = qEl.value.toLowerCase().split(/\s+/).filter(Boolean);
+    var campus = campusEl.value;
+    view = all.filter(function (r) {
+      if (campus && r.campus !== campus) return false;
+      for (var i = 0; i < terms.length; i++) {
+        if (r.key.indexOf(terms[i]) === -1) return false;
+      }
+      return true;
+    });
+    var mode = sortEl.value;
+    view.sort(function (a, b) {
+      switch (mode) {
+        case 'salary-asc': return a.salary - b.salary || a.name.localeCompare(b.name);
+        case 'name-asc': return a.name.localeCompare(b.name);
+        case 'name-desc': return b.name.localeCompare(a.name);
+        default: return b.salary - a.salary || a.name.localeCompare(b.name);
+      }
+    });
+    markArrows(mode);
+    rowsEl.innerHTML = '';
+    shown = 0;
+    render();
+    summarize();
+  }
+
+  function markArrows(mode) {
+    var parts = mode.split('-');
+    document.querySelectorAll('th.sortable').forEach(function (th) {
+      var on = th.dataset.key === parts[0];
+      th.querySelector('.arrow').textContent = on ? (parts[1] === 'asc' ? '▲' : '▼') : '';
+      th.setAttribute('aria-sort', on ? (parts[1] === 'asc' ? 'ascending' : 'descending') : 'none');
+    });
+  }
+
+  function summarize() {
+    if (!view.length) {
+      summaryEl.innerHTML = 'No matches. Try a last name, or part of a job title.';
+      return;
+    }
+    var med = median(view.map(function (r) { return r.salary; }));
+    summaryEl.innerHTML =
+      '<b>' + count.format(view.length) + '</b> ' + (view.length === 1 ? 'record' : 'records') +
+      ' &middot; median salary <b>' + money.format(med) + '</b>';
+  }
+
+  function render() {
+    var stop = Math.min(shown + PAGE, view.length);
+    var html = '';
+    for (var i = shown; i < stop; i++) {
+      var r = view[i];
+      html +=
+        '<tr class="person" data-i="' + i + '" tabindex="0">' +
+        '<td class="name">' + esc(r.name) + '</td>' +
+        '<td class="col-campus">' + esc(r.campus) + '</td>' +
+        '<td>' + esc(r.title) + '</td>' +
+        '<td class="num col-fte">' + esc(r.fte) + '</td>' +
+        '<td class="num">' + money.format(r.salary) + '</td>' +
+        '</tr>';
+    }
+    rowsEl.insertAdjacentHTML('beforeend', html);
+    shown = stop;
+    if (shown < view.length) {
+      moreEl.innerHTML = '<button class="more" type="button">Show ' +
+        count.format(Math.min(PAGE, view.length - shown)) + ' more of ' +
+        count.format(view.length - shown) + ' remaining</button>';
+      moreEl.querySelector('button').onclick = render;
+    } else {
+      moreEl.innerHTML = '';
+    }
+  }
+
+  function toggleDetail(tr) {
+    var next = tr.nextElementSibling;
+    if (next && next.classList.contains('detail')) { next.remove(); return; }
+    var r = view[+tr.dataset.i];
+    var detail = document.createElement('tr');
+    detail.className = 'detail';
+    detail.innerHTML = '<td colspan="5"><dl>' +
+      '<div><dt>Campus:</dt><dd>' + esc(r.campus || '—') + '</dd></div>' +
+      '<div><dt>FTE:</dt><dd>' + esc(r.fte || '—') + '</dd></div>' +
+      '</dl></td>';
+    tr.after(detail);
+  }
+
+  rowsEl.addEventListener('click', function (e) {
+    var tr = e.target.closest('tr.person');
+    if (tr) toggleDetail(tr);
+  });
+  rowsEl.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var tr = e.target.closest('tr.person');
+    if (tr) { e.preventDefault(); toggleDetail(tr); }
+  });
+
+  document.querySelectorAll('th.sortable').forEach(function (th) {
+    th.addEventListener('click', function () {
+      var key = th.dataset.key;
+      var cur = sortEl.value.split('-');
+      var dir = cur[0] === key && cur[1] === (key === 'name' ? 'asc' : 'desc')
+        ? (key === 'name' ? 'desc' : 'asc')
+        : (key === 'name' ? 'asc' : 'desc');
+      sortEl.value = key + '-' + dir;
+      apply();
+    });
+  });
+
+  var timer;
+  qEl.addEventListener('input', function () {
+    clearTimeout(timer);
+    timer = setTimeout(apply, 120);
+  });
+  campusEl.addEventListener('change', apply);
+  sortEl.addEventListener('change', apply);
+
+  fetch(SOURCE_FILE)
+    .then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.text();
+    })
+    .then(function (text) {
+      all = build(parseCSV(text));
+      var campuses = {};
+      all.forEach(function (r) { if (r.campus) campuses[r.campus] = (campuses[r.campus] || 0) + 1; });
+      Object.keys(campuses).sort().forEach(function (c) {
+        var opt = document.createElement('option');
+        opt.value = c;
+        opt.textContent = c + ' (' + count.format(campuses[c]) + ')';
+        campusEl.appendChild(opt);
+      });
+      document.getElementById('source').textContent =
+        'Data: ' + count.format(all.length) + ' records from ' + SOURCE_FILE + '.';
+      apply();
+    })
+    .catch(function (err) {
+      summaryEl.textContent = 'Could not load the salary data (' + err.message + ').';
+    });
+})();
+</script>
+</body>
+</html>
