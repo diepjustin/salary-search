@@ -1,0 +1,389 @@
+{
+  "02055": {
+    "name": "Button, Mark E",
+    "title": "Dean",
+    "campus": "UNL",
+    "salary": "350,790",
+    "group": "dean",
+    "photo_url": "https://chancellor.unl.edu/sites/unl.edu.chancellor.office/files/styles/1_1_720x720/public/node/person/photo/2025-02/m-button.jpg?itok=1azLflD6",
+    "source_url": "https://chancellor.unl.edu/university-leadership/executive-leadership-team/"
+  },
+  "34153": {
+    "name": "Heng-Moss, Tiffany M",
+    "title": "Dean",
+    "campus": "UNL-IANR",
+    "salary": "280,857",
+    "group": "dean",
+    "photo_url": "https://chancellor.unl.edu/sites/unl.edu.chancellor.office/files/styles/1_1_720x720/public/node/person/photo/2025-02/t-hengmoss.jpg?itok=-Szsd5XD",
+    "source_url": "https://chancellor.unl.edu/university-leadership/executive-leadership-team/"
+  },
+  "06098": {
+    "name": "Nelson, Carl A",
+    "title": "Associate Dean",
+    "campus": "UNL",
+    "salary": "181,737",
+    "group": "dean",
+    "photo_url": "https://chancellor.unl.edu/sites/unl.edu.chancellor.office/files/styles/1_1_720x720/public/node/person/photo/2025-02/j-nelson-2.jpg?itok=lBZkNb1i",
+    "source_url": "https://chancellor.unl.edu/university-leadership/executive-leadership-team/"
+  },
+  "34132": {
+    "name": "Burkey, Thomas E",
+    "title": "Assoc Dean",
+    "campus": "UNL-IANR",
+    "salary": "173,455",
+    "group": "dean",
+    "photo_url": "https://chancellor.unl.edu/sites/unl.edu.chancellor.office/files/styles/1_1_720x720/public/node/person/photo/2025-06/t-burkey.jpg?itok=udymtYcY",
+    "source_url": "https://chancellor.unl.edu/university-leadership/college-deans/"
+  },
+  "02886": {
+    "name": "Farrell, Kathleen Anne",
+    "title": "Dean",
+    "campus": "UNL",
+    "salary": "448,491",
+    "group": "dean",
+    "photo_url": "https://chancellor.unl.edu/sites/unl.edu.chancellor.office/files/styles/1_1_720x720/public/node/person/photo/2025-02/k-farrell.jpg?itok=qiW82x3R",
+    "source_url": "https://chancellor.unl.edu/university-leadership/college-deans/"
+  },
+  "02056": {
+    "name": "Belser, Andrew W",
+    "title": "Dean",
+    "campus": "UNL",
+    "salary": "282,355",
+    "group": "dean",
+    "photo_url": "https://chancellor.unl.edu/sites/unl.edu.chancellor.office/files/styles/1_1_720x720/public/node/person/photo/2025-02/a-belser.jpg?itok=9Rm-OtEI",
+    "source_url": "https://chancellor.unl.edu/university-leadership/college-deans/"
+  },
+  "08099": {
+    "name": "Moberly, Richard E",
+    "title": "Dean",
+    "campus": "UNL",
+    "salary": "386,059",
+    "group": "dean",
+    "photo_url": "https://chancellor.unl.edu/sites/unl.edu.chancellor.office/files/styles/1_1_720x720/public/node/person/photo/2025-02/r-moberly.jpg?itok=2OzrZklI",
+    "source_url": "https://chancellor.unl.edu/university-leadership/college-deans/"
+  },
+  "09827": {
+    "name": "Goodburn, Amy M",
+    "title": "Sr. Assoc VC and Dean Undergraduate",
+    "campus": "UNL",
+    "salary": "264,937",
+    "group": "chancellor",
+    "photo_url": "https://chancellor.unl.edu/sites/unl.edu.chancellor.office/files/styles/1_1_720x720/public/node/person/photo/2026-02/a-goodburn-portrait.jpg?itok=K3fOxYNk",
+    "source_url": "https://chancellor.unl.edu/university-leadership/division-and-unit-deans/"
+  },
+  "06557": {
+    "name": "Lorang, Elizabeth M",
+    "title": "Dean",
+    "campus": "UNL",
+    "salary": "216,592",
+    "group": "dean",
+    "photo_url": "https://chancellor.unl.edu/sites/unl.edu.chancellor.office/files/styles/1_1_720x720/public/node/person/photo/2025-02/l-lorang.jpg?itok=zkNGsCVm",
+    "source_url": "https://chancellor.unl.edu/university-leadership/division-and-unit-deans/"
+  },
+  "58204": {
+    "name": "Bauer, Marc D",
+    "title": "Athletic Director",
+    "campus": "UNK",
+    "salary": "151,950",
+    "group": "athletic_director",
+    "photo_url": "https://www.unk.edu/_files/images/headshots/bauermd.jpg",
+    "source_url": "https://www.unk.edu/about/administration/index.php"
+  },
+  "58203": {
+    "name": "Holman, George P",
+    "title": "Assoc Vice Chancellor for Stu Affairs",
+    "campus": "UNK",
+    "salary": "151,178",
+    "group": "chancellor",
+    "photo_url": "https://www.unk.edu/_files/images/headshots/holmangp.jpg",
+    "source_url": "https://www.unk.edu/about/administration/index.php"
+  },
+  "00450": {
+    "name": "Blackman, Bret Ryan",
+    "title": "Vice President, Info Tech",
+    "campus": "NU System",
+    "salary": "308,372",
+    "group": "president",
+    "photo_url": "https://www.unomaha.edu/office-of-the-chancellor/leadership/_headshots/bret-blackman_018.png",
+    "source_url": "https://www.unomaha.edu/office-of-the-chancellor/leadership/index.php"
+  },
+  "60568": {
+    "name": "Coleman, Jason D",
+    "title": "Associate Dean",
+    "campus": "UNO",
+    "salary": "180,000",
+    "group": "dean",
+    "photo_url": "https://www.unomaha.edu/office-of-the-chancellor/leadership/_headshots/jason-coleman.png",
+    "source_url": "https://www.unomaha.edu/office-of-the-chancellor/leadership/index.php"
+  },
+  "61041": {
+    "name": "Dowell Jr, Adrian E",
+    "title": "Vice Chancellor & Director of Athletics",
+    "campus": "UNO",
+    "salary": "350,000",
+    "group": "chancellor",
+    "photo_url": "https://www.unomaha.edu/office-of-the-chancellor/leadership/_headshots/adrian-dowell.jpeg",
+    "source_url": "https://www.unomaha.edu/office-of-the-chancellor/leadership/index.php"
+  },
+  "61248": {
+    "name": "Kirchner, Carol A",
+    "title": "Vice Chancellor",
+    "campus": "UNO",
+    "salary": "300,000",
+    "group": "chancellor",
+    "photo_url": "https://www.unomaha.edu/office-of-the-chancellor/leadership/_headshots/carol-kirchner_008.png",
+    "source_url": "https://www.unomaha.edu/office-of-the-chancellor/leadership/index.php"
+  },
+  "58000": {
+    "name": "Schnoor, Neal H",
+    "title": "Chancellor",
+    "campus": "UNK",
+    "salary": "325,000",
+    "group": "chancellor",
+    "photo_url": "https://nebraska.edu/_files/images/people/neal-schnoor-portrait.jpg",
+    "source_url": "https://nebraska.edu/meet-our-people/chancellors-and-vice-presidents"
+  },
+  "90065": {
+    "name": "Davies, Herbert O",
+    "title": "Chancellor",
+    "campus": "UNMC",
+    "salary": "591,262",
+    "group": "chancellor",
+    "photo_url": "https://nebraska.edu/_files/images/people/dele-davies.jpg",
+    "source_url": "https://nebraska.edu/meet-our-people/chancellors-and-vice-presidents"
+  },
+  "61034": {
+    "name": "Li, Joanne W",
+    "title": "Chancellor",
+    "campus": "UNO",
+    "salary": "669,873",
+    "group": "chancellor",
+    "photo_url": "https://nebraska.edu/_files/images/people/joanne-li.jpg",
+    "source_url": "https://nebraska.edu/meet-our-people/chancellors-and-vice-presidents"
+  },
+  "00026": {
+    "name": "Barnes, Anne C",
+    "title": "Senior Vice President/CFO",
+    "campus": "NU System",
+    "salary": "502,454",
+    "group": "president",
+    "photo_url": "https://nebraska.edu/_files/images/people/barnes_anne.jpg",
+    "source_url": "https://nebraska.edu/meet-our-people/chancellors-and-vice-presidents"
+  },
+  "05270": {
+    "name": "Jackson, Jimmy J",
+    "title": "Assoc Vice Chancellor, Univ Operations",
+    "campus": "UNL",
+    "salary": "248,534",
+    "group": "chancellor",
+    "photo_url": "https://nebraska.edu/_files/images/people/jackson_d.jpg",
+    "source_url": "https://nebraska.edu/meet-our-people/chancellors-and-vice-presidents"
+  },
+  "00063": {
+    "name": "Kratochvil, Christopher J",
+    "title": "Vice President for External Relations",
+    "campus": "NU System",
+    "salary": "554,979",
+    "group": "president",
+    "photo_url": "https://nebraska.edu/_files/images/people/chris-kratochvil.jpg",
+    "source_url": "https://nebraska.edu/meet-our-people/chancellors-and-vice-presidents"
+  },
+  "00001": {
+    "name": "Gold, Jeffrey P",
+    "title": "President",
+    "campus": "NU System",
+    "salary": "1,062,573",
+    "group": "president",
+    "photo_url": "https://nebraska.edu/_files/images/people/jeffrey-p-gold-contact.jpg",
+    "source_url": "https://nebraska.edu/president/"
+  },
+  "71059": {
+    "name": "Britigan, Bradley E",
+    "title": "Dean",
+    "campus": "UNMC",
+    "salary": "471,324",
+    "group": "dean",
+    "photo_url": "https://www.unmc.edu/_images/aboutus/britigan.jpg",
+    "source_url": "https://www.unmc.edu/aboutus/leadership-mission/com-dean.html"
+  },
+  "71567": {
+    "name": "Klepser, Donald G",
+    "title": "Dean",
+    "campus": "UNMC",
+    "salary": "307,664",
+    "group": "dean",
+    "photo_url": "https://www.unmc.edu/_images/aboutus/donald-klepser.jpg",
+    "source_url": "https://www.unmc.edu/aboutus/leadership-mission/cop-dean.html"
+  },
+  "90066": {
+    "name": "Gould, Karen A",
+    "title": "Dean",
+    "campus": "UNMC",
+    "salary": "222,662",
+    "group": "dean",
+    "photo_url": "https://www.unmc.edu/_images/aboutus/karen-gould.jpg",
+    "source_url": "https://www.unmc.edu/aboutus/leadership-mission/gradstudies-dean.html"
+  },
+  "05214": {
+    "name": "Dannen, Troy A",
+    "title": "Athletic Director",
+    "campus": "UNL",
+    "salary": "1,700,000",
+    "group": "athletic_director",
+    "photo_url": "https://huskers.com/imgproxy/lElvULnEtBomywIzzg4y6RVQ4QHkbBzv5v5NApy2Efg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wMy8yMC9ZczZGMm4zTUNrMWdwUWtqTWZ3TVNtQVFrR2RNQmswdjltenBGR3V6LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "58257": {
+    "name": "Johnson, Drew K",
+    "title": "Head Coach - Womens Basketball",
+    "campus": "UNK",
+    "salary": "108,150",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/2cd5JJ0BdO8wEEF5DWV-XpijmBiJ4wQHJ-d9369X5e0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNy8zMS9zeWQ4dHNMUW80ckpTeFo2bk85SlBiNFhsNHFKSDl2bVlZc2pNOVl6LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10105": {
+    "name": "Klempa, Paul A",
+    "title": "Head Coach-Women's Bowling",
+    "campus": "UNL",
+    "salary": "110,000",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/b5ZTtvf1F2KQESYEoHTyC7Du0319kLhpF7L04EI-DFc/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS93TFgwZzdsVFd6SWpJazBGU1lIbENrVGpibVFBNFdBcjl3UEducTVkLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09982": {
+    "name": "Butzke, Erynn S",
+    "title": "Spirit Squad Head Coach",
+    "campus": "UNL",
+    "salary": "68,301",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/L2L4YQdH6R-aNP19RERbGGyYT6lAIjVPgIC0sl0B-iM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9kbjIxUkRxWW4xaE9rSmREeWJKb3hscm1oZDZNY3d0QmhVQWJxZnNOLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "13684": {
+    "name": "Campbell, Corey E",
+    "title": "Head Football Strength Coach",
+    "campus": "UNL",
+    "salary": "650,000",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/6AckNRe41FRiOsWevxnqs58XbKQk4zGulLxBEAxvinY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC80QjVZTXdwd0kyMVk5eTNTRFJueEZ0bjBoMnlheEUxbW5VSDRqYnFwLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05224": {
+    "name": "Bolt, William E",
+    "title": "Head Coach-Baseball",
+    "campus": "UNL",
+    "salary": "500,000",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/8lXBXeJDK4kPWU1OONz_FBwi8K-BDYnHpaNM_e-BONk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wMS8yMy9pTEl2ZmoxVkUyUlZneXVUVTdtZkFzUnVuS2FhVTZhRXZ2TjVnSzB3LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05221": {
+    "name": "Hoiberg, Fredrick K",
+    "title": "Head Coach-Basketball",
+    "campus": "UNL",
+    "salary": "4,350,000",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/mFlvM_hGorixbyxDiRyGLJpquQz-xstFxIivmaqyVtY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNi8xMS9UVFVvNnVGWXJZV2IwUjhlUXdzaEFaVHBYSjBkazRIb0c0Y0l1YTh3LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03578": {
+    "name": "Williams, Amy M",
+    "title": "Head Coach-Women's Basketball",
+    "campus": "UNL",
+    "salary": "975,000",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/4MwQeXILQ5bQP3yRcMgY3d_fs0iRdLFtMZLix6o7D-g/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOS8xMi9hYjBncks3b0cxTU9BUVFFeHByTU5FcVVyeFp2MkF3eTBmdWN0WFdNLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05222": {
+    "name": "Rhule, Matthew K",
+    "title": "Head Coach-Football",
+    "campus": "UNL",
+    "salary": "7,500,000",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/UKymQNedtWWI87ZnZcBIIR_7pZW1gVR94iWpJ7B5PeA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS83Zjl6WG5zVU1zWFVxb0g3VkZtWFp4UnZwVTY1TFdTT1dMalBDQlE3LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05219": {
+    "name": "Manning, Mark M",
+    "title": "Head Coach-Wrestling",
+    "campus": "UNL",
+    "salary": "400,000",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/HL8Ppy0odp6tRPYxr6Vq6KBGLsNLV_RsNQUyVGdJYDs/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wMy8xMi9CaEJoVHB6RXBSVlhraFJ5YUdoRnBocDl0Y3VuU2RIbk90bVBwT0wwLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05223": {
+    "name": "Cornell, Judd M",
+    "title": "Head Coach-Men's Golf",
+    "campus": "UNL",
+    "salary": "128,750",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/U-Kd5K4d1DkJ2e18BiY4FWQX-9WoJhexSJ-CGtduMrE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9FRTVUTXhLNzBlU2ZSclRoUDJiTlhCb2VDbWFLTGdhZENkelZhVVd1LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05217": {
+    "name": "Chmelka, Kenneth C",
+    "title": "Head Coach - Men's Gymnastics",
+    "campus": "UNL",
+    "salary": "130,000",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/Dq9ucpu0DMwJv0H75wlhW7Ucnn7t2OCdtFPdsw6EAAA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMS9DWmp1UE5DcmFtSmowdFR2WFhVdDUwSXd0bkZRdmI1QUg2TmJ2Yk4yLnBuZw.png",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10376": {
+    "name": "Clark, Richard B",
+    "title": "Head Coach-Rifle",
+    "campus": "UNL",
+    "salary": "75,000",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/M_ASt-QWQQIH_ek6heHP8RYiLHW1YjkWeepSNIVE8oM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOS8wOS85ZmVHc0lpWHNKUkxPVFZrTkQwanNEdDhoSEdyZGJjNkpwcjNzRzhkLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09285": {
+    "name": "Walker, John V",
+    "title": "Head Coach-Women's Soccer",
+    "campus": "UNL",
+    "salary": "211,000",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/FhywGTsQVAtBp_4qcMipFMHovAZzkfAhzp62BrHCcYE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS94b3hFbTh4SWRoZTZuVlc4NnFEZGtnZXE5MnpqTUpHeWgzV1lHQW8xLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05286": {
+    "name": "Revelle, Rhonda",
+    "title": "Head Coach-Softball",
+    "campus": "UNL",
+    "salary": "310,000",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/jPot-PdltBp9zNNFQqKgtg-N1Dj7trlUEobWrR6W-AA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8yMy9FQVA1Nnoyc3RPOGVxa3hab3BNRjF4YnMxejVoNEloekpOM1lDUk9uLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "07087": {
+    "name": "Rowan, Patrick J",
+    "title": "Assoc Head Coach - Swimming",
+    "campus": "UNL",
+    "salary": "72,120",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/TvAVCS3U4-FFVbCZ9_VK_rCpPvJQNu-3TrsXrf5PCgs/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9Nc2I1bUtHWjNUVDBMMjREWUM2S0RhbVl3U1hpNTZFNmg3SnAzbmVNLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05218": {
+    "name": "Morales, Pedro P",
+    "title": "Head Coach-Women's Swimming",
+    "campus": "UNL",
+    "salary": "117,500",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/LSTB33zZ_lJnWj9qG2ts41JbVN5_xFU_0vsEtf-pHiE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9qR1R2RlZwYzZCdnRRTU5qRjdKWU9iT0xVdWNiNFY4TURvVEp2dnNrLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05226": {
+    "name": "Kobelt, Peter C Interim",
+    "title": "Head Coach-Men's Tennis",
+    "campus": "UNL",
+    "salary": "140,000",
+    "group": "head_coach",
+    "photo_url": "https://huskers.com/imgproxy/gGZcC4U3YG94DoQotaEslvTvYwi1y8a-rgyJKfPMJHE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8yNC9HZFhzUUNhaXZ1RkJkM2s2d3V1VnJqTUl4Qm5GWVF5VE1tdVlaNmJMLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  }
+}

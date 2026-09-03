@@ -75,6 +75,17 @@ tbody tr.detail dl { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; margin:
 tbody tr.detail dt { font-weight: 600; display: inline; }
 tbody tr.detail dd { display: inline; margin: 0 0 0 .35rem; }
 .name { font-weight: 500; }
+.avatar { display: inline-block; vertical-align: middle; width: 28px; height: 28px; margin-right: .55rem; }
+.avatar-img, .avatar-fallback {
+  width: 28px; height: 28px; border-radius: 50%; display: inline-flex;
+  align-items: center; justify-content: center; vertical-align: middle;
+  object-fit: cover; flex-shrink: 0;
+}
+.avatar-img { background: var(--head-bg); }
+.avatar-fallback {
+  background: var(--head-bg); color: var(--muted-color);
+  font-size: .68rem; font-weight: 600; letter-spacing: .02em;
+}
 #more { margin: 1rem 0 0; }
 button.more {
   padding: .6rem 1.1rem; font-size: .95rem; font-family: inherit; cursor: pointer;
@@ -159,6 +170,7 @@ footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-w
 <script>
 (function () {
   var SOURCE_FILE = 'personnel_data.csv';
+  var PHOTOS_FILE = 'data/leadership_photos.json';
   var PAGE = 100;
   var all = [], view = [], shown = 0;
   var qEl = document.getElementById('q');
@@ -200,6 +212,31 @@ footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-w
     });
   }
 
+  function initials(name) {
+    var last = name.split(',')[0].trim();
+    var first = name.split(',')[1] || '';
+    var a = first.trim().charAt(0);
+    var b = last.charAt(0);
+    return (a + b).toUpperCase() || '?';
+  }
+
+  // Official headshots for a curated subset of people (top administrators,
+  // deans, athletic directors, head coaches) -- hotlinked to each
+  // university's own site, keyed by the CSV's Position id. Most rows have
+  // no entry here; those get an initials placeholder instead.
+  var photosByPosition = {};
+
+  function avatarHtml(r) {
+    var photo = photosByPosition[r.position];
+    if (photo) {
+      return '<img class="avatar-img" src="' + esc(photo.photo_url) + '" alt="" loading="lazy" ' +
+        'referrerpolicy="no-referrer" ' +
+        'onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),' +
+        '{className:\'avatar-fallback\',textContent:' + JSON.stringify(initials(r.name)) + '}))">';
+    }
+    return '<span class="avatar-fallback">' + esc(initials(r.name)) + '</span>';
+  }
+
   function build(rows) {
     var head = rows[0].map(function (h) { return h.trim(); });
     var idx = {};
@@ -214,7 +251,9 @@ footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-w
         campus: (row[idx['Campus']] || '').trim(),
         title: (row[idx['Title']] || '').trim(),
         fte: (row[idx['FTE']] || '').trim(),
-        salary: parseFloat((row[idx['Salary']] || '0').replace(/[^0-9.]/g, '')) || 0
+        salary: parseFloat((row[idx['Salary']] || '0').replace(/[^0-9.]/g, '')) || 0,
+        // internal-only join key for the leadership-photo manifest; never rendered
+        position: (row[idx['Position']] || '').trim()
       };
       rec.key = (rec.name + ' ' + rec.campus + ' ' + rec.title).toLowerCase();
       recs.push(rec);
@@ -282,7 +321,7 @@ footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-w
       var r = view[i];
       html +=
         '<tr class="person" data-i="' + i + '" tabindex="0">' +
-        '<td class="name">' + esc(r.name) + '</td>' +
+        '<td class="name"><span class="avatar">' + avatarHtml(r) + '</span>' + esc(r.name) + '</td>' +
         '<td class="col-campus">' + esc(r.campus) + '</td>' +
         '<td>' + esc(r.title) + '</td>' +
         '<td class="num col-fte">' + esc(r.fte) + '</td>' +
@@ -344,11 +383,20 @@ footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-w
   campusEl.addEventListener('change', apply);
   sortEl.addEventListener('change', apply);
 
+  // Leadership photos are a nice-to-have for a small subset of rows -- if
+  // this fetch fails or the file isn't there, everyone just gets the
+  // initials fallback instead of a broken page.
+  var photosReady = fetch(PHOTOS_FILE)
+    .then(function (res) { return res.ok ? res.json() : {}; })
+    .then(function (data) { photosByPosition = data; })
+    .catch(function () { /* no photos available; initials fallback covers it */ });
+
   fetch(SOURCE_FILE)
     .then(function (res) {
       if (!res.ok) throw new Error('HTTP ' + res.status);
       return res.text();
     })
+    .then(function (text) { return photosReady.then(function () { return text; }); })
     .then(function (text) {
       all = build(parseCSV(text));
       var campuses = {};
