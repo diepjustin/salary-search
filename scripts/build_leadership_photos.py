@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """
-Build a manifest of official headshot URLs for top administrators, athletic
-directors, and head coaches in personnel_data.csv.
+Build a manifest of official headshot URLs for top administrators and the
+full athletics department staff in personnel_data.csv.
 
 Scope (see conversation / README note): chancellors, vice chancellors,
-president, CFO/VPs, deans/associate deans, athletic directors, and head
-coaches only -- NOT the full roster and NOT department chairs (that's a
-separate, larger follow-up).
+president, CFO/VPs, deans/associate deans -- plus every UNL/UNL-IANR, UNO,
+and UNK athletics-department employee findable on that school's own staff
+directory (coaches at every level, trainers, strength staff, operations,
+etc.), matched by name against personnel_data.csv. Department chairs outside
+athletics are still NOT included (a separate, larger follow-up).
 
 This does a small, fixed number of GET requests (a couple dozen pages) against
 each university's own public leadership/athletics pages -- not a bulk crawl.
@@ -143,9 +145,15 @@ def match_candidate(candidate_name, targets_by_lastname):
     for pos_id, first_tok in candidates:
         if first_tok == first or first_tok.startswith(first) or first.startswith(first_tok):
             return pos_id
-    # fallback: last name unique match
-    if len(candidates) == 1:
-        return candidates[0][0]
+    # NOTE: deliberately no "only one person has this last name in our
+    # target list, so it must be them" fallback here. That rule caused a
+    # real bug: a coach's relative sharing the same surname, employed by
+    # the same athletics department, matched before the actual coach's own
+    # roster entry did (Charlie Hoiberg, "Graduate Manager", wrongly
+    # attached to Fredrick Hoiberg's salary row -- unrelated first names,
+    # only the surname lined up). Requiring at least a first-name prefix
+    # relationship, as the loop above does, is the safety floor: fewer
+    # matches, but no more attaching a relative's photo to the wrong salary.
     return None
 
 
@@ -264,6 +272,62 @@ def extract_nuxt_payload_roster(html):
     return out
 
 
+def extract_unk_staff_table(html, base_url):
+    """lopers.com (UNK) runs the older, plain-HTML Sidearm template: the
+    staff-directory listing is a real <table>, server-rendered, no photos in
+    it -- but each row links to that person's own bio page, which does have
+    one (see extract_unk_bio_photo)."""
+    soup = BeautifulSoup(html, "html.parser")
+    out = []
+    for tr in soup.select("tr.sidearm-staff-member"):
+        a = tr.find("a")
+        if not a:
+            continue
+        name = a.get_text(strip=True)
+        href = a.get("href")
+        if name and href:
+            out.append((name, urljoin(base_url, href)))
+    return out
+
+
+def extract_unk_bio_photo(html):
+    soup = BeautifulSoup(html, "html.parser")
+    box = soup.select_one(".sidearm-staff-member-bio-image")
+    img = box.find("img") if box else None
+    return img.get("src") if img and img.get("src") else None
+
+
+def load_uno_athletics_roster():
+    """omahamavs.com (UNO) is a JS-rendered Nuxt app behind Incapsula bot
+    protection -- a plain script can't (and shouldn't try to) get past that.
+    This reads a one-time capture of the fully-rendered staff-directory page,
+    taken through a real browser session, saved as JSON."""
+    if not UNO_RAW_FILE.exists():
+        return []
+    data = json.loads(UNO_RAW_FILE.read_text(encoding="utf-8"))
+    out = []
+    for d in data:
+        photo = d.get("photo")
+        if not photo or "person-default" in photo:
+            continue  # no real headshot on file for this person
+        out.append((d["name"], photo, d.get("title") or ""))
+    return out
+
+
+def campus_lastname_index(rows, campuses):
+    """Name index over ALL personnel rows (not just the curated leadership
+    target list) restricted to the given campuses -- used to match an
+    athletics-department roster against everyone from that campus, since
+    assistant coaches/trainers/etc. were never in the curated target list."""
+    idx = {}
+    for r in rows:
+        if r["Campus"] not in campuses:
+            continue
+        last, first = name_key(r["Name"])
+        idx.setdefault(last, []).append((r["Position"], first))
+    return idx
+
+
 # ---------------------------------------------------------------------------
 # Source list
 # ---------------------------------------------------------------------------
@@ -296,11 +360,9 @@ UNMC_SOURCES = [
     "https://www.unmc.edu/aboutus/leadership-mission/library-dean.html",
 ]
 
-ATHLETICS_SOURCES = [
-    "https://huskers.com/staff-directory",
-    "https://omahamavs.com/staff-directory",
-    "https://lopers.com/staff-directory",
-]
+HUSKERS_SOURCE = "https://huskers.com/staff-directory"
+UNK_STAFF_SOURCE = "https://lopers.com/staff-directory"
+UNO_RAW_FILE = ROOT / "data" / "raw_scrape" / "uno_athletics.json"
 
 
 def main():
@@ -393,20 +455,7 @@ def main():
                 record(pos_id, name, photo_url, url)
         print(f"  done {url}")
 
-    # Athletics rosters (one fetch each covers the whole staff list)
-    for url in ATHLETICS_SOURCES:
-        try:
-            html = fetch(url)
-        except Exception as e:
-            print(f"  FAILED {url}: {e}")
-            continue
-        for name, photo_url, title in extract_nuxt_payload_roster(html):
-            pos_id = match_candidate(name, targets_by_lastname)
-            if pos_id and targets[pos_id]["group"] in ("head_coach", "athletic_director"):
-                record(pos_id, name, photo_url, url)
-        print(f"  done {url}")
-
-    # ---- report ----
+    # ---- report on the curated leadership pass ----
     matched = len(found)
     print(f"\nMatched {matched} / {len(targets)} target people")
     unmatched = [t for pid, t in targets.items() if pid not in found]
@@ -422,9 +471,91 @@ def main():
             "source_url": info["source_url"],
         }
 
+    # -----------------------------------------------------------------
+    # Full athletics-department rosters (all staff, not just head coaches
+    # and ADs) -- matched against every CSV row for that campus, since
+    # assistant coaches/trainers/etc. were never in the curated target list.
+    # -----------------------------------------------------------------
+    all_rows = list(csv.DictReader(CSV_PATH.open(newline="", encoding="utf-8-sig")))
+    rows_by_position = {r["Position"]: r for r in all_rows}
+    athletics_found = {}  # pos_id -> {photo_url, source_url, scraped_name}
+
+    def record_athletics(pos_id, scraped_name, photo_url, source_url):
+        if pos_id in athletics_found or pos_id in manifest:
+            return
+        athletics_found[pos_id] = {
+            "photo_url": photo_url,
+            "source_url": source_url,
+            "scraped_name": scraped_name,
+        }
+
+    athletics_sources = [
+        ("UNL Huskers", HUSKERS_SOURCE, {"UNL", "UNL-IANR"}),
+        ("UNK Lopers", UNK_STAFF_SOURCE, {"UNK"}),
+    ]
+    for label, url, campuses in athletics_sources:
+        idx = campus_lastname_index(all_rows, campuses)
+        if url == HUSKERS_SOURCE:
+            try:
+                html = fetch(url)
+                roster = [(n, p) for n, p, _t in extract_nuxt_payload_roster(html)]
+            except Exception as e:
+                print(f"  FAILED {url}: {e}")
+                roster = []
+            for name, photo_url in roster:
+                pos_id = match_candidate(name, idx)
+                if pos_id:
+                    record_athletics(pos_id, name, photo_url, url)
+            print(f"  done {label}: {url} ({len(roster)} roster entries)")
+        elif url == UNK_STAFF_SOURCE:
+            try:
+                html = fetch(url)
+                listing = extract_unk_staff_table(html, url)
+            except Exception as e:
+                print(f"  FAILED {url}: {e}")
+                listing = []
+            for name, bio_url in listing:
+                pos_id = match_candidate(name, idx)
+                if not pos_id:
+                    continue
+                try:
+                    bio_html = fetch(bio_url)
+                    photo_url = extract_unk_bio_photo(bio_html)
+                except Exception as e:
+                    print(f"    FAILED {bio_url}: {e}")
+                    continue
+                if photo_url:
+                    record_athletics(pos_id, name, urljoin(bio_url, photo_url), bio_url)
+            print(f"  done {label}: {url} ({len(listing)} roster entries, individual bio pages fetched)")
+
+    # UNO: browser-captured roster (Incapsula-protected, JS-rendered site --
+    # see load_uno_athletics_roster's docstring)
+    uno_idx = campus_lastname_index(all_rows, {"UNO"})
+    uno_roster = load_uno_athletics_roster()
+    for name, photo_url, title in uno_roster:
+        pos_id = match_candidate(name, uno_idx)
+        if pos_id:
+            record_athletics(pos_id, name, photo_url, "https://omahamavs.com/staff-directory")
+    print(f"  done UNO Mavericks: {len(uno_roster)} roster entries (browser capture)")
+
+    print(f"\nAthletics pass matched {len(athletics_found)} additional people")
+    for pos_id, info in athletics_found.items():
+        row = rows_by_position.get(pos_id)
+        if row is None:
+            continue
+        manifest[pos_id] = {
+            "name": row["Name"].strip(),
+            "title": norm_title(row["Title"]),
+            "campus": row["Campus"],
+            "salary": row["Salary"],
+            "group": "athletics_staff",
+            "photo_url": info["photo_url"],
+            "source_url": info["source_url"],
+        }
+
     OUT_PATH.parent.mkdir(exist_ok=True)
     OUT_PATH.write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
-    print(f"\nWrote {OUT_PATH} ({len(manifest)} entries)")
+    print(f"\nWrote {OUT_PATH} ({len(manifest)} total entries)")
 
 
 if __name__ == "__main__":

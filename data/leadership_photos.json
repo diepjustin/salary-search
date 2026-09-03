@@ -17,33 +17,6 @@
     "photo_url": "https://chancellor.unl.edu/sites/unl.edu.chancellor.office/files/styles/1_1_720x720/public/node/person/photo/2025-02/t-hengmoss.jpg?itok=-Szsd5XD",
     "source_url": "https://chancellor.unl.edu/university-leadership/executive-leadership-team/"
   },
-  "06098": {
-    "name": "Nelson, Carl A",
-    "title": "Associate Dean",
-    "campus": "UNL",
-    "salary": "181,737",
-    "group": "dean",
-    "photo_url": "https://chancellor.unl.edu/sites/unl.edu.chancellor.office/files/styles/1_1_720x720/public/node/person/photo/2025-02/j-nelson-2.jpg?itok=lBZkNb1i",
-    "source_url": "https://chancellor.unl.edu/university-leadership/executive-leadership-team/"
-  },
-  "34132": {
-    "name": "Burkey, Thomas E",
-    "title": "Assoc Dean",
-    "campus": "UNL-IANR",
-    "salary": "173,455",
-    "group": "dean",
-    "photo_url": "https://chancellor.unl.edu/sites/unl.edu.chancellor.office/files/styles/1_1_720x720/public/node/person/photo/2025-06/t-burkey.jpg?itok=udymtYcY",
-    "source_url": "https://chancellor.unl.edu/university-leadership/college-deans/"
-  },
-  "02886": {
-    "name": "Farrell, Kathleen Anne",
-    "title": "Dean",
-    "campus": "UNL",
-    "salary": "448,491",
-    "group": "dean",
-    "photo_url": "https://chancellor.unl.edu/sites/unl.edu.chancellor.office/files/styles/1_1_720x720/public/node/person/photo/2025-02/k-farrell.jpg?itok=qiW82x3R",
-    "source_url": "https://chancellor.unl.edu/university-leadership/college-deans/"
-  },
   "02056": {
     "name": "Belser, Andrew W",
     "title": "Dean",
@@ -143,15 +116,6 @@
     "photo_url": "https://nebraska.edu/_files/images/people/neal-schnoor-portrait.jpg",
     "source_url": "https://nebraska.edu/meet-our-people/chancellors-and-vice-presidents"
   },
-  "90065": {
-    "name": "Davies, Herbert O",
-    "title": "Chancellor",
-    "campus": "UNMC",
-    "salary": "591,262",
-    "group": "chancellor",
-    "photo_url": "https://nebraska.edu/_files/images/people/dele-davies.jpg",
-    "source_url": "https://nebraska.edu/meet-our-people/chancellors-and-vice-presidents"
-  },
   "61034": {
     "name": "Li, Joanne W",
     "title": "Chancellor",
@@ -168,15 +132,6 @@
     "salary": "502,454",
     "group": "president",
     "photo_url": "https://nebraska.edu/_files/images/people/barnes_anne.jpg",
-    "source_url": "https://nebraska.edu/meet-our-people/chancellors-and-vice-presidents"
-  },
-  "05270": {
-    "name": "Jackson, Jimmy J",
-    "title": "Assoc Vice Chancellor, Univ Operations",
-    "campus": "UNL",
-    "salary": "248,534",
-    "group": "chancellor",
-    "photo_url": "https://nebraska.edu/_files/images/people/jackson_d.jpg",
     "source_url": "https://nebraska.edu/meet-our-people/chancellors-and-vice-presidents"
   },
   "00063": {
@@ -196,6 +151,15 @@
     "group": "president",
     "photo_url": "https://nebraska.edu/_files/images/people/jeffrey-p-gold-contact.jpg",
     "source_url": "https://nebraska.edu/president/"
+  },
+  "90065": {
+    "name": "Davies, Herbert O",
+    "title": "Chancellor",
+    "campus": "UNMC",
+    "salary": "591,262",
+    "group": "chancellor",
+    "photo_url": "https://www.unmc.edu/_images/aboutus/about-davies.jpg",
+    "source_url": "https://www.unmc.edu/aboutus/leadership-mission/chancellor.html"
   },
   "71059": {
     "name": "Britigan, Bradley E",
@@ -224,31 +188,1129 @@
     "photo_url": "https://www.unmc.edu/_images/aboutus/karen-gould.jpg",
     "source_url": "https://www.unmc.edu/aboutus/leadership-mission/gradstudies-dean.html"
   },
+  "04706": {
+    "name": "Davidson, Matthew A",
+    "title": "Sr Assoc AD-Event Mgmt & Operations",
+    "campus": "UNL",
+    "salary": "150,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/idAGixAw-xdcTJ1o9RmDSY3H6-pFSqR2fzi_6ck0mqc/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9qSHk4TXNWVk8zZFBpMUVMTHdjWmFCZXRBZ1VGNFRVeXZCenoyV1VjLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05294": {
+    "name": "Lenz, Mitzi R",
+    "title": "Executive Specialist",
+    "campus": "UNL",
+    "salary": "89,673",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/4tVTmuIA2uy6Kse042Y_jODeknRFnB9aJJ6ujN1dL4U/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS90YklRa1lWckFaRnZFYlV0dmJYc3d3ODVnc0FGUXo4a0w0UDFLMXlILmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "06944": {
+    "name": "Leblanc, Dennis Deputy AD",
+    "title": "for Student Services",
+    "campus": "UNL",
+    "salary": "277,886",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/vaKr_Q9VrVYt0vhLc5x48Sp88Kr-0Np6jbbPws6198I/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9ydTdFRmx6c3dVOTVuM3B6aU1HZnpvVTVic2Y3cndYQmlMbDNNaFJ4LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "15826": {
+    "name": "Dorsey, Seth E Deputy",
+    "title": "AD for Internal Operations",
+    "campus": "UNL",
+    "salary": "240,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/a450re4sSKO9rMEYDNju3ZBvrusnsVmqa6PccZYmOgM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNy8xNS9KWVFzVFA0ZzJHTDB5M1lMZ0RXQmoxMjFiZzBIdGVnQmp1OHluNjVsLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "14238": {
+    "name": "Brown, Kristen D Deputy",
+    "title": "AD - SWA",
+    "campus": "UNL",
+    "salary": "250,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/K9LWWctgM4UExqxAE5HaZUSS8q7u9_F5WU09ywdb1QE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNy8xNS9jd2pmVEtianVWQnRrOU1iZWJnTTh5TDQ2WWdoQjJkM2VDSEU3ZXpBLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "07713": {
+    "name": "Zimmer, Keith A",
+    "title": "Executive Associate AD - Life Skills",
+    "campus": "UNL",
+    "salary": "241,239",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/X36hTNwfjRxzMSyiuz55PRZWgC3-9Jbxx39Bazdl4II/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS93YVhHbk8yb1IxbzFQR0lLQ24zQkk0UDViSGwwS1REdDdQSXM1RnMyLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "13126": {
+    "name": "Mann, Keith Joseph",
+    "title": "Senior Associate AD - Communications",
+    "campus": "UNL",
+    "salary": "118,530",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/T7q8r4GA-SXETKNBn_6AU6TsfaspnbhIuJc3OrTN5KA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8yMC9WS0F0WFd2ZUhMQVMyRVZzY2MzOXJoVldjVEc2UVRWc2NNUlh2RTlQLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "02077": {
+    "name": "Meier, Brandon J",
+    "title": "Sr Assoc AD - Marketing & Multimedia",
+    "campus": "UNL",
+    "salary": "223,837",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/O4MvK200nwqniayGxosjdkdkMSbadz5kybu-Ob9XE0g/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9LNktSZHRTREhJa0ZNUWZ5d3NYZk9lSjhUTzJmcHlWckhlcDJKeEw2LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
   "05214": {
     "name": "Dannen, Troy A",
     "title": "Athletic Director",
     "campus": "UNL",
     "salary": "1,700,000",
-    "group": "athletic_director",
+    "group": "athletics_staff",
     "photo_url": "https://huskers.com/imgproxy/lElvULnEtBomywIzzg4y6RVQ4QHkbBzv5v5NApy2Efg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wMy8yMC9ZczZGMm4zTUNrMWdwUWtqTWZ3TVNtQVFrR2RNQmswdjltenBGR3V6LmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
-  "58257": {
-    "name": "Johnson, Drew K",
-    "title": "Head Coach - Womens Basketball",
-    "campus": "UNK",
-    "salary": "108,150",
-    "group": "head_coach",
+  "14239": {
+    "name": "Fields Sr, Haven C Deputy",
+    "title": "AD/COO",
+    "campus": "UNL",
+    "salary": "325,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/umcxDJQmGn5IH0IpwC49P0pCONL4ECAfyoJrbkMJkvo/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNC8yNS80WUdoaW9PVDBaTzQxOGtRNFoxWlJtNUo4TjdvQWpMT1dyS0p2eDUyLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10225": {
+    "name": "Peterson, Patricia A",
+    "title": "Senior Associate AD of Compliance",
+    "campus": "UNL",
+    "salary": "150,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/qO6_t00MokM6Z-MN9WfuPQ5sOXnWBZf6LPyNazzQODU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9pTDkxR2FNdFBiQ2ZwSFQ3TlJ5eTRwYzNjaTlwSW5wWUJzU2p3OTlhLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05336": {
+    "name": "Kai, Tyler Jon H",
+    "title": "Deputy AD for Revenue Generation",
+    "campus": "UNL",
+    "salary": "225,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/EmAraw-OgzunD3dhPR-zB3lQjJbrrexW6vkItuq9Rkw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNy8zMS8xdUNtblNMamlBdnEwUjhvY25UTjF0NnVIOEN5YkU1bldoTzNvQUtJLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "08739": {
+    "name": "Henrichs, Lonna M",
+    "title": "Assistant AD - Licensing & Branding",
+    "campus": "UNL",
+    "salary": "91,903",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/ow55JGi3GEM3F4ao7WYP3I9_Eu2oJtHiRlyz17DrcWo/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9vbkZXR05UT2J0bE00bVl3QXdZWWhST0h1ZmFkVXhJUVFmZzlxdUtBLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05251": {
+    "name": "Bateman, Jonathan D",
+    "title": "Associate AD/Administration",
+    "campus": "UNL",
+    "salary": "103,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/BSJn2E8mgp2h_52Sm9MmtXgNXUzKNiHmnbWG6BPoXEM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8yMC9iSm5EeWZLYWhVeVp3RTVmeG1NaGpHSjJqT3l6ZnlYd2pWR0J5SXdtLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09367": {
+    "name": "Maples Jr, Larry D",
+    "title": "Assoc AD Capital Projects - Sr Proj Mgr",
+    "campus": "UNL",
+    "salary": "135,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/GT8aoLczIFCiLmXxDJstkPxwEi08j7FsuWxLLCpZNFg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8wNS9zWVJWWGg2M1ZDY0JXakUzMEN0ZFV6cGVhdDh4QlZIN2Q3dkJaY1FlLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "06743": {
+    "name": "Chramosta, Blake J",
+    "title": "Director of Business Administration",
+    "campus": "UNL",
+    "salary": "61,809",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Wwc3JzYp-zZvevfJC2W921NOxkrJFOsDOIfCGQdSFvI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9UOTJnWFdtSnFSVnljS3RGWm83dmY5UEJGcUowSUdKaXdoVTdKdzRILmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03057": {
+    "name": "Gosha, Kortne F A",
+    "title": "Senior Associate Athletic Director",
+    "campus": "UNL",
+    "salary": "210,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/MOro3gmCFM1xk9meVWG1FyQYPO_n78-HlaRvpWaowRw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNy8xNi9oZWpyS09WcElPRzhNaEhiTVRLZGVDcHBNSFI1MnZiSlZxYXg4Rm9LLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "00036": {
+    "name": "Polt, Audrey A",
+    "title": "Associate AD for Legal Affairs/Assoc GC",
+    "campus": "UNL",
+    "salary": "185,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/_c3Wf0y1rULNQIEegPNFym2nbSZ2mwpRbhtfkXnKAkU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8yMC84VEtIQ0JqODRaSzd5NWVDMlgzYzI3dzV6RklMOFNSUDR6VFFYQWlPLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "14677": {
+    "name": "Fuess, Scott Macneill",
+    "title": "Faculty Athletics Representative",
+    "campus": "UNL",
+    "salary": "203,335",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/aM__eJ6T5LMuHsHqZC5GwwC7rWe9W-pHph1mg95Ojpc/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9VSlROT2hhZlNYNE83R25DeGVkSUtTYTE2VWJMWWhudFhqVjZLQkg1LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "06196": {
+    "name": "Hawley, Caleb C",
+    "title": "Academic Counselor",
+    "campus": "UNL",
+    "salary": "64,843",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/pSCCHeERwKeIzZJpTW12Wp6-LkhHEVLhy4GmrlcsmGw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9MM1JpT01SeVpZemtRNW53TzlOV2ZPbXJseWROYlJGbHVvcWRoTHlRLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05255": {
+    "name": "Banks, Alvin A",
+    "title": "Academic Counselor",
+    "campus": "UNL",
+    "salary": "73,354",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/-00KzJYZhpiMSDa_mZt6YNPlW8Ljy09EYyO14Z1fGS4/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9raE05V3ZmZndGbEN6SER3SGRES1pVRHBlMVJwN3g1V2w3Nzc2WnBJLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "08468": {
+    "name": "Klug, Andrea K Learning",
+    "title": "Specialist",
+    "campus": "UNL",
+    "salary": "66,522",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/YwpiQdDEHgocTSGVJD3d5lb0snew-vDZC5EDLBoKO1I/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9UTE5HdWg4ZDFPanRtbHhTNHE5cmh0SGVzUjdlSk5LM3Zha21RMm5QLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10076": {
+    "name": "Czapla, Alyssa L",
+    "title": "Academic Specialist",
+    "campus": "UNL",
+    "salary": "59,225",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/TS_2lVZNvc07DAHRh9uybjQ23odqoriIFoltRLtNtlk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOS8yMS80UHczbEEyaDQxeEZxaFJyNXBtdkJHNmQzaWxJekRJeFhvVVpvNFFnLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "06865": {
+    "name": "Huber, Leah T",
+    "title": "Administrative Tech I",
+    "campus": "UNL",
+    "salary": "55,009",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/gVSAeZ2qGDxty8PBgQh1iO7xv5jV_Z8rxqnb3JIxXeg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9ScEQyeWxoZ2NJTVp6WG9CUGxVbmVlaE9SUW9KdENuTnl2eWJwRHJnLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "02845": {
+    "name": "Wroblewski, Allison T",
+    "title": "Academic Specialist",
+    "campus": "UNL",
+    "salary": "56,650",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/bX5bVGQPiyB14PZ5yLaAEOEs59qGLGJKBJ98XC0wNCY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOS8yMS9jNHpkYnhESnE0cDJKcUhIaUEzTjVWN3NZTlhFVzVMY3ZjTncwZkxVLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "04426": {
+    "name": "Anderson",
+    "title": "Deanna M Vice Chancellor",
+    "campus": "UNL",
+    "salary": "275,010",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/KSAe4HugcmivgGT9Su8dMJpj_hEUE6hd2AcaJuEjptQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wMS8yMi9QU2p1aTY4YkJqZ0xEVERUYkEyYUlIUW9pTWVnZGpSeVdoUmtocm9YLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "02988": {
+    "name": "Mathers, Dylan J",
+    "title": "Assistant Athletic Trainer",
+    "campus": "UNL",
+    "salary": "65,900",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/GZYmc_ouxFYWNSHJuWNz6WkQ5nMeSGqZa_oiOi4XrpY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8wMi8ycjZ3dUlYR3FJbE43Z0lTWHpHYVNkMUdrMkFMSnpZeDIyNDVmU0o5LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "06009": {
+    "name": "Johnson, Brynn K",
+    "title": "Assistant Athletic Trainer",
+    "campus": "UNL",
+    "salary": "61,000",
+    "group": "athletics_staff",
     "photo_url": "https://huskers.com/imgproxy/2cd5JJ0BdO8wEEF5DWV-XpijmBiJ4wQHJ-d9369X5e0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNy8zMS9zeWQ4dHNMUW80ckpTeFo2bk85SlBiNFhsNHFKSDl2bVlZc2pNOVl6LmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
-  "10105": {
-    "name": "Klempa, Paul A",
-    "title": "Head Coach-Women's Bowling",
+  "07748": {
+    "name": "Loewenstein, Lisa E",
+    "title": "Associate Athletic Trainer",
+    "campus": "UNL",
+    "salary": "72,100",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/KqZzv8GSA99NfPApAQdU-VS9RAICElOu_KGbZXLOwUY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS96bVlOc3FGRWVrQUVENXEyNzl1MGRIbVNsSmRRTHFPTGxXdWh3YWpZLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10115": {
+    "name": "Herman, Hannah E",
+    "title": "Athletic Medicine Clinical Coordinator",
+    "campus": "UNL",
+    "salary": "56,650",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/WWYGdlt769LYpcX7oeIfZ5cJ5K_tqjSGI0Zb7qozlWE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wOC8wNS9yUHJEdkpXZTVKdXlmSGtHbW9Yb2RseFI2QzkxY1VlMGJQNzBrR3AyLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "02166": {
+    "name": "Furneisen, Ellie B",
+    "title": "Asst Athletic Trainer - Spirit Squad",
+    "campus": "UNL",
+    "salary": "54,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/VDDQQjJOg7Us0a5rdW--0-axV6POLfUMwhegf5ZR2nc/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8wOS9zdDZWMjhGOFVJMHdhb0w1RG1Nb3F2T2s2YjRlbHRPOHFzOEtXOHhtLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03586": {
+    "name": "Roth, Samuel B",
+    "title": "Director of Football Rehabilitation",
+    "campus": "UNL",
+    "salary": "125,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/0V75qDQFzjVvdmaBj2Pz5WUWoiHxLh9xaSlCel7tw8Q/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNC8wMy9vUUthMWk1YmZoelRTSzdtcGVxVDZUSkFKZzg4dTlIaTBhQ3FaeTFuLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03591": {
+    "name": "Mc Cabe, Andrew N",
+    "title": "Associate Athletic Trainer",
+    "campus": "UNL",
+    "salary": "75,190",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/8yrKtmGh23QDwNjPUijZhu8SY6GaZq4SYqfHxBjjpnY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNC93MW01TkN1Y2REWWUzQ1EzTGJudkM5MDdwa3hONnBNeUtXRXZQRW0wLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03585": {
+    "name": "Showalter, Kylee E",
+    "title": "Asst Athletic Trainer - Track & Field",
+    "campus": "UNL",
+    "salary": "54,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Xn4-PpmlS-JzZ_-rjhURIb_0KGexM4vMiLthh_V2Uas/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8wNS9Fbml2OWpNQ29xYlpEUGc0ZzdUUVp0MDYwb2p0Z2JNdTBqSmFaUXVrLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "11807": {
+    "name": "Stemm, Jack D",
+    "title": "Assistant Athletic Trainer",
+    "campus": "UNL",
+    "salary": "63,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/zasd4TUy29NpaE8Ktn_xWi6kwchu-OK8REGjyeqU01s/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8wMi9iU1lOazR1c1pxWW5CM00ycnllYlFCUTdnR1ljZDFVYnd6c1JDVnU0LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "15706": {
+    "name": "Luiken, Jacob M",
+    "title": "Assistant Athletic Trainer",
+    "campus": "UNL",
+    "salary": "62,186",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/zX4_ee7MFhADb4T1x3O3Pe9xf_iQVJQg01kz7VA12hI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9ISEtKTk5TRVFoTkRYb0R3RGdrQ1ZiaFk0aTBWczlSNFAzSTZ0cU9hLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09239": {
+    "name": "Weeda, Tyler J",
+    "title": "Associate Athletic Trainer",
+    "campus": "UNL",
+    "salary": "72,100",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/zTYa2xz7-jBzQzxi7GkiibYpSnyDhDIsBFznOXCYohA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wNy8zMC82MGJRY3NUNjZGdWM0c3pjb0pJSndsSTBJYnl3UWZ1djZsYTdaTHhULmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "06807": {
+    "name": "Huver, Benjamin S",
+    "title": "Assistant Athletic Trainer",
+    "campus": "UNL",
+    "salary": "71,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/gDRbOkwoYuC1Klvl4Kcy1cXkB_uNggRQWwUWUumWWps/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9pNmhTd0JVRTN0R1pRd2NwQjlsVjZadFBKSFJuWUc0VGczSGJmbExBLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03594": {
+    "name": "Emricson, Jolene M",
+    "title": "Associate Athletic Trainer",
+    "campus": "UNL",
+    "salary": "68,114",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/xZoERymmFNDaSTR8PSmoLOW0RArEVBGf3HA4_zLxzHM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS91MUcySGJwczFlQ2tLak9ETVFQRURKb0FDYlJLV3VSUDl5dGNtaVdYLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10399": {
+    "name": "Higgins, Amanda K",
+    "title": "Assistant Professor of Practice",
+    "campus": "UNL",
+    "salary": "74,327",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/pHcimrxgU23cZS97A_LtlFydH7MWPWK1sVgsPp5vhaQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9zWkJwRnByY2NXUXR2TWtsc0YyOWZ1WDJkSnhPVUZROXFJS2I5UDVsLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "16348": {
+    "name": "Yoder, Brandon K",
+    "title": "Assoc AD for Athletic Medicine",
+    "campus": "UNL",
+    "salary": "190,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/F7Syeo_h3poDRWF3uxpyAtj2kTTB4Hx6LSvsQZJJWjw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9lNGtPMDhVNmtRR0w2SnBtbmZ5QU5lNlNKSEltZUhBVnA4TkRsWmw5LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05519": {
+    "name": "Perkey, Dennis A",
+    "title": "Associate Professor of Practice",
+    "campus": "UNL",
+    "salary": "78,435",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/8-iqygd8KTgbcZDRkeNAlD53cn_DknHbg8O__ecxne8/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8xOS9tY1h1WE5wZkYyQmlBbGdvVVdVODd5dVlFNHdFd1dzUEtqMU90ZmtaLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03506": {
+    "name": "Elliott, Jordan C",
+    "title": "Assistant AT - Men's/Women's Tennis",
+    "campus": "UNL",
+    "salary": "53,560",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/x5l5plibp1scbAzlCCsXRNuavaqdoF0PpfdZ0ZTMIsQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8wNS9BVDlvM25Ta2owTVplZ1VKWDJZR29mbWxFSWJ3RDU3ZmphbFFFelI5LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "12241": {
+    "name": "Hamblin, Drew",
+    "title": "Head Athletic Trainer - Football",
+    "campus": "UNL",
+    "salary": "190,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/1ObwPwitOYxLKqFgJ72SBPGd-1ND4zonFjq83qoqjmw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9aM0tXTHprSVpmVDNQRU1HbGEyMzJvT205c2ZjemdQVzZFZlQ5MUphLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09076": {
+    "name": "Fowler, Tanner C",
+    "title": "Assistant Athletic Trainer",
+    "campus": "UNL",
+    "salary": "61,862",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Nh0gcd1RBFgjKcgEVPkW0w5YHAaj_h6JQt5pd0JICiA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9ZOXBJWUd1czVVM3Q3SENtQlU0d2FPTk9aUUlmdDlCYlpiUlQ5bFpMLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03411": {
+    "name": "Thomas, Andrew T",
+    "title": "Asst Athletic Trainer - Swim & Dive",
+    "campus": "UNL",
+    "salary": "54,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/hqIQ8mAodUoFMDRtqlTVZ0FTvhMcFx-fkxAdJJ--if0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9HNGswYXFXS3FDRjh6NXhhaVN2UVF3dG5uM1pEYWxIUlREWHB3RDlELmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09139": {
+    "name": "Rodriguez, Robert H",
+    "title": "Director of Olympic Sports Rehab",
+    "campus": "UNL",
+    "salary": "140,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/5k3_GpNYQ480eydVv3BvdUsnYvHeZJ0H_pxcMcFqb30/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9aMTlGdVRtM0p4NXBzSWlkYjFQNnZyZ0pXaHJRWUdIbmlXbnZBSk1GLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10512": {
+    "name": "La Croix, Marcia K",
+    "title": "Associate Athletic Trainer",
+    "campus": "UNL",
+    "salary": "72,100",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/1YmuKhFXS8hWshpUf1i3sWDwzUKVTCYUlfo-0wn5ryY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOS8yOS9Vak5laTdsRUt1UTNtRjN5WUM2SktCck5vSllzeHZ2OUlrS2kwMHg4LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "13273": {
+    "name": "Seiler, Amy L Massage",
+    "title": "Therapist",
+    "campus": "UNL",
+    "salary": "21,464",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/pBQXPzlaqmRZrhZO9cvzwrm0L9djb1Y5adN8v6v8-Zo/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9GZVZNR0NpRE9MZDB2cXFJa0RVSk9FNFlMdzZxZFA0WmU2VGcyWGJXLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "02524": {
+    "name": "Hackbart, Anne L",
+    "title": "Project Coordinator",
+    "campus": "UNL",
+    "salary": "72,626",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Ln6m8xsZo057pB4FPGbH8NYk-T2dF9Ywxcp50PeR1EI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9EZWtKRjQ5QjJHdkEybUVoV3dydFc4d01EWFB1Z1Y5d2pJam8zZE0xLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "11372": {
+    "name": "Farrell, Jane E",
+    "title": "Assistant AD of Human Resources",
+    "campus": "UNL",
+    "salary": "103,751",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/__QYOhHh-Aja7QONF0dIu1gfibcfyyHyDshh0ZeSf6s/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9SWWVISFpqNlJyaVVmUDB1V2tmaktxN3VzNGZzdDI3amFkcEo1Q3NwLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "11708": {
+    "name": "Klempa, Leanna",
+    "title": "Payroll & HR Specialist",
+    "campus": "UNL",
+    "salary": "60,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/b5ZTtvf1F2KQESYEoHTyC7Du0319kLhpF7L04EI-DFc/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS93TFgwZzdsVFd6SWpJazBGU1lIbENrVGpibVFBNFdBcjl3UEducTVkLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "06548": {
+    "name": "Hagedorn, Jami J",
+    "title": "Associate AD - Financial Reporting",
+    "campus": "UNL",
+    "salary": "154,520",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/YMrSMXguwxExU4ca1-lga1GWmG9tPvtNsdJnuO8StQY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9uZ2Y4YTZFY0hFVTNhVzljWnhna3VqZFZPaFMxRUdiTUU2MnhFcWQ2LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "13613": {
+    "name": "Barager, Heather N",
+    "title": "Director of Business Operations",
+    "campus": "UNL",
+    "salary": "68,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/nOC7r6f3Y_4d8ezoP-bt1d6PqDMK1A-cxV4_ubqb2r8/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS8zS29FdzFPWmh1S0piWXQxQ2N4Q0RxNGpYN0hYRm5Zc2tTTTVCSlNKLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "11029": {
+    "name": "Worthy, Bailey N",
+    "title": "Associate AD for Business Administration",
+    "campus": "UNL",
+    "salary": "150,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/mgw4qdihmxtnKnbTp6rVHdraB6T_dsNU6mKut2c0fkE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNS8wNy83SkZvaXFESkVNY3J0UFVjendpZ1k4R1FoVVVhZkZxVGJZNlNHVzd1LnBuZw.png",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09889": {
+    "name": "Chery, Richard",
+    "title": "Asst Dir for Cap Planning, Constr & Fac",
+    "campus": "UNL",
+    "salary": "87,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/zhaDfrPeSMy610-TdW7oevq_yp3A9IabXGCoCM7nCIY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wMi8xNy83akdYSHZLQjhXS2xod2pNbkUwbGpCS2xNRDB2bERVbVFYYnVMbkNtLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "06756": {
+    "name": "Kelly, John E",
+    "title": "Assistant AD - Facilities & Venue Mgmt",
+    "campus": "UNL",
+    "salary": "105,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/T6lYx5tCP8sg0GqhyjJNTpu_DPTw5HAf7zQ_q7Pz0mg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8wNS9QRThOaExnQVZEMmp6UDJWVnRtTmplSTNXNjVGRlFMWjc0a0YxZThGLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09284": {
+    "name": "Greene, Zakkary G",
+    "title": "Asst Director of Graphics & Branding",
+    "campus": "UNL",
+    "salary": "50,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/FxfB0NA_Lt7HEODlGaBP68bfK451jOinxnDoapp5zA8/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9PZmRSNEsyOVNrM3JCaFU3N3JwaThaOXpHcXhTeUpsbkJGZ1g3TE0zLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "11975": {
+    "name": "Tran, Thanh V",
+    "title": "Director of Graphics and Branding",
+    "campus": "UNL",
+    "salary": "68,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Kz4qXIkvy7SCkwMHd7lEQN1_l4MQC5lZBV_j_UAQ1iU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xNy9QYkJsbjVXSEFQM1c2bGk2S0ZqUHFjVmtQWVdwRVRQV1dYN0FvVE1CLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "02862": {
+    "name": "Nichols, Jessica L",
+    "title": "Asst Director of Graphics & Branding",
+    "campus": "UNL",
+    "salary": "50,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/7UFe2zw_kCr4w4HwCo-KZxIHX5CzFHX88viyznPP648/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9ud1dYNG9TQ04zYVJ0V0RDWnJVbkhVd0l6dlpaRVZOZ2VuWlQxVzM5LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "11035": {
+    "name": "Mc Knight, Shamus Craig",
+    "title": "Assistant AD - Athletics Communications",
+    "campus": "UNL",
+    "salary": "76,240",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/r3oqaHhxwJPgJRhwr3Ak5zteOEksYj5lzASbmIGPEcQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8xMS8wNS9sb0RENnRtN3ozRFc2cVVUNTRDUk5MTWczdGhsUDJQdTVsb2NwaGx1LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05249": {
+    "name": "Griesch, Jeffrey W",
+    "title": "Assistant AD - Athletics Communications",
+    "campus": "UNL",
+    "salary": "76,676",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/VkxJQS9NlQ-GnN6V2vhPVh3bXybtkCMLJMCQAECaDos/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNS8zMC9UdXV4VXlPYUFDeVYzYU9TWWI2NnlBNkoySWIycHdEUXBpNE5Kc2pqLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "08066": {
+    "name": "Meister, Jared D",
+    "title": "Associate Communications Director",
+    "campus": "UNL",
+    "salary": "48,411",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Eo7-9lmcf0d2RjWI_8sy60CBq7p99nqRYLEckzyj-AM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS92OFM2cGpXVnZOaDd0UEFKenk5QjczNWljMkZ6ejI5aFJMdFVXTElRLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "15481": {
+    "name": "Smith, Matthew J",
+    "title": "Director - Athletics Communications",
+    "campus": "UNL",
+    "salary": "68,128",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/5Wlje546Mzisnsww2OqD7QSe7mF7a7R9KBfEUY3fkFI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9VdnJjYnJ1UHFMZWhtd0xwUGl5OXFybFBTN2J6U3ZTaFVDSU9lbHNTLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03593": {
+    "name": "Johnson, Jena L",
+    "title": "Associate Director of Compliance",
+    "campus": "UNL",
+    "salary": "79,965",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/jRxwDt6T4aq3uQpIuBMEzfoPGBj-NPeIsEJgzZm5eac/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS92SXZZUW85bTZJY3I5OVRwaDRCM3VvZERrZUVzOER3dXM3TzZoOEY4LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09966": {
+    "name": "Standley, Sarah E",
+    "title": "Associate Director of Compliance",
+    "campus": "UNL",
+    "salary": "63,860",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/UMrfPTTjTquZxaLkKr6lyFGj6oSM9QTa-x9e2eR55jM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMS8wMy9sSXNBdVJHZ0d3N2R3OFJxZTFGSG1qd2oxUzVjQnZTYUV1M2JtMGdCLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "04705": {
+    "name": "Balke, Seth L",
+    "title": "Associate Director of Compliance",
+    "campus": "UNL",
+    "salary": "58,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/0ip1Ny6igwdUJRJsoVPd33iU31IRfDvQpqcPt8eT_64/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC83dnM0OVlYWEVWaGFQRElkT01Qd2IxaUF5cmpsbldVbVJWbENEZDhZLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "07058": {
+    "name": "Carter, Darin J",
+    "title": "Director of Concession Events",
+    "campus": "UNL",
+    "salary": "82,828",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/qFo0xx60Xlgfc32a2SGENua_71N-eUkm4dRU58Su34Y/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9RRUlMVDl5M3FLTUdGcldwenJJU21SSDhsblNXRWxlSDN5SjY3a3VsLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03584": {
+    "name": "Bruhn, Scott R",
+    "title": "Director of Photography",
+    "campus": "UNL",
+    "salary": "67,505",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/e6uljEwzKRC0hc11PEP_aPpPKaL1WVsjvex2ckI2jug/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8yNS9qdzVHd3BDY0hiTEVhQ2lBTkxZTXZGV2VSdzdtaEk0bXdqNHRtakRmLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "14323": {
+    "name": "Rice, Samuel W",
+    "title": "Assoc Dir - Creative & Emerging Media",
+    "campus": "UNL",
+    "salary": "58,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/JHHbuwFD_qn-mUaWHl9dKhkguiltbgDuuTZohFk3wAg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wOC8xMy81OGdIak02Q3dSQnlKUWRVQVFKZDdoMjB3N3ZCOGZkelNERVJWNkVxLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "15647": {
+    "name": "Smith, Collin J",
+    "title": "Assoc Dir - Creative & Emerging Media",
+    "campus": "UNL",
+    "salary": "57,819",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/s_Lnk4xbeE1uheOUAXklHwCVTMFq3YFNJuTjQnPrA-I/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS8zZGh6ZE1xMVBOYlJlcWhnd0h1UFZNNHFQOG5pNmpjeVM2bmc4MEJwLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05235": {
+    "name": "Navara, Quinn A",
+    "title": "Creative Media Specialist",
+    "campus": "UNL",
+    "salary": "43,888",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/biD6U9OU34A37QaOC0tBKoMHoxXcgdkgzw7ABrZ4jMw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNy8xNi9WMzZib0ZLN2FxcVJYaHlGUWREeXZ1eFNZTUtmQlJPNlkyeFF4MlE2LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05185": {
+    "name": "Nicholson, Chelsea L",
+    "title": "Assoc Dir - Creative & Emerging Media",
+    "campus": "UNL",
+    "salary": "58,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/xa7Qac4PcjoXv9aF_uEhVitzyuqtDZwq55_iaO8bR8M/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wOC8xNy9sMEgxZ1FaWkJxdXBiMlRka1hvTVpQdzdxUnZ3SVFVR1RNaXpMTXZ4LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10013": {
+    "name": "Henrichs, Timothy J",
+    "title": "Assistant AD - Event Management",
+    "campus": "UNL",
+    "salary": "85,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/z8cpgXBaHjAB2Jo8kXCIKBB24OUaZZawtNYeQIw3Kpo/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS83eTR6bHQ3VUFDWEdnVWYxMG1QNnBIYmQ5WTQ1WmJVd25scDZtR0NWLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05278": {
+    "name": "Engel, Anton C Guest",
+    "title": "Relations/Security Attendant",
+    "campus": "UNL",
+    "salary": "46,762",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/9nkfXdpXSYogH3Fa1Vw_IBjAux033FOIpMBjk4ma_Ek/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9LY1ZVTzBqcGp2YTk5ZDBjdUl5bGhnQzNpN3VqekkxblhZTDBQM2JwLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "07778": {
+    "name": "Ellenberger, Paul O Guest",
+    "title": "Relations/Security Attendant",
+    "campus": "UNL",
+    "salary": "39,126",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/sYq5YCBmbfpOHaWNWgpxioA2bJkZZAE5sSkEiVFOsOU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9VVmh0ZlZTMFZBRFZxY2F4VTU5WHBLUkNLd2RaanUwSmFLVkM5SFRpLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "14158": {
+    "name": "Ford, Craig R Guest",
+    "title": "Relations/Security Attendant",
+    "campus": "UNL",
+    "salary": "35,152",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/mjCut4V4EztYg7LUYjfxb0C0tEN2y8guLEm1zP2pp4I/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8wNS9DT2NTbE5hdEVHU0djeEIzYTZtcGswZWN2eUI1eDlhRkJvekRsVkI0LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "11872": {
+    "name": "Sikora, Douglas B Guest",
+    "title": "Relations/Security Attendant",
+    "campus": "UNL",
+    "salary": "35,152",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/SSlTBuB-erj4k1Ja7feaCl3wmDIc6DMmyNCpmtihrM8/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8xMy81QlVNWVJzYVh4TE1HRlE3QjVjV2NtUUtUMmVnWEtRSldwT2FSbjNqLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "13159": {
+    "name": "Mac Lean, Clark K",
+    "title": "Director of Event Management",
+    "campus": "UNL",
+    "salary": "70,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Uk71bisySpAztGBGeAXOkHjOvyzl1jGYWnXeFIxIuZc/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNS8xMy9GSG02bTNZaXVQTDZmUjE3d3ZmelZ1RkZpV2IwdWUybU1zNlRlbzRtLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09402": {
+    "name": "Scott, Richard E Guest",
+    "title": "Relations/Sec Attendant",
+    "campus": "UNL",
+    "salary": "36,207",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/QeH_T6pIFNVOXQPBCKpCKbxoX1S7LdlN6mQHt7aazQ8/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC95dFZobFlZNmkzRng3ejNUdzdhSkR1cE5ldVUxdWgybkNVSDh5alZZLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "07049": {
+    "name": "Smith, Parker J",
+    "title": "Assistant Director of Event Management",
+    "campus": "UNL",
+    "salary": "37,500",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/c0XwIOEZrF6WczWUmNPLhMRNMRrbIkHVsN_CCZEuqDg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9VSTFxdHk5QkpObDY4eTlIY2ZlbVV0TWVpUDR3eEdRZXV6N0padXd0LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05262": {
+    "name": "Norris, Patrick H",
+    "title": "Equipment Manager",
+    "campus": "UNL",
+    "salary": "64,034",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/hgdpXaN5EETR4tmrOgzyzmajluKrcm3C4aS-jcJi91w/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9heDF2UVFNb285cUFTQjFiMVYxSWZXNlkzWjg4aEJ2YUNSUTlJeEdRLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05263": {
+    "name": "Terry, Jay Adam",
+    "title": "Assistant AD - Equipment Operations",
+    "campus": "UNL",
+    "salary": "125,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/iFdwv8Vz5LfbDgwCnIAJbXT22pT56wcDSh4kHCvX_WE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC8xMnV2YWxzM3dPQnFNbkVHdEluODJrZzNOMVpHZVh5QjFnVzBkQVFhLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "15265": {
+    "name": "Kotrous, Kyle E",
+    "title": "Equipment Manager",
+    "campus": "UNL",
+    "salary": "61,822",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/RmiVLnxudvvdrS0lXXbBis6GzTA6IZfG4yiwMHifQiM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9YcGxseGU5V0NhaWYyNUUyWWlWbXhDZjJnTnJRd2ZrVEI3TmtMb0dSLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05261": {
+    "name": "Jaques, Roger L",
+    "title": "Shipping/Receiving Clerk",
+    "campus": "UNL",
+    "salary": "39,344",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/G5Bpc9XdAzOOvyq-u4RARSU2XIydLUYjOsImORqdoEQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9IMXlKa3Npb0V1eDVoblJCMFJoQWw5R3JKdWR2SFNzVEJYM2xiZm9RLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "16838": {
+    "name": "Yetts, Ryan J",
+    "title": "Equipment Manager",
+    "campus": "UNL",
+    "salary": "47,741",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/rEqiWUY0F3k0CEzr4pLI0za3ggT5dVp5rQIfgRSyVes/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9SNEdEZmtWTkVBendIZ2l4ZXl6MVFFSElzbGhVUTB1U25icDBJaEdYLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03274": {
+    "name": "Smith, Zachary A",
+    "title": "Equipment Manager",
+    "campus": "UNL",
+    "salary": "60,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Ul1RE21VkLKTF6HZnu8I1UvaJ2WA57K6uyDG3FC6ef8/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNy8yMi9LN2lodnk0S2hhS1FNQnM1aHdkNFhHWmpSTHFzTU5KNFZZc3hvUmphLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09672": {
+    "name": "Berger, David R",
+    "title": "Assistant Turf Manager",
+    "campus": "UNL",
+    "salary": "52,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/RLmSL2m2SOJxwujaDQdxGK4wfi4jKHLbOTtu7voN6Og/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8xMy90Tk5PbzNZc2lUOWlHZkx5QUgxNkxsOUVzZGg3RmphNFFhdTRUMU5hLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "04710": {
+    "name": "Brown, Bradley J",
+    "title": "Building Services Manager",
+    "campus": "UNL",
+    "salary": "67,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/f-PWsF_FQh8P16Laot8l2r126s1I73UNPwwj6chGOPE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9tdGZZR1BoN3RBM1I2OGFKQW9McTQwSVlGTlVxQklPYktoSEpyRG9ELmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03368": {
+    "name": "Rempe, Brian P",
+    "title": "Custodial Leader",
+    "campus": "UNL",
+    "salary": "43,978",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/VBRLOM9d4-A3JEW6CmJSRjgmZxvoGjZy9qmz7yGw888/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS83enZRbnVZalFkOWNmTE9OWVJxZTMzWGpFTFJJOFBaTFVNcVBXOUlkLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "16597": {
+    "name": "Lenz, Daniel J Contest",
+    "title": "Set-up Supervisor",
+    "campus": "UNL",
+    "salary": "57,720",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/mZiE9kgdUq-CLaUtnzjrLBMRexHEZ_u0iLC0tkOjrg0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8wNS9iWUhWOUlZU0Exd1FESThiZWkzVnZmTmwwQWhCd2poenc2YzRGUlU0LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10107": {
+    "name": "Erickson, Brian P",
+    "title": "Custodian/Event Set-up Assistant",
+    "campus": "UNL",
+    "salary": "41,648",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/18195HGk9gFwExOXmKls_p6tPzq6JF6IYN6lCm04pHM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS90NWM2Z3k0THhGMFlPUkJOSjVYaWpJcmVGMUtsTmxrcUNUY1hzQ2JyLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "04724": {
+    "name": "Harter, Alex J Turfgrass",
+    "title": "Manager",
+    "campus": "UNL",
+    "salary": "60,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/yXFv_FZFbJXXilVY0hAFWUMhGmeXMslpA0cyF2oMnnw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9sWHdibklDc3dTdU9aRmtCZktQU2lQWnVnWDVLbUFzRGM3MkRvOEtFLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10375": {
+    "name": "Freeman, Derek D",
+    "title": "Senior Associate AD - Development",
+    "campus": "UNL",
+    "salary": "154,500",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/R1zfF6rTsoTnXERTkPwZA0csoATLcPxuaGjb-XXzQrI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9uZnA4U1dpZVAyazc0WGdQc3Z4RWdURVZ4NmI1YmduZEN5QVdkWjFuLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "14959": {
+    "name": "Day, Blake J",
+    "title": "Associate AD of Leadership Gifts",
+    "campus": "UNL",
+    "salary": "120,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/EAHLZtEEalPxWozSMGCAkzDTGikPv-vNtcMJzLpRO3k/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNi8wMi9JeFRrM3VydkwwdXFmSE5UdjRDb0ozeXBHOVl5ZEUycHBJQnJSOXVyLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "07267": {
+    "name": "Kewman, Benjamin L",
+    "title": "Associate AD of Development",
     "campus": "UNL",
     "salary": "110,000",
-    "group": "head_coach",
-    "photo_url": "https://huskers.com/imgproxy/b5ZTtvf1F2KQESYEoHTyC7Du0319kLhpF7L04EI-DFc/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS93TFgwZzdsVFd6SWpJazBGU1lIbENrVGpibVFBNFdBcjl3UEducTVkLmpwZw.jpg",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/UNP8fkGkibwehb297HXYeOGS4mysFm1tdQGRgztTSpE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9remplRnQxdkt2dTJjTG5xaFM0c2k0VlBBUEJ0T2o3NWdRQjBwMmYzLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05201": {
+    "name": "Stai, Brenden M",
+    "title": "Asst AD-Leadership Gifts & Football Rel",
+    "campus": "UNL",
+    "salary": "92,882",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/TVskVcRsXcLVERv47GPqYEe7nPGyDmnpwi-AZEdYcWQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9uSWR1NVVvR25ibFJSZWtJMkZZSUJnTEt6VWZmMzNiVXc0NXM3eUdFLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10086": {
+    "name": "Hart, Larisa R Dir.",
+    "title": "of Premium Seating & Hospitalilty",
+    "campus": "UNL",
+    "salary": "69,010",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/HiW6qf1M9R_G9p0ejkvwq7iWxA7q2CrsYITG_iB8SEY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9sWXNnRGlCc2ZCTW9XUldyWVh5eWFiaWc5UXhuekJKcHFjVWpXYmNsLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09926": {
+    "name": "Ousley, Ian R",
+    "title": "Sr Dir of Bus Intel - Dev & Ticketing",
+    "campus": "UNL",
+    "salary": "79,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/q60X9h7uy3DhiKRuuhXMkIK9jWfz1tY3IgwA7XwT0GA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9MMllRdEhGeFBoQ0R2d1BtaHY4dENMMGJqVTU0aEk4ZDdkRmVRZVZDLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09609": {
+    "name": "Granahan, Lydia J Ast",
+    "title": "Dir of Premium Seating & Hospitality",
+    "campus": "UNL",
+    "salary": "48,410",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/-FHZlY30KPsYq7vpnpR1-J2fyLOzltPZh2_CtajSXr0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9nRnlya3JEOTVpSVRWSzVKcUxzdW1aeDlpa1ZTWFJjc002bld3MXc3LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10550": {
+    "name": "Bollig, Kyle J",
+    "title": "Associate Director of Development",
+    "campus": "UNL",
+    "salary": "60,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/1doA2bnmT_o-sa0Z7TgiTdqe4fEocHN9SnKqtkRPbSM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9wSW80WjFNRG1SN0RPRnhpeEVrd3g1cjRjbXpPY2lDbVhyYW0zVElpLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "14973": {
+    "name": "Acton, Trevor L",
+    "title": "Asst Director of Annual Giving (N-Club)",
+    "campus": "UNL",
+    "salary": "45,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/b5hUKPTYetCFM3JyU6TOq3HuZDwGGCQNmMuD2y6OcDE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNi8wMi93YmlpRG5IcUJXeU91Q1pNUmdMZ3ZKNnYzNzNMT01CSzhmUDQ5aXR6LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "15551": {
+    "name": "Moorman-Wolfe, Jack D",
+    "title": "Assistant Director of Annual Giving",
+    "campus": "UNL",
+    "salary": "45,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/9eB8M-ksAqDJythTODgOf-Ll-XGphLLUk2O_HxaKZLU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNi8wMi9CRktoVTVVOGg1a0pUUXhHRGF5bmtlVjNJdWpxMXVaajdVbzBZcGhTLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "14971": {
+    "name": "Yelden, Jack R",
+    "title": "Assistant Director of Revenue Analytics",
+    "campus": "UNL",
+    "salary": "53,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/zNQazZEsAWV5GJRKZF-v8liEmf2rbpPlEaZmnUPDPXQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNi8wMi9aQ1hBU3poRXdyZ1k3Z0gyVUdLaFRKMExXc0k0ZTdLanBUVWhzMHY1LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09292": {
+    "name": "Puchalla, Jennifer L",
+    "title": "Development & Ticketing Services Manager",
+    "campus": "UNL",
+    "salary": "54,636",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/06OMdx6hCKk7yWBhcealneqbb7xeYVcdbV1o16eUEWA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNi8wMi9xeEI5SzV3RzdlTUpGeVk5aW5adXhrOFZqYU5LNXZoeU1ybXdPTzdhLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "38149": {
+    "name": "Conway, Karen L",
+    "title": "Office Assoc",
+    "campus": "UNL-IANR",
+    "salary": "39,372",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/rAqRl3Q48b8vUqeZmoG3HfXNzwwf53zJt0f02Mv1bRA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9RWjVqV0lVMkxsaXdDTHdZNDg1VmxuTmhhbmhWZVp0NU5teXBKSGlYLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "08321": {
+    "name": "Hartman, Kirk A",
+    "title": "Asst AD of HuskerVision",
+    "campus": "UNL",
+    "salary": "119,785",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/pfhpJmWjAu07rWYt5Cf38f2__z8urR_lUtvVrakhdeg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9QQk10c0RtT0oyUGlEdjg5QzVQMUhiYVdPTmd0eFhGcks1MDg0VUk5LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09398": {
+    "name": "Gentrup, Melanie A",
+    "title": "Assistant Live Events Producer",
+    "campus": "UNL",
+    "salary": "48,925",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/GN7A5U80c0IciMqSD9wRnBxmdkukiy045PtOIZeJMyA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8wOS9qWk1KM0RReGhTcXJ0SzhjR05HOGl5Z3BZR09hZFgya1Z5Z3RUM2lSLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10029": {
+    "name": "Wood, Alexander J",
+    "title": "Executive Director of Video Production",
+    "campus": "UNL",
+    "salary": "87,270",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/hZXAGPB2ua_x_AANEweav5oJHd1CPFckzqXwtUhQeV0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS94V1Q1ZlRyTFBTRTFKVUx3RDFRclhiNnk3RmR1RnlvYkJRMVZuWnczLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05337": {
+    "name": "Shore, Curtiss M",
+    "title": "Creative Content Producer",
+    "campus": "UNL",
+    "salary": "50,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/agVw9kciwe8TfJATZkje9Svls5NfD8qKMQxVJB7QtY8/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNy8xNy9LVHZ5d0dlODltRUtTbW9WN0JuWG9HaVJqalUxSEw2T3RCeWF1dDRDLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "15885": {
+    "name": "Hill, Garrett P Broadcast/Systems",
+    "title": "Engineer-",
+    "campus": "UNL",
+    "salary": "77,478",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Eflisc4tnph5nmKODW3iJfbyWcR7X4sVuOZc-LAAN4Y/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9FQWFKa2EzenhOZUdrMmZBUGIzSVBlaGowNDVqS3ZGbGlubW1EekhHLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "13857": {
+    "name": "Raguse, Kevin S Broadcast",
+    "title": "Systems Manager",
+    "campus": "UNL",
+    "salary": "68,406",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/a5yiFPKst5F2gmxcBhyeAk45UNqaIk0EKapagzR3yPQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9nUVJsazBRQkMzckYycWZ5ODdSR3lTMzc5TUJ1V1B6M0x3Y1Q5UE1NLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "13858": {
+    "name": "Burling, Stacey L Dir",
+    "title": "of Education & Engagement Programs",
+    "campus": "UNL",
+    "salary": "73,035",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/3pvJzvKw-3-HCwYJC4-PnUyfU8toj6vCtH7-EC-ZnXs/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS93c3A4NERqYU5BZXllWGNGcDBZNEZkTUtCVmZrVThwS0xOQ0s4QXdzLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "16327": {
+    "name": "Nett, Kristen T",
+    "title": "Asst Dir, Community/Charitable",
+    "campus": "UNL",
+    "salary": "57,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/PSv_qoqaYfX39CDQwGr7Susy8-UHOERCs_FgQD6Awx0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8yMi81MlJpdzdoZW84M3JXZkR1UHRYY3hBMHh1SnpqQ1NzaVE5c3Z3UXF0LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09581": {
+    "name": "Harris, Alex B",
+    "title": "Associate AD-Marketing & Fan",
+    "campus": "UNL",
+    "salary": "89,116",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/nA2gMB43tm-MQKri_rQMCD-HTzDwseHhNcY1XtgOuLw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9nMGt6bUhrV0Z5TGF5ckxjSWdPR3A2TGVRN3Z0aE9CbVpmSUdKd0RNLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "07111": {
+    "name": "Rouse, John W",
+    "title": "Asst Dir of Marketing & Fan Experience",
+    "campus": "UNL",
+    "salary": "48,410",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/lPROIMT6u-Lo0zXBAS8H2og544UD6LJc-C2sDZ3d4qE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOS8xMC9zUmJJc3BMSVE2cGV2WWtseDJJeklyNVZaUGhQZHVmNjNmMnhwN3p3LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10084": {
+    "name": "Schlotfeld, Bailey J",
+    "title": "Asst AD - Marketing & Revenue",
+    "campus": "UNL",
+    "salary": "61,267",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Em9a0WHMrXeGtFwdhgah0RRwDD7zmhAypu8WiczsKdg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wMy8zMC9zalRQb2NFWGJCNXZuOTRxMW1aMXJSS1ZqMTlUczFEd09PVjByMHN5LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "12859": {
+    "name": "Thome, Matthew D",
+    "title": "Director of NAPL",
+    "campus": "UNL",
+    "salary": "153,769",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/1KX9ZFkZDF3bIqp4QR9rCn6ZzJr-fdsUGk50fsqKQAw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9GbGFqRnNXWDRvbE1aU3kzbFprcm1Xb3ZtTjJEcWxVVk9uNlNsR29xLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "14346": {
+    "name": "Stuart, Andrew C",
+    "title": "Assistant Director - NAPL",
+    "campus": "UNL",
+    "salary": "87,344",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/1sp_Nck2xc2gw1w2Sk-JB_p5IvqUG1ZCLcD-mZVZxgk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS94ZHJaNkJKNlhDcGpHeGhCVXFEa3c3aDFsc1VqRXltajNZNmlMNWxULmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "11972": {
+    "name": "Hasenkamp, Ryan M",
+    "title": "Senior Research Associate",
+    "campus": "UNL",
+    "salary": "66,126",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/7SI3D1MvzCWO1nyX9xeOiboN3-ycgv1t4wTclFxwmLg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9hV2ZoUGdtUkJwZWxveDRzSzJVb2dYakZUWFVyclFSMmVnT3ZmRFdPLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "04979": {
+    "name": "Smith, Bradley R",
+    "title": "Senior Performance Analyst",
+    "campus": "UNL",
+    "salary": "90,074",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/u6igx5CnKgKS1ICMDdBWUkl08vZ1eqtU_S3JlYWiuQs/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8yMC9ZS2k2VzJmSHE4SEVCaGZkTlNnNXlhQ0JoaGJsWDI4Sk8zOUhwZkt4LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09397": {
+    "name": "Coggin, Kristin A",
+    "title": "Assistant AD for Performance Nutrition",
+    "campus": "UNL",
+    "salary": "235,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/heeQ8SarvcfTCZfBuuMJy4__PC_6IVd5c8FX7GMv9EQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC8ydmQwUnBSaWYyNWM3WWJCVFNCQVNkQ3NwVGRZNGk2ZzFzUWtQeXZmLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05043": {
+    "name": "Nelson, Zane M Prep",
+    "title": "Chef I",
+    "campus": "UNL",
+    "salary": "39,208",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/6dshFR85xKQpRN2tamRsUhxc5lZjReMdXdb8c5-9YvE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9aWXJjSndUR1N2YTU5MFR4TnhESkdPck1Kd2xUYktCTFZRYTNqNkxLLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "16864": {
+    "name": "Luth, Ronald K Sport",
+    "title": "RDN (Registered Dietitian/Nutritio",
+    "campus": "UNL",
+    "salary": "61,800",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/_vEyxTfrWRBisbX12ZWnNEWD4zG4Ah2BUrHHntbWcg8/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9tSHNPT3d2UUdoRDduVEp2Uk42c0VtRHBnN0l2NGZOU3hHdWhDTGJyLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "08155": {
+    "name": "Blattner, Jake F",
+    "title": "Associate RDN",
+    "campus": "UNL",
+    "salary": "103,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/sP0Rq5WBLn_TmEPfOWfD44Vujn8MAbVH5kpeqrP_Gtw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9sYUdWTjNNQkJqN2kxZEVYZXA5OUk0SGk4RXg2bkJncE9OcGM2OE81LmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
   "09982": {
@@ -256,8 +1318,44 @@
     "title": "Spirit Squad Head Coach",
     "campus": "UNL",
     "salary": "68,301",
-    "group": "head_coach",
+    "group": "athletics_staff",
     "photo_url": "https://huskers.com/imgproxy/L2L4YQdH6R-aNP19RERbGGyYT6lAIjVPgIC0sl0B-iM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9kbjIxUkRxWW4xaE9rSmREeWJKb3hscm1oZDZNY3d0QmhVQWJxZnNOLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05985": {
+    "name": "Pino, Julian P",
+    "title": "Athletic Psychologist",
+    "campus": "UNL",
+    "salary": "90,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/cTwEz1gAVKESGLxYv6bfXvZdoycfQkJX8nyFQ95H4bI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9OMndVTDFvdjA5SFUxcGNkZW5PVDQ1dkk0eldUV2dha3dDeE9zclI0LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "04984": {
+    "name": "Ward, Brianna C",
+    "title": "Director of Sports Psychology",
+    "campus": "UNL",
+    "salary": "155,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/9IldG90D_ShIwqpzNuouAMsNUxFKpwz6Q8QmuoChd68/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS8xUU1WWkN3a3FCeFN2REMyT1VhbDVxdlZ3b2lOTWdLWTBwdzA2aXJJLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09412": {
+    "name": "Broocks, Andrew M",
+    "title": "Asst Dir of FB Strength & Conditioning",
+    "campus": "UNL",
+    "salary": "95,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/5qCnsB3HNmu3vo5KWiVT717VoYzSBUT0WCyUKe938lM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wMS8yMi82UHNqcEFtR1JpRDg4ajV3NVh2WGZ0SGQwSjh3TnI0Zlh2bEp0UE9zLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10239": {
+    "name": "Johnson, Eric T",
+    "title": "Asst Dir of Olympic Strength &",
+    "campus": "UNL",
+    "salary": "82,400",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Cg-KlaKHMOFxUBdM2pSFsoT_PIdMYeZSpt5zu9PnZtQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9INjFNREdNbkZpZVVjQXY3UERPaEpEbExKOXhEZk84ckwxOGRaM0dzLmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
   "13684": {
@@ -265,8 +1363,80 @@
     "title": "Head Football Strength Coach",
     "campus": "UNL",
     "salary": "650,000",
-    "group": "head_coach",
+    "group": "athletics_staff",
     "photo_url": "https://huskers.com/imgproxy/6AckNRe41FRiOsWevxnqs58XbKQk4zGulLxBEAxvinY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC80QjVZTXdwd0kyMVk5eTNTRFJueEZ0bjBoMnlheEUxbW5VSDRqYnFwLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09795": {
+    "name": "Jones, Hayden K Assist",
+    "title": "Strength & Conditioning Coach",
+    "campus": "UNL",
+    "salary": "51,912",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/pb2-wKx1R5YMfTrIPSSy_QcK0II0fK0xbvNIcjLeBYU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9lWnVSMWh5MmJEUEJpUHluaVZ2UTBXbFVnZ2JkYmc0MnlWU29OdFUzLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "14252": {
+    "name": "Kmitta, Brian K",
+    "title": "Director of Olympic Sports Performance",
+    "campus": "UNL",
+    "salary": "157,030",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/nJdciIlXaciKdpGIZtofqWa7-kzCscGBXbJNY1xXVhc/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wOC8yNy9vVTVtM3ZsaWdoWDVNdFpScmljMUZiM2p1UGR4Y3NKWWQwaEJJNlpGLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05186": {
+    "name": "Plumlee, Garrett W",
+    "title": "Assistant Strength & Conditioning Coach",
+    "campus": "UNL",
+    "salary": "65,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/btcTSLx-ZP-A4Ovw-Zpwb39ZpuND2JOnNC5bkOGoqmE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC91Z2ptWWN5dHFjRGFhcHZjSktXdVhyam80d3ZDQjFqY1hMak9OQ2x1LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09399": {
+    "name": "Pfeifer, Jonathan E",
+    "title": "Asst Dir of Olympic Strength &",
+    "campus": "UNL",
+    "salary": "82,400",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/gvM4g_C_Cx3E6w3K721KWmIltESWYlkzHNIBmgni33I/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9rVEI4M3RKbnJtSVJzdVAxQm1MY2txZjBwMUU0UzVLNWQ0U2dudWJZLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05269": {
+    "name": "Reetz, Kristi J",
+    "title": "Director of Ticketing Operations",
+    "campus": "UNL",
+    "salary": "76,491",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/aNdiz2XfjhFKA3B57v18BwUyw-xP_AxtG_3L4p0tJwA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNi8wMi92RWF0QzR1TDVrejRQbXAzbkFnV01WbElYUGUzWG9nSGdaeWlXSVU0LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "08319": {
+    "name": "Caskey, Drew L",
+    "title": "Administrative Ticket Office Manager",
+    "campus": "UNL",
+    "salary": "46,505",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/nG_fgDmF4iaObce8fx0e3hUCVRu_hiIiTamAQ28XhOk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wOC8wNC9ScmtGWHNNM0NDcVF5YkZxUkVqWkZpRll3RXZIVkJYelhBSFhmekNpLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05265": {
+    "name": "Adam, Holly J",
+    "title": "Assistant AD - Ticketing",
+    "campus": "UNL",
+    "salary": "102,717",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/YizJFdo8_5hknoGBZFRZ4HoKpGgtECpPiEuuVqPfBpw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9HaVVmRkplNlBqNlZKRHFjZVVRWHpjSXFKRXczRzNuNnN2VnFCNFFoLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05275": {
+    "name": "Brinkmann, Renee",
+    "title": "Staff Secy III",
+    "campus": "UNL",
+    "salary": "51,903",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/pTkyfYu0UbeyO-WGVMPtg468Ww3Wns_en0BEG_0q4bw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9YSldjVzVpRlljcXdBMVRSUmJNZUs3V0tnejhwbkxzTDVkMjdxNWd5LmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
   "05224": {
@@ -274,8 +1444,80 @@
     "title": "Head Coach-Baseball",
     "campus": "UNL",
     "salary": "500,000",
-    "group": "head_coach",
+    "group": "athletics_staff",
     "photo_url": "https://huskers.com/imgproxy/8lXBXeJDK4kPWU1OONz_FBwi8K-BDYnHpaNM_e-BONk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wMS8yMy9pTEl2ZmoxVkUyUlZneXVUVTdtZkFzUnVuS2FhVTZhRXZ2TjVnSzB3LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "08942": {
+    "name": "Harvell, Lance J",
+    "title": "Assistant Baseball Coach",
+    "campus": "UNL",
+    "salary": "200,789",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/ZS8lHOv4-bbaGDN72_G16WwSwhJ4xYkrWC2N1_IJMMc/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wMS8yMy8wNDFONDVncXh4M09HT2JIWTBJUnpHdWtIejVmTnV6ZkFqSGJDTnhDLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "06886": {
+    "name": "Childress, Robert A",
+    "title": "Assistant Baseball Coach",
+    "campus": "UNL",
+    "salary": "250,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/6JJPBIllT3mRIcESIwXVzaHmeJWOx0JdxFbf-Jqg7x4/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wMS8yMy9yalhGU3ZWSHFRajY3Mmp2ampkam9PQzJkZHc3Ujkxc2xKNE9LVWpNLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05215": {
+    "name": "Behrens, Conor G",
+    "title": "Director of Operations",
+    "campus": "UNL",
+    "salary": "43,888",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/gc45bILzDz42tjBrdaEJyqwGEcoMIWoKbtS4vb771PU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wMS8yMy9VeUs4UXVMODVCNHlrVmwybXpreXhCeDBZRG0xclhKQkY5ejdyVXVBLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03703": {
+    "name": "Borders, Padyn I Men's",
+    "title": "Basketball Recruiting Coordinator",
+    "campus": "UNL",
+    "salary": "59,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/_TtbsnYOtUrMBAy3JcFQkqdaPT6LhlrTQOKAyXo3zck/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNi8xMS9XWUk5NndXbHJoRGs4aFFxSzhtOGdUcDFBMjNPVjgzZWtEMDFlY1FXLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "14961": {
+    "name": "Moore, Justin P",
+    "title": "Coordinator of Analytics",
+    "campus": "UNL-IANR",
+    "salary": "61,984",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/J0wza8H3cr1dhVd-glYJxhPwvB1pSFmh06_9OLk78g4/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNi8xMS9aRU5FVVVya1NlQzhJU1pPcE1YRklNdldTNWs3NGRLSk9Nd2pMcnB3LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05280": {
+    "name": "Burbach, Sheryl K",
+    "title": "Assistant Director of Operations",
+    "campus": "UNL",
+    "salary": "65,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/7JYJ5-P5N6lztcSEiKexWMmNISuwRBZExertYVuoU3g/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS90SUxSYVVRSzVMWFZraUNFMWlnMGdlUEJ6NndNOWlIMzVUMlI0RENLLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "06587": {
+    "name": "Tommy, Emmanuel D",
+    "title": "Director of Player Development",
+    "campus": "UNL",
+    "salary": "57,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Gm3GHbcKpGfbh1Xqjt0dZ-_e2VAYq3nPmn7iD9Q7H9E/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wOC8xMy9KcnRES0pGbVhEZmdnUEdzbzk2c2c3eGNDd1RzRjlxaldScHZvOXE5LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05252": {
+    "name": "Monaghan, Patrick W",
+    "title": "Assistant Coach - Men's Basketball",
+    "campus": "UNL",
+    "salary": "325,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/do9zkncOMwRUXaXZqsd7-zbu_fh_Ef0P7PIHZYz7us4/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNC8xOC9aVnl6Y2xCaXNLTzB0WWdib204MTBQZ25qRFdnTE5GQTJVRGhZb3VQLmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
   "05221": {
@@ -283,17 +1525,269 @@
     "title": "Head Coach-Basketball",
     "campus": "UNL",
     "salary": "4,350,000",
-    "group": "head_coach",
-    "photo_url": "https://huskers.com/imgproxy/mFlvM_hGorixbyxDiRyGLJpquQz-xstFxIivmaqyVtY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNi8xMS9UVFVvNnVGWXJZV2IwUjhlUXdzaEFaVHBYSjBkazRIb0c0Y0l1YTh3LmpwZw.jpg",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Cp3V0EMvr3Ew6FFnU8fcDTTqT5Y9kwCoytZXD9srL8U/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNi8xMi9SMFdKR1AyWFlNNHVPTUhyNFQ2UkhjdWNacHdmZGJYY0Z4WTJWanZtLmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
-  "03578": {
-    "name": "Williams, Amy M",
-    "title": "Head Coach-Women's Basketball",
+  "02754": {
+    "name": "Bania, Michael R",
+    "title": "Video Coordinator",
     "campus": "UNL",
-    "salary": "975,000",
-    "group": "head_coach",
+    "salary": "65,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/GpPi6IXjkc4O2cqhO7eka9JKg2IGx1YmBeb5YpB7cHA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNi8xMS9WRjNPMlZtQXRQeUQ1RGpVaDBHNTVxeGhYajJKNnc0azZHNFBXWHduLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "14342": {
+    "name": "Virgilio, Luca",
+    "title": "General Manager",
+    "campus": "UNL",
+    "salary": "175,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Fm0T9WRujHbZipJINSmBDmWxNV_kUEXHnYvSvkktj3k/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9FbnJqN3VkTUdES2pHbmRwdE0yTGxnSzJRdWVOQVcycmdDYkNpS09OLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "06859": {
+    "name": "Hoistad, Jillian E",
+    "title": "Office Associate",
+    "campus": "UNL",
+    "salary": "49,359",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/pUDW4mM0d1TsJWUWJrL_TKbVXjRu57eGwPvcGBibBIg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOS8xMS9DZmlLV0JKQnB0aWZZTGJGQlg1OGwyd0daVjdDUm55MHNIaWNjQU5NLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "08859": {
+    "name": "Edwards, Taylor M",
+    "title": "Asst Dir of Scouting & Ops/Asst Coach",
+    "campus": "UNL",
+    "salary": "50,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/IPUbMd1AT4eMvsx2wIVzfweMxLHqE08pIecTnLo4MQQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOS8xMS9IZmNXVUxZSlphZjRKNDMxMFJyZTNXSkdNek5Gb0NTNk03aUlWdmN5LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "14287": {
+    "name": "Williams, Amy D",
+    "title": "Customer Service Assistant",
+    "campus": "UNL",
+    "salary": "18,720",
+    "group": "athletics_staff",
     "photo_url": "https://huskers.com/imgproxy/4MwQeXILQ5bQP3yRcMgY3d_fs0iRdLFtMZLix6o7D-g/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOS8xMi9hYjBncks3b0cxTU9BUVFFeHByTU5FcVVyeFp2MkF3eTBmdWN0WFdNLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05287": {
+    "name": "Assibey, Julian T",
+    "title": "Assistant Coach - Women's Basketball",
+    "campus": "UNL",
+    "salary": "195,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Mu9jH9C1CwRmM1o38ur6k_ouL9Nb3JPrYBiUX3XolKM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvaHR0cHM6L3MzLnVzLWVhc3QtMi5hbWF6b25hd3MuY29tL3NpZGVhcm0ubmV4dGdlbi5zaXRlcy9odXNrZXJzLmNvbS9pbWFnZXMvMjAyMy82LzEyL0Fzc2liZXlfX0p1bGlhbl81Mjg1LkpQRy8xWXZqTUZrcHd2aHVRUTRkUERITlppeWpla0NRSERjSUh2amVGM3JZLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03587": {
+    "name": "Keller, Jessica M",
+    "title": "Assistant Coach - Women's Basketball",
+    "campus": "UNL",
+    "salary": "195,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/QXl5QsEJylLL1R5xsUUmmiW8FJ_rGjsaado-RRpoWAs/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOS8xMi9DZWs2cDJvTUMwMVBQY0QyNk9ZRWkxUW9HRmNxcVZreGgwTjY4OG9LLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "08944": {
+    "name": "Mays, Tandem S",
+    "title": "Assistant Coach-Women's Basketball",
+    "campus": "UNL",
+    "salary": "195,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/nstR32Tv9hrZ0BxpE5FyqRWo_hogMCOEeHM3tbgOxB4/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOS8xMi81ajdUdENzdXcySzdSUThrYjNjeE91cmN2ZnJ1eW94TjQzYndMQTRiLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10056": {
+    "name": "Hart, Amanda L",
+    "title": "General Manager",
+    "campus": "UNL",
+    "salary": "100,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/ihsFs46mIvFxeQRWyFdvA6ZWY29Q9SVUG3u6HSGj_CI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOS8xMi93cEQ5c1NiV3U0ZmhOTHR4UzBCdndUM3lKQXZCdVpJZHNLYzhHMmtTLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03590": {
+    "name": "Reyes, Jaylen K T",
+    "title": "Assistant Coach-Women's Volleyball",
+    "campus": "UNL",
+    "salary": "170,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/iI3FXTXJ3t22RDHs6_ZgSzJgVUIgFSryLJm6VShvT4Q/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8wOS9VYkZwRXFIMXFrUVRGdzl1SFd3NTdCMG44N3RwS1ZYbkFFNElEeFA5LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10105": {
+    "name": "Klempa, Paul A",
+    "title": "Head Coach-Women's Bowling",
+    "campus": "UNL",
+    "salary": "110,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/loTllwoHZcELuHZ6lQv7uAIiLz4WoKvVqPAbDv-bgcM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9rQUJ2VmpNaWZ1blJ0Wm5RRXlTNzdHMnhXOG5ZR09zSENZTGx5ZjJuLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10104": {
+    "name": "Bond, Julia M",
+    "title": "Assistant Women's Bowling Coach",
+    "campus": "UNL",
+    "salary": "60,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/p583_4JPrv44M0LsvoK8ebGAf57BjOXdr6uvuSoUslA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9RRFBTRnRudk01WHA1eEg5bkRmT1hxNGVZQTRnbG9hMXo5M2FZOWdPLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "07246": {
+    "name": "Elliott, Megan K",
+    "title": "Director",
+    "campus": "UNL",
+    "salary": "244,446",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/BlCkY5GXYv4bEMrsoy5ik20JPBcG81jrjDt7gdLk120/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9vWVNvVXI1cElnN21GejNYWDU1NHlTMG1mNGd3YVdZbERJVHBSSXZhLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05250": {
+    "name": "Wackerly, Matthew M",
+    "title": "Asst CC Coach/Asst Track Coach",
+    "campus": "UNL",
+    "salary": "77,584",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/N3hu3nErN4iPjittjBuRbroVbzySJF7Kn6RhNPKXaAU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS85aXNKaWJiZElsazBHdDRBWWJ5ZEkzYU9rQXJaWEVQa2UyeWhJNXp5LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09294": {
+    "name": "Gossett, Avery A",
+    "title": "Director of Recruiting Operations",
+    "campus": "UNL",
+    "salary": "100,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/j5WzkTVtYcMSeKSdXN8Xbkiurjcb5UmeQPyQ79X0ABE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNy8zMS80VVNoT0NHb2ZFVjZFU3BiNWxGODB0UEhYdWU4VVgyQ0VFWnpnYkRWLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "08956": {
+    "name": "Johnson, Desmond E",
+    "title": "Asst Dir of FB Strength & Conditioning",
+    "campus": "UNL",
+    "salary": "80,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/zyJe80lU84UUSATmfsw2Dv8rPW-mXv1yw2NsUop5cnk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wMS8yNS95UnV6YzNENExRd0tCSHlYaUZNSFQ3VlY3Y0Z3Wkc3OUF4QmFnYm9pLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "16075": {
+    "name": "Vigilant, Daevon T Player",
+    "title": "Development Assistant",
+    "campus": "UNL",
+    "salary": "50,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/n47lUC1bHZenl2_2WB0GGSYNb3_JsmvcqfTAUfecjjA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNi8xMi9MMGZlcERmZ0ZWYmh5MFVld3FVOFJJbHBmT09MOFdFQkZIVHU2cTNZLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "08952": {
+    "name": "Richards, Taylor W Football",
+    "title": "Recruiting Coordinator",
+    "campus": "UNL",
+    "salary": "50,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/PFAHAQzMhm6lOubpTenE6QRt3UP4mAUaqYXrwCF1xSc/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNy8yMi9sRWlYZjNrMVZRTXRuZ1dqY3pOaWtKeTBNbFJ6cDVSVTVLUXJUcEg1LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05244": {
+    "name": "Dvoracek, Robert W",
+    "title": "Assistant Coach-Football",
+    "campus": "UNL",
+    "salary": "450,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/8TATgtzrqcYmLs_2gvToOZUkY1_PTl6KnDqMp8uTr30/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9jREdXUmhBdm9mdktKd1ladnJNd0xFaEZGYjJYdHdUSmlUU2czejRLLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "16908": {
+    "name": "Franklin, Julian J",
+    "title": "Assoc Dir of FB Nutrition/Culinary RD",
+    "campus": "UNL",
+    "salary": "100,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/3b7oxGXSMcmmp9RLA6D73U_G3RVirdvc_DERM7GVskE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC8ySkFxSkgzSERsek94enQ5dlR6UkpqdHNER0g5M2xZMFJUQjZKTmZOLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "04045": {
+    "name": "Taylor, Abbi J Football",
+    "title": "Performance Dietitian",
+    "campus": "UNL",
+    "salary": "70,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Au3XeOXaK-oFNW9sVk2xUFWQYWccEkTsGehy5nPpbBk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNC8wMy81ZWtNVGphMGh0U0dXekl1THF1cXB2RVFKSllhWk1Nb2VuOE9vUFlHLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "13451": {
+    "name": "Stewart, Patrick R",
+    "title": "General Manager",
+    "campus": "UNL",
+    "salary": "800,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/ClZtNHzXhRbIAKH0c9ZRhofMxt8IKxBzsokRAuWFYFE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNC8wMy94YlRkYlNUOVU5eWl6ZUF6UWE2bGxyUXptSmhiaExvT1AyZ0pMcW0yLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09273": {
+    "name": "Padden, Sean J",
+    "title": "Assistant AD of Strategic Intelligence",
+    "campus": "UNL",
+    "salary": "125,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/j02c-XvRL5FyZbQ6rgzHKa8jPZHmjdBgMhcjcVKts0w/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9zUWFKa3RMdUtmdE5SMFU0VEdhV0s5WGh6YThaRnhtaXgwM3dCVmxULmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "13639": {
+    "name": "Shorts Jr, Daikiel R",
+    "title": "Assistant Coach-Football",
+    "campus": "UNL",
+    "salary": "400,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/V8oyak9xeRvGJghkDRpydNQ8CIDfHjH6nLu5ghKNihE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNy8xOS8yeUZCTUE1OEprUWJMa25SMm5PdWFmR3dZdGVtc0paU0RYZFJmUDZpLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "07456": {
+    "name": "Gearheart, Ryan T",
+    "title": "Sr Assoc Dir of FB Strength & Condition",
+    "campus": "UNL",
+    "salary": "150,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/8HiMBk064_99CEEZL1irKkMHBeEKysm2USlgjeYf4O8/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wMS8yMi9pdk1QTXVqclZhZ1ltdm4zZEJaMnJmMmhKeFVxekI1T0Zzc21PZUp1LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "16299": {
+    "name": "Courter, Mackenzie Performance Nutrition",
+    "title": "Coordinator",
+    "campus": "UNL",
+    "salary": "60,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/HTgH7UZO4TarQ5ATwOI0MSFAbBbecbPuPyjCk6lXIZU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNC8wMy9QcFkxdVNDclNBSGV5eVNqdnhTbDAzZWY3THJxcWU4YjlzbWFvdVZBLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "14315": {
+    "name": "Verducci, Frank J",
+    "title": "Recruiting & Personnel Analyst",
+    "campus": "UNL",
+    "salary": "46,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/dNS2W1CDkHYzSUXhQ8cDhpVa9lHhvDUzXiOwIv4KDlU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOC8wMi84MDdXOG4yQURKYVJXYWhYeFNET2pISjRtZ3M3QlVjUU9DOTZlTjRXLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "13396": {
+    "name": "Williams, Keith P",
+    "title": "Sr Dir of Player Personnel & Recruiting",
+    "campus": "UNL",
+    "salary": "200,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/fyxCvZBFie4sw8_SPz_TI_kZ9YxuHCY2qLZeI3jRw4k/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9NcG4wbjEzZnYyV3dlSm5yOWliSG5SNkNaWEZTaVNzV0J6SVFUaUdmLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "07175": {
+    "name": "Bowling, Thomas K",
+    "title": "Director of FB Operations",
+    "campus": "UNL",
+    "salary": "53,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/bR2ILcPCTb7dxgKlFpWFtt7N1Yb0LR4Cvl5ZR1rHZU0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNi8wNi96U3FPbHJad29IQmw2blpTM2dNcGI1QVlBRUlhbUJMengwVVkzc2pGLmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
   "05222": {
@@ -301,17 +1795,152 @@
     "title": "Head Coach-Football",
     "campus": "UNL",
     "salary": "7,500,000",
-    "group": "head_coach",
+    "group": "athletics_staff",
     "photo_url": "https://huskers.com/imgproxy/UKymQNedtWWI87ZnZcBIIR_7pZW1gVR94iWpJ7B5PeA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS83Zjl6WG5zVU1zWFVxb0g3VkZtWFp4UnZwVTY1TFdTT1dMalBDQlE3LmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
-  "05219": {
-    "name": "Manning, Mark M",
-    "title": "Head Coach-Wrestling",
+  "05302": {
+    "name": "Holgorsen, Dana C",
+    "title": "Assistant Coach - Football",
+    "campus": "UNL",
+    "salary": "1,200,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/JqDEAcBCmkoM61Ay9hPAIx79FzJVHXjhSgwW4jJY6Hk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNy8xOS9ydFpBWm85NEZBdzJpdkFnT0JkaUt3bU9aa0pDd21FQmowVTFqQmtELmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10535": {
+    "name": "Caniford, Clayton W",
+    "title": "Director of Football Business Operations",
+    "campus": "UNL",
+    "salary": "70,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/R6bA4glKOdCwUga7VngzYHImnYK_9Kd2OUPXnXHcQGk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNy8zMS9Qelhpbmo5czhBa2ZvTFdKbElLMUlhazB4Ymh6OVZmMlBpY2ttYWEzLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "02487": {
+    "name": "Brown, Ronald A",
+    "title": "Director of Player Support & Outreach",
+    "campus": "UNL",
+    "salary": "87,550",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/qoYQ4NtorQZlf_xXcc0bsAX0KcseU9AoZMLQgyRyjRY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9QcVRHaGtRZWl6UVI0SGM0M2pNOTloa0dCSW03d3lNNFhTdDZVa1hELmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09363": {
+    "name": "Di Michele, Adam D",
+    "title": "Assistant Coach - Football",
+    "campus": "UNL",
+    "salary": "175,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/L-r2V0yjxir8YRBS4hQXvPhkB35EVZ9l9y4KvSXHAWk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC94bXpxenRMVVAyWVYwZmtRM2lOR0xLRUNhblJPeTltdnBHNHY1WFhHLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09101": {
+    "name": "Maher, Brett D",
+    "title": "Assistant Coach - Football",
+    "campus": "UNL",
+    "salary": "120,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/F_ao0ozwFehxHK5XPBRAzEZTYXjvzKLCAWGznzPLc98/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wMy8wNi9WRGZBZ2ZPUmpIWldMN21EY1FmVjhKUmF0aktCZlZvdmVWdjFNQU0xLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "07546": {
+    "name": "Childers, Halle",
+    "title": "Office Associate/Receptionist",
+    "campus": "UNL",
+    "salary": "40,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/K7r9GfvxUsMtxtlVQhsBj0gmUmwZ1EvO8H7qlc-1Zbo/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNy8zMS8wMjI2SDRGVDRqemdvRXAyQTRrR2hUYk5rb2tKb0FVYVBCT0kzdEVQLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "06509": {
+    "name": "Mozee, Jamar D",
+    "title": "Senior Football Assistant",
+    "campus": "UNL",
+    "salary": "200,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/kTPYcDZmAW76IDw52TKeLfj3F33pQFgku_D3tJBOsyU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNy8zMS9NNUlBN09Wc2xnV0ZLWUZ3bmQ0THBZMmwwcVZDSjZCR3NzSUkxUTZpLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "13333": {
+    "name": "Satterfield, Marcus D",
+    "title": "Assistant Coach/Offensive Coordinator",
+    "campus": "UNL",
+    "salary": "1,442,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/jVv8LsQrXEVJmsOPUC03Y3N0To3w9dY2oO1g5L22NtQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC93SlFxQ2haS2Iyb1V1VDVCcGNMZmxXMnRXNnJ3VUNRbjYxbkN1NUpFLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05864": {
+    "name": "Simpson, Philip J",
+    "title": "Assistant Coach-Football",
+    "campus": "UNL",
+    "salary": "350,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/gOXHvac3qpaiX1NSXKUkxpy-I8I62HithXbd1tl1sDI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC8zWW1yb3hzaFZrQkREQWk3Q1JFWGJzaDNuZjRCSUZGa1RwSWVzYzgxLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09256": {
+    "name": "Oteng, Martin N",
+    "title": "Director of Video Technology",
+    "campus": "UNL",
+    "salary": "87,551",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Up6N0ZpgYUpzAb-0wgDKn52y9clXIWW5vXVRgt2H-Zw/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9Kb2NqMkdickkxakoxRldYSGRWMWJiNE5oT3JnQW1GNW16Y0NnbHRJLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09135": {
+    "name": "Snow, Philip J",
+    "title": "Assistant Football Coach",
     "campus": "UNL",
     "salary": "400,000",
-    "group": "head_coach",
-    "photo_url": "https://huskers.com/imgproxy/HL8Ppy0odp6tRPYxr6Vq6KBGLsNLV_RsNQUyVGdJYDs/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wMy8xMi9CaEJoVHB6RXBSVlhraFJ5YUdoRnBocDl0Y3VuU2RIbk90bVBwT0wwLmpwZw.jpg",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/ibBPBkNlVbe_lhKBSK7RIGDnsKUNR7fSk1IbJqjmWXA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNC8wMy9oOGdEelJybHVZc0hJS2NmM2g3ZXNaQ01zbDJSTWhIRXdod1dUVk1OLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09583": {
+    "name": "Ptak, Sarah M",
+    "title": "Associate Director of Football Nutrition",
+    "campus": "UNL",
+    "salary": "100,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/qexLLl4kNPqNIl8H0iskpNmMB2kSahLz78bgsMdkRH4/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNy8zMS95UklSblVuc2l1ZHFWYU4yY2ExTEdSQnpWTm5BeHpPYUNaU2VTN3hGLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "08444": {
+    "name": "Foley III, Edward C",
+    "title": "Associate Director of FB Operations",
+    "campus": "UNL",
+    "salary": "43,888",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/twUFCOV1kSWSNU3z3e_xGZ84sqxKKdyEUI2sWlPbgQc/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9DcTZ4am5ENnhoYTE0ajFaTVM3S1M5Y25IY1J6QThhY0szNmNJcFo1LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05253": {
+    "name": "Thomas, Glenn A",
+    "title": "Assistant Coach - Football",
+    "campus": "UNL",
+    "salary": "800,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/cegerOVt84xULXpz9tgDyvEMaWELGNmyGG9Sgxf81oU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wMS8yNS9BM0pkcmpsWTlJd05ndWRjSWhwMHQ4OWo1am0wenpiZmV1V2NBUXhFLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10333": {
+    "name": "Verboys Jr, Andrew T",
+    "title": "Assistant Coach - Football",
+    "campus": "UNL",
+    "salary": "75,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/zshZ_PD7_0SuBDfOr9eDZXqhulvJTLAtCTAdZ7jzhrY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wMS8yMi9BemozcWdhZXlRcVNxUkd3bWxLRVVHdE96NnM0SHZDbXFLVG1KeHB0LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "14972": {
+    "name": "Williams III, Addison C",
+    "title": "Assistant Coach - Football",
+    "campus": "UNL",
+    "salary": "625,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/jHgJ-I47Ct9NNXPZ8UbJctT2Ikf-57KDDbT5bU3CF6g/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNC8wMy9rbEhoZnFXWVE5MVZXaUZvR0tURHlEZ0luTjhZMDZmVktjVmFNU2VWLmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
   "05223": {
@@ -319,17 +1948,44 @@
     "title": "Head Coach-Men's Golf",
     "campus": "UNL",
     "salary": "128,750",
-    "group": "head_coach",
+    "group": "athletics_staff",
     "photo_url": "https://huskers.com/imgproxy/U-Kd5K4d1DkJ2e18BiY4FWQX-9WoJhexSJ-CGtduMrE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9FRTVUTXhLNzBlU2ZSclRoUDJiTlhCb2VDbWFLTGdhZENkelZhVVd1LmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
-  "05217": {
-    "name": "Chmelka, Kenneth C",
-    "title": "Head Coach - Men's Gymnastics",
+  "07419": {
+    "name": "Minzel, Travis J",
+    "title": "Asst Coach - Men's Golf",
     "campus": "UNL",
-    "salary": "130,000",
-    "group": "head_coach",
-    "photo_url": "https://huskers.com/imgproxy/Dq9ucpu0DMwJv0H75wlhW7Ucnn7t2OCdtFPdsw6EAAA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMS9DWmp1UE5DcmFtSmowdFR2WFhVdDUwSXd0bkZRdmI1QUg2TmJ2Yk4yLnBuZw.png",
+    "salary": "72,141",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/FRhgB8Gv2dPqGD4Eq-jrQMnRsCX-7lwOdsrQEBPhvaM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS94TnNRUVZWSW5WeDloOHJTaDhXVmhCV1BVZlpJWWtHYTNVRjlrUERpLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "06377": {
+    "name": "Sutherland, Jeanne M",
+    "title": "Head Coach-Women's Golf",
+    "campus": "UNL",
+    "salary": "127,308",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Xmp2W6U7bzbDNzKEDA_UNELsaR-9wrLFFlJSdwFgVn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOS8wOC9xR1N1N2lET1BrbEpuWGFKTDMyNGVrVXducnROdDFiUUE0enloM2tmLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "08965": {
+    "name": "Robinson, John R",
+    "title": "Assistant Coach-Men's Gymnastics",
+    "campus": "UNL",
+    "salary": "62,294",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/rwo78a-yWslTA1-YmFOyyy2FpmWyikB1o9Lhe9PoOGU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9aZnRDd016OW9BRjN0cXpGWU9yQWV5WElLTnFGR3VJb0VsVzhHNldYLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "03795": {
+    "name": "Fusco, Karin S",
+    "title": "Director of Ops for Men's Gymnastics",
+    "campus": "UNL",
+    "salary": "48,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/FLMaRyz0_k7zCBpVNgu7W5Z3ljk34K6btDb5PXtilMM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8xMC9SeWZpZ3QzWk1vSVJicDlGOWZ0SjlaeUhiUVRTZHR6UlYxWjY2aTNBLmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
   "10376": {
@@ -337,8 +1993,26 @@
     "title": "Head Coach-Rifle",
     "campus": "UNL",
     "salary": "75,000",
-    "group": "head_coach",
+    "group": "athletics_staff",
     "photo_url": "https://huskers.com/imgproxy/M_ASt-QWQQIH_ek6heHP8RYiLHW1YjkWeepSNIVE8oM/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOS8wOS85ZmVHc0lpWHNKUkxPVFZrTkQwanNEdDhoSEdyZGJjNkpwcjNzRzhkLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05514": {
+    "name": "Derting, Kristen C",
+    "title": "Assistant Rifle Coach",
+    "campus": "UNL",
+    "salary": "50,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/w6aWd2NtdCSnCk5b8NR7lMSvvU9-lsMMLnha1fVPUSY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wOS8wOS9ITkNtVFpLMjdGMGt5RHlidm40ZzczVzR0VXpmczZxZDZJWUNBczN2LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09299": {
+    "name": "Bridge, Ian C",
+    "title": "Assistant Coach-Women's Soccer",
+    "campus": "UNL",
+    "salary": "70,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/SdBH7iYlPOjfcYbQ6yyFN00WWeOu7wbrIFsEnt4xDZE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9YbE9FODZucDBKMWQwRTlUb2NaR2EzR0hEczZBdEdzcDFEdTFRUzdRLmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
   "09285": {
@@ -346,8 +2020,26 @@
     "title": "Head Coach-Women's Soccer",
     "campus": "UNL",
     "salary": "211,000",
-    "group": "head_coach",
+    "group": "athletics_staff",
     "photo_url": "https://huskers.com/imgproxy/FhywGTsQVAtBp_4qcMipFMHovAZzkfAhzp62BrHCcYE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS94b3hFbTh4SWRoZTZuVlc4NnFEZGtnZXE5MnpqTUpHeWgzV1lHQW8xLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05608": {
+    "name": "Bohling, Erin",
+    "title": "Director of Softball Operations",
+    "campus": "UNL",
+    "salary": "62,131",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/bPr68zsih7IWNqt4cdbgJg6k8vmqq7f_8TJu38sVrqI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8yMy9VTU9DcmlzNWVkVDFCR2gxWGQ4MHpGc1dvZ1N6dzlRZU84YmFlMVk3LmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "11986": {
+    "name": "Ferrell, Olivia A",
+    "title": "Assistant Coach - Softball",
+    "campus": "UNL",
+    "salary": "54,495",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/dKnHtLBhtzK6xXyIQVxCo4l-3KXQj6IDgRIwOoo7BMU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8yMy84NEV5UkNxdjU3UDRIOUVUSG9McDV2bm52d21BSk1HM1AybjJGMTNVLmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
   "05286": {
@@ -355,8 +2047,17 @@
     "title": "Head Coach-Softball",
     "campus": "UNL",
     "salary": "310,000",
-    "group": "head_coach",
+    "group": "athletics_staff",
     "photo_url": "https://huskers.com/imgproxy/jPot-PdltBp9zNNFQqKgtg-N1Dj7trlUEobWrR6W-AA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8yMy9FQVA1Nnoyc3RPOGVxa3hab3BNRjF4YnMxejVoNEloekpOM1lDUk9uLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "09369": {
+    "name": "Miller, Diane L",
+    "title": "Assistant Coach-Softball",
+    "campus": "UNL",
+    "salary": "115,261",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/NmH4knthv447TryQqf7coEl94lP78oP7-SFOKXUTPF0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8yMy8ybTdMS3N0bVN3WU9vN2FadHV6dXRvbHp1dkEyTmNrZ0N5aTR4d2x4LmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
   "07087": {
@@ -364,17 +2065,17 @@
     "title": "Assoc Head Coach - Swimming",
     "campus": "UNL",
     "salary": "72,120",
-    "group": "head_coach",
+    "group": "athletics_staff",
     "photo_url": "https://huskers.com/imgproxy/TvAVCS3U4-FFVbCZ9_VK_rCpPvJQNu-3TrsXrf5PCgs/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9Nc2I1bUtHWjNUVDBMMjREWUM2S0RhbVl3U1hpNTZFNmg3SnAzbmVNLmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
-  "05218": {
-    "name": "Morales, Pedro P",
-    "title": "Head Coach-Women's Swimming",
+  "09571": {
+    "name": "Forman, Brett A",
+    "title": "Assistant Coach-Men's Tennis",
     "campus": "UNL",
-    "salary": "117,500",
-    "group": "head_coach",
-    "photo_url": "https://huskers.com/imgproxy/LSTB33zZ_lJnWj9qG2ts41JbVN5_xFU_0vsEtf-pHiE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9qR1R2RlZwYzZCdnRRTU5qRjdKWU9iT0xVdWNiNFY4TURvVEp2dnNrLmpwZw.jpg",
+    "salary": "72,500",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/zgpVHDehjUjMU1RiO6wWyNXs1c-ATXcwA-E9uMpVwpc/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wNi8yNS9rRFZDVWIwMW16dFc4SEE2UzJsdkRQUTlaVjBrbURrQzh4WkJvbXdoLmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
   },
   "05226": {
@@ -382,8 +2083,773 @@
     "title": "Head Coach-Men's Tennis",
     "campus": "UNL",
     "salary": "140,000",
-    "group": "head_coach",
+    "group": "athletics_staff",
     "photo_url": "https://huskers.com/imgproxy/gGZcC4U3YG94DoQotaEslvTvYwi1y8a-rgyJKfPMJHE/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8yNC9HZFhzUUNhaXZ1RkJkM2s2d3V1VnJqTUl4Qm5GWVF5VE1tdVlaNmJMLmpwZw.jpg",
     "source_url": "https://huskers.com/staff-directory"
+  },
+  "16693": {
+    "name": "Witte, Casie L",
+    "title": "Asst Director of Operations & Recruiting",
+    "campus": "UNL",
+    "salary": "47,741",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/WMdJ_ZqCqmKRaLaEdZdeOthXf2KAMh23IUG_ZnuPTc4/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9mZE1Yalo5VE9GRlJYVHZEVllqTTQzNkl2d0hnYnZLVjFsVFcwakhGLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "13838": {
+    "name": "Brousek, Cody R",
+    "title": "Director of Operations for Track & Field",
+    "campus": "UNL",
+    "salary": "85,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Hcor1d2B5dq5BdDOmMoK2nuH1F19t0LJVLi0JbFxebY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9QRklNWk5Db0dwOWIxNDI3WTh2MjkyRVBMOEhPZlZCTGF1QjVScTNSLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05264": {
+    "name": "Duff, Joni L",
+    "title": "Staff Secy III",
+    "campus": "UNL",
+    "salary": "62,570",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/JKHwiDMiz_OI2DvXdin5F4n_X8cfBKRfAgKB1Ly-_Bo/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNy8yOS9rZ3BwSm53OXFYamk2cERZZlQ2OVhGRDZQN0RKU0ljNUh5UnQwUlZaLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "11811": {
+    "name": "Peterson, Lindsay A",
+    "title": "Director of Volleyball Operations",
+    "campus": "UNL",
+    "salary": "95,391",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/xNQMAje36ybTTWmNDPABy_cp-g2-9hIqqQAWfzYPQPQ/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNy8yOS9KRnFBY1J4ODhqWUV2ZlZ2YTZ1b3RwYjBaVXFGdkhYaTFjS2UyckxaLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05256": {
+    "name": "Snyder, Bryan M",
+    "title": "Associate Coach - Wrestling",
+    "campus": "UNL",
+    "salary": "178,908",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/uimh9c8yzaGHbbWZrg5oJMZ-HVgzysIz40bv_aDj_fU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS8xS2V6eUtLMVdUMTdRMEJKRUNwYTVUb2hFUFVLZXlGQ01ueVRLdVpuLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10320": {
+    "name": "Dlagnev, Tervel I",
+    "title": "Assistant Coach - Wrestling",
+    "campus": "UNL",
+    "salary": "152,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/TKnkGUYH-Bj-KHiBcs0BPiK_cspyWx0qwGF2yVaISHc/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9VMVB3ZnFQaGNIZDA1RGZJaDhCaE9zTlRXTXpndXpDMHdSc1RQU0oxLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "10106": {
+    "name": "Bradley, Brandon M",
+    "title": "Director of Operations for Wrestling",
+    "campus": "UNL",
+    "salary": "50,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/M6HYYjJivufrJL0KF3YEghychY3csjfHdKLtSOGByT8/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8xMC8wNy9wVWNGSnczNnlNRlg0Umg0MGZqaXFNNkdFeGlSazV2ZVQ3WUNlNVFwLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "05219": {
+    "name": "Manning, Mark M",
+    "title": "Head Coach-Wrestling",
+    "campus": "UNL",
+    "salary": "400,000",
+    "group": "athletics_staff",
+    "photo_url": "https://huskers.com/imgproxy/Qtu2aYcRZf0GQXRMeVa6gn3zG8TLlrbThI2Ew-_WQdk/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8wNS9EZkRLdUpXQ3NzcEU5d0plSWVtN1ZXdVFtOHlYZVh2cGlvTjRBVXhvLmpwZw.jpg",
+    "source_url": "https://huskers.com/staff-directory"
+  },
+  "58378": {
+    "name": "Page, Rachael M",
+    "title": "Assoc Athletic Dir Compliance & Stu Srvc",
+    "campus": "UNK",
+    "salary": "75,242",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2021/11/22/rachel_page_4029.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/rachael-page/206"
+  },
+  "58426": {
+    "name": "Yazvac, Peter A",
+    "title": "Asst Athletic Director/Media Relations",
+    "campus": "UNK",
+    "salary": "57,564",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2017/8/7/Yazvac_Peter_pp.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/peter-yazvac/69"
+  },
+  "58337": {
+    "name": "Hagan, Natalie R",
+    "title": "Business Management Analyst",
+    "campus": "UNK",
+    "salary": "72,923",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2017/8/11/hagan_natalie_pp.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/natalie-hagan/269"
+  },
+  "58263": {
+    "name": "Ridgeway, Emily A",
+    "title": "Manager Athl Devel & Community",
+    "campus": "UNK",
+    "salary": "58,350",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2023/3/7/Ridgeway-Emily_pp.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/emily-ridgeway/407"
+  },
+  "57747": {
+    "name": "Babl, Jeffrey E",
+    "title": "Video Production Coordinator",
+    "campus": "UNK",
+    "salary": "53,173",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2022/8/23/jeff-babl-9316.JPG?width=300",
+    "source_url": "https://lopers.com/staff-directory/jeff-babl/372"
+  },
+  "58299": {
+    "name": "Bracale, Steven J",
+    "title": "Manager of Marketing & Fan",
+    "campus": "UNK",
+    "salary": "44,000",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2025/7/1/Barcale-Steve_pp.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/steve-bracale/472"
+  },
+  "56076": {
+    "name": "Smidt, Michelle R",
+    "title": "Office Services Associate",
+    "campus": "UNK",
+    "salary": "50,854",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2017/8/8/Smidt_Michelle_pp.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/michelle-smidt/7"
+  },
+  "56010": {
+    "name": "Franzen, Lisa J",
+    "title": "Office Associate",
+    "campus": "UNK",
+    "salary": "35,858",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2019/8/22/franzen_lisa_pp.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/lisa-franzen/330"
+  },
+  "58259": {
+    "name": "Rodehorst, Shawn W",
+    "title": "Head Coach - Womens Golf",
+    "campus": "UNK",
+    "salary": "51,500",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2017/8/14/Rodehorst_Shawn.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/shawn-rodehorst/287"
+  },
+  "58428": {
+    "name": "Hof, Kiphany J",
+    "title": "Assoc Director Mental Hlth Practitioner",
+    "campus": "UNK",
+    "salary": "62,830",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2023/7/31/Hof-Kiphany_pp.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/kiphany-hof/379"
+  },
+  "58383": {
+    "name": "Stock, Shane E",
+    "title": "Head Strength & Conditioning Coach",
+    "campus": "UNK",
+    "salary": "53,045",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2022/12/21/Stock-Shane_pp.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/shane-stock/301"
+  },
+  "58252": {
+    "name": "Held, Ryan J",
+    "title": "Head Coach - Football",
+    "campus": "UNK",
+    "salary": "169,135",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2025/8/5/Held-Ryan_pp.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/ryan-held/397"
+  },
+  "58374": {
+    "name": "Schaffner, Timothy B",
+    "title": "Asst Football Coach, Defensive Coord",
+    "campus": "UNK",
+    "salary": "83,204",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2026/8/4/Schaffner-Tim_yd9Gw.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/tim-schaffner/399"
+  },
+  "58365": {
+    "name": "Harris, Tyler W",
+    "title": "Asst FB Coach-Wide Receivers/Pass",
+    "campus": "UNK",
+    "salary": "65,000",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2026/8/4/Harris-Tyler_t4nvz.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/tyler-harris/427"
+  },
+  "58371": {
+    "name": "Mc Coy, Ruzell J",
+    "title": "Asst FB Coach-Linebackers/Recruit Coord",
+    "campus": "UNK",
+    "salary": "65,350",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2025/8/5/McCoy-Ruzell_pp.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/ruzell-mccoy/460"
+  },
+  "58353": {
+    "name": "Willis, Nate D",
+    "title": "Asst FB Coach - Defensive Backs",
+    "campus": "UNK",
+    "salary": "50,000",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2025/8/5/Willis-Nate_pp.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/nate-willis/428"
+  },
+  "58269": {
+    "name": "Fuller, Robert C",
+    "title": "Asst Mens Basketball Coach",
+    "campus": "UNK",
+    "salary": "28,080",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2024/10/1/Fuller-Rob_pp_4ZOPQ.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/rob-fuller/438"
+  },
+  "58258": {
+    "name": "Ackermann, Katie M",
+    "title": "Head Coach - Softball",
+    "campus": "UNK",
+    "salary": "60,000",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2019/9/4/ackerman_katie_pp.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/katie-ackermann/332"
+  },
+  "58260": {
+    "name": "Trelka, Kyle D",
+    "title": "Head Coach - Swimming",
+    "campus": "UNK",
+    "salary": "41,200",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2025/9/11/Trelka-Kyle_pp_ZOLtG.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/kyle-trelka/426"
+  },
+  "58251": {
+    "name": "Shafer, Scott T",
+    "title": "Head Coach - Tennis",
+    "campus": "UNK",
+    "salary": "47,380",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2025/10/29/Shafer-Scott_pp_UtUp2.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/scott-shafer/156"
+  },
+  "58382": {
+    "name": "Diller, Caleb L",
+    "title": "Assistant Tennis Coach",
+    "campus": "UNK",
+    "salary": "28,778",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2025/10/29/Diller-Caleb_pp_CJmYC.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/caleb-diller/416"
+  },
+  "58264": {
+    "name": "Bonsall, Brady I",
+    "title": "Head Coach Track/Cross Country",
+    "campus": "UNK",
+    "salary": "70,265",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2023/11/27/Coach_Bonsall_Ivwlb.JPG?width=300",
+    "source_url": "https://lopers.com/staff-directory/brady-bonsall/20"
+  },
+  "58430": {
+    "name": "Hammond, Samantha J",
+    "title": "Asst Coach Volleyball",
+    "campus": "UNK",
+    "salary": "41,200",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2025/8/22/Hammond-Samantha_pp_KbaQI.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/samantha-hammond/378"
+  },
+  "58257": {
+    "name": "Johnson, Drew K",
+    "title": "Head Coach - Womens Basketball",
+    "campus": "UNK",
+    "salary": "108,150",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2023/5/9/Drew_Johnson_2.JPG?width=300",
+    "source_url": "https://lopers.com/staff-directory/drew-johnson/412"
+  },
+  "58265": {
+    "name": "Breton, Robert L",
+    "title": "Head Coach - Womens Soccer",
+    "campus": "UNK",
+    "salary": "60,545",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2026/8/14/Breton-Rob_4xmoi.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/rob-breton/376"
+  },
+  "58250": {
+    "name": "Jensen, Dalton J",
+    "title": "Head Coach - Wrestling",
+    "campus": "UNK",
+    "salary": "87,823",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2020/10/20/daltonjensen_4102.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/dalton-jensen/117"
+  },
+  "58272": {
+    "name": "Sorenson, Andrew R",
+    "title": "Asst Coach Wrestling",
+    "campus": "UNK",
+    "salary": "40,190",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2021/10/14/andrewsorensen_6238.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/andrew-sorenson/242"
+  },
+  "57782": {
+    "name": "Mc Carty, Sara",
+    "title": "Program Coord of the Central NE AHEC",
+    "campus": "UNK",
+    "salary": "58,350",
+    "group": "athletics_staff",
+    "photo_url": "https://lopers.com/images/2023/7/31/McCarty-Sara_pp.jpg?width=300",
+    "source_url": "https://lopers.com/staff-directory/sara-mccarty/324"
+  },
+  "65783": {
+    "name": "Maher, Matthew S",
+    "title": "Executive Assoc AD for Internal Affairs",
+    "campus": "UNO",
+    "salary": "156,860",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2022%2F6%2F22%2FMaher_Matt_1_.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "65241": {
+    "name": "Ekwerekwu, Lindsey R",
+    "title": "Executive Associate AD / SWA",
+    "campus": "UNO",
+    "salary": "119,764",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_31.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "65141": {
+    "name": "Carey, Brian R",
+    "title": "Sr. Associate AD of Compliance",
+    "campus": "UNO",
+    "salary": "83,285",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_11.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "60844": {
+    "name": "Smith, Michael A",
+    "title": "Associate AD/General Manager - Arena",
+    "campus": "UNO",
+    "salary": "125,215",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_54.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "65426": {
+    "name": "Brooke, Danielle M",
+    "title": "Associate AD of Student-Athlete Dev.",
+    "campus": "UNO",
+    "salary": "62,098",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F9%2FSTAFF_HEADSHOTS_36.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "65132": {
+    "name": "Hawili, Rayan A",
+    "title": "Director of Strength & Performance",
+    "campus": "UNO",
+    "salary": "60,471",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_14.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "64142": {
+    "name": "Holt, Danielle",
+    "title": "Asst. Director of Strength &",
+    "campus": "UNO",
+    "salary": "42,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_68.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "64953": {
+    "name": "Anderson, Ethan Hamilton",
+    "title": "Assistant A.D., Event Mgmt",
+    "campus": "UNO",
+    "salary": "55,497",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_9.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61458": {
+    "name": "Reeves, Trevor R",
+    "title": "Compliance Coordinator",
+    "campus": "UNO",
+    "salary": "37,590",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2018%2F7%2F11%2F20180709_Headshots_52136.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61660": {
+    "name": "Le Clair, Megan M",
+    "title": "Senior Events Manager",
+    "campus": "UNO",
+    "salary": "54,139",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F9%2FSTAFF_HEADSHOTS_51.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61571": {
+    "name": "Moore, Cameron S",
+    "title": "Events Coordinator",
+    "campus": "UNO",
+    "salary": "45,789",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F9%2FSTAFF_HEADSHOTS_50.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61525": {
+    "name": "Korth, Devon M",
+    "title": "Operations and Turf Manager",
+    "campus": "UNO",
+    "salary": "61,285",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2026%2F8%2F30%2FDevonKorth.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61678": {
+    "name": "Sunquist, Hunter",
+    "title": "Senior Operations and Turf Supervisor",
+    "campus": "UNO",
+    "salary": "50,470",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F9%2FSTAFF_HEADSHOTS_73.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "62704": {
+    "name": "Fouts, Cameron",
+    "title": "Senior Operations Supervisor",
+    "campus": "UNO",
+    "salary": "48,668",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F9%2FSTAFF_HEADSHOTS_46.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61951": {
+    "name": "Krause, Jesse J",
+    "title": "Audio / Visual Specialist",
+    "campus": "UNO",
+    "salary": "48,410",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2026%2F8%2F30%2FScreenshot_20260331_134402_Gallery.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61665": {
+    "name": "Goebel, Emmit V Ice",
+    "title": "Operations Manager/Ice Tech",
+    "campus": "UNO",
+    "salary": "56,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F9%2FSTAFF_HEADSHOTS_75.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61553": {
+    "name": "Schaefbauer, Jacob",
+    "title": "Operations Supervisor - Arena",
+    "campus": "UNO",
+    "salary": "42,500",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F9%2FSTAFF_HEADSHOTS_47.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "63380": {
+    "name": "Cross, Wendy M",
+    "title": "Assoc Athletic Dir of Internal Affairs",
+    "campus": "UNO",
+    "salary": "58,020",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_48.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61294": {
+    "name": "Beebout, Erin N",
+    "title": "Asst Athletic Dir of Internal Affairs",
+    "campus": "UNO",
+    "salary": "52,607",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_27.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61045": {
+    "name": "Smits, Jason D",
+    "title": "Equipment Manager Hockey",
+    "campus": "UNO",
+    "salary": "54,716",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2017%2F9%2F7%2FJason_Smits.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "63581": {
+    "name": "Mitchell, Hannah",
+    "title": "Asst Director, Athletic Communications",
+    "campus": "UNO",
+    "salary": "45,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2026%2F7%2F20%2FStaffHeadshots2026-3.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "65355": {
+    "name": "Henrichs, Abbey N",
+    "title": "Director of Events",
+    "campus": "UNO",
+    "salary": "89,536",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2024%2F10%2F30%2Fhenrichs-abbey-marcomm.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61014": {
+    "name": "Crutchfield, Chris",
+    "title": "Head Coach, Men's Basketball",
+    "campus": "UNO",
+    "salary": "335,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_15.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "65212": {
+    "name": "Brown, Kyan",
+    "title": "Associate Head Coach - MBB",
+    "campus": "UNO",
+    "salary": "130,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_32.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "65410": {
+    "name": "Danals, Brandt R",
+    "title": "Asst Coach/Director of Ops. MBB",
+    "campus": "UNO",
+    "salary": "69,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2026%2F4%2F13%2FBD_Black_Headshot.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61055": {
+    "name": "Holdman, Keenan",
+    "title": "Asst. Coach MBB",
+    "campus": "UNO",
+    "salary": "74,400",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_25.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "65832": {
+    "name": "Crutchfield, Joshua",
+    "title": "Assistant Coach - Player Personnel",
+    "campus": "UNO",
+    "salary": "50,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_63.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "63126": {
+    "name": "Noel-Bernier, Dave",
+    "title": "Associate Head Coach - MIH",
+    "campus": "UNO",
+    "salary": "163,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F10%2F2%2FDAVE_NOEL-BERNIER.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61556": {
+    "name": "Hambrook, Bennett",
+    "title": "Assistant Coach, Ice Hockey",
+    "campus": "UNO",
+    "salary": "82,400",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F10%2F2%2FBENNETT_HAMBROOK.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "63608": {
+    "name": "Vit, Zachary W",
+    "title": "Director of Hockey Operations",
+    "campus": "UNO",
+    "salary": "57,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_10.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "63986": {
+    "name": "Englebretson, Joshua R",
+    "title": "Assistant Athletic Trainer",
+    "campus": "UNO",
+    "salary": "55,818",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2018%2F7%2F11%2FJosh_Englebretson.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "65210": {
+    "name": "Dowling, Donovan",
+    "title": "Head Coach, Men's Soccer",
+    "campus": "UNO",
+    "salary": "95,481",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F9%2FSTAFF_HEADSHOTS_17.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "65232": {
+    "name": "Mc Reynolds, Joshua D",
+    "title": "Asst Coach - Men's Soccer",
+    "campus": "UNO",
+    "salary": "54,075",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F9%2FSTAFF_HEADSHOTS_21.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "63619": {
+    "name": "Clark, Hunter",
+    "title": "Head Coach, Men's Tennis",
+    "campus": "UNO",
+    "salary": "48,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F9%2FSTAFF_HEADSHOTS_58.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61027": {
+    "name": "Carey, Jamie I",
+    "title": "Head Coach, Women's Basketball",
+    "campus": "UNO",
+    "salary": "200,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_33.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "62129": {
+    "name": "Szabla, Leah D",
+    "title": "Assistant Women's Basketbal Coach",
+    "campus": "UNO",
+    "salary": "80,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_76.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "65217": {
+    "name": "Townley, Madison",
+    "title": "Asst Coach - Women's Basketball",
+    "campus": "UNO",
+    "salary": "55,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_40.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "63847": {
+    "name": "Levine, Daniel WBB",
+    "title": "Asst Coach/Director of BB Operations",
+    "campus": "UNO",
+    "salary": "55,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_39.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "62848": {
+    "name": "Pingpank, Saskia",
+    "title": "Assistant Track/XC Coach",
+    "campus": "UNO",
+    "salary": "43,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F9%2FSTAFF_HEADSHOTS_67.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "63620": {
+    "name": "Grasso, Victoria",
+    "title": "Head Women's Golf Coach",
+    "campus": "UNO",
+    "salary": "46,800",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F9%2FSTAFF_HEADSHOTS_70.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "63364": {
+    "name": "Walters II, Timothy P",
+    "title": "Head Coach, Women's Soccer",
+    "campus": "UNO",
+    "salary": "89,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_45.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "63515": {
+    "name": "Holland, Ashley N",
+    "title": "Asst Coach - Women's Soccer",
+    "campus": "UNO",
+    "salary": "48,456",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F1%2FSTAFF_HEADSHOTS_55.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "62232": {
+    "name": "Hessel, Jessica C",
+    "title": "Head Coach, Men's & Women's Swimming & D",
+    "campus": "UNO",
+    "salary": "72,100",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F9%2FSTAFF_HEADSHOTS_35.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "63300": {
+    "name": "Sprague, Eric P",
+    "title": "Assistant Diving Coach",
+    "campus": "UNO",
+    "salary": "32,898",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2018%2F2%2F6%2FSprague_Eric_170901_SwimmingAndDiving_138a.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "63301": {
+    "name": "Hartman, Bryce T",
+    "title": "Asst Swimming Coach",
+    "campus": "UNO",
+    "salary": "32,898",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2026%2F8%2F11%2FUntitled-2.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "65247": {
+    "name": "Summitt, Adam",
+    "title": "Head Coach, Women's Tennis",
+    "campus": "UNO",
+    "salary": "45,657",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2017%2F9%2F25%2FSummitt_Adam_170918_WomensTennis_003a.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61026": {
+    "name": "Buttermore, Matthew W",
+    "title": "Head Coach, Volleyball",
+    "campus": "UNO",
+    "salary": "103,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2026%2F7%2F27%2FStaffHeadshots2026-5.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "61031": {
+    "name": "Breitbarth, Kyle J",
+    "title": "Asst. Coach Volleyball",
+    "campus": "UNO",
+    "salary": "51,343",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F11%2FKyle.jpg&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
+  },
+  "65424": {
+    "name": "Petak, Ashley E",
+    "title": "Assistant Coach, Volleyball",
+    "campus": "UNO",
+    "salary": "50,000",
+    "group": "athletics_staff",
+    "photo_url": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fnebomaha.sidearmsports.com%2Fimages%2F2025%2F8%2F9%2FSTAFF_HEADSHOT_1.png&width=100&height=100&gravity=north&type=webp",
+    "source_url": "https://omahamavs.com/staff-directory"
   }
 }
