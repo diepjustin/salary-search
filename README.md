@@ -46,7 +46,15 @@ first one's file and never overwrites it:
 ```bash
 python3 scripts/build_leadership_photos.py   # leadership + all athletics staff
 python3 scripts/build_unmc_photos.py         # UNMC faculty, ~10 min
+python3 scripts/build_campus_photos.py       # UNL and UNO faculty, ~2 min
+python3 scripts/verify_photos.py             # drop anything that does not resolve
 ```
+
+`verify_photos.py` is not optional. The page hotlinks these images, so a wrong
+or rotted URL shows a broken avatar and still counts toward coverage unless
+something checks. It also repairs a real UNL quirk: their Drupal sites print
+each other's file paths, so an image linked on `film.unl.edu` may only be
+served by `arts.unl.edu`.
 
 `fetch_sources.py --verify` re-hashes local files against
 `data/source_manifest.json`, so a later re-fetch can be proven identical to the
@@ -198,17 +206,31 @@ not an athletics employee.
 ## Headshots
 
 `data/leadership_photos.json` maps a name to a photo hosted by the university,
-hotlinked rather than copied. 1,499 of 12,588 people (12%) have one — UNMC 25%,
-UNL 6%, UNO 4%, UNK 5%.
+hotlinked rather than copied. 2,310 of 12,588 people (18%) have one — UNMC 25%,
+UNL 23%, UNO 13%, UNK 5%. Every URL in it has been fetched and confirmed to
+return an actual image.
 
 **Keyed by name, never by position number.** A position is a seat: 1,002
 changed occupant in a single year, so a position-keyed manifest starts serving
 the previous occupant's face the moment the data rolls over.
 
 Sources: each university's own leadership pages, the three athletics staff
-directories (huskers.com, lopers.com, omahamavs.com), and UNMC's department
-faculty listings, which embed a person record carrying first name, middle
-initial, surname and image URL as separate fields.
+directories (huskers.com, lopers.com, omahamavs.com), UNMC's department faculty
+listings (which embed a person record carrying first name, middle initial,
+surname and image URL as separate fields), and the UNL and UNO department
+directories.
+
+Neither UNL nor UNO publishes a sitemap or a central list of departments, so
+those directory URLs were found by crawling and are pinned in
+`build_campus_photos.py`. UNL's departments live on their own subdomains with
+no shared path convention; UNO is one host whose paths vary just as much, and
+its employee directory sits under `/search/`, which its robots.txt disallows,
+so that page is never fetched.
+
+Both publish a display name rather than separate name fields, so matching there
+is narrower on purpose: a multi-word surname cannot be matched at all, because
+payroll's "Zuniga Ulloa, Jorge M" and a page saying "Jorge Zuniga" are not
+safely the same person.
 
 ### What has to agree before a photo is attached
 
@@ -233,13 +255,22 @@ A shortened or changed surname is never bridged either. UNMC lists Michele
 Aizenberg; payroll says `Aizenberg Ansari, Michele R`. Probably the same
 person; "probably" gets initials.
 
-### A source that looks usable and is not
+### Sources that look usable and are not
 
 UNL's directory at `directory.unl.edu` has a clean JSON API
 (`?q=<name>&format=json`) with an `imageURL` for every employee. **Every one of
 those URLs redirects to `default-avatar-100.jpeg`.** Taking the field at face
 value would put the same silhouette on 4,000 people and call them headshots.
-UNL photos here come from department and leadership pages instead.
+UNL photos here come from department and leadership pages instead — and those
+pages serve the same silhouette for staff without a portrait, so
+`build_campus_photos.py` rejects placeholder filenames by rule rather than
+trusting a heuristic to notice.
+
+Matching a directory's own subdomain against a person's payroll department is
+the other one. It sounds like free corroboration and is not: it agreed for only
+413 of 716 UNL matches, because college sites host many departments
+(`business.unl.edu` lists Management, Finance and Marketing). As a gate it
+would have discarded correct matches while proving nothing.
 
 ## Relationship to Matt Waite's version
 
@@ -263,10 +294,15 @@ person's cost-object lines rather than reporting one of them.
 * `personnel_data.csv` in this folder is the old single-year file the page used
   before this. It is superseded by `data/by_year/salaries_2025-2026.csv` and is
   no longer read by anything.
-* Headshot coverage is 12%, and uneven: UNMC is at 25% because its department
-  sites publish structured person lists, while UNL and UNO faculty photos live
-  on per-department pages that have not been mapped. UNL-IANR (1,330 people)
-  and NCTA have almost none.
+* Headshot coverage is 18% and uneven. UNL-IANR (1,330 people, 1.5%), UNK (5%)
+  and NCTA have almost none, and a large share of UNL's headcount is in units
+  that publish no portraits at all — 199 in Custodial Services, 110 in Building
+  Systems Maintenance, 54 in University Police — so the realistic ceiling is
+  well below the headcount.
+* The UNL and UNO directory lists in `build_campus_photos.py` were found by
+  crawling and are certainly incomplete; neither campus publishes an index to
+  check them against. Departments whose sites use a path not in that list are
+  simply missed.
 * The UNMC pass reads only listing pages whose URL ends in `/faculty/`,
   `/staff/` and similar. A trial that also walked nested listings found ~200
   more people; the tighter rule was kept because it is easier to reason about.
