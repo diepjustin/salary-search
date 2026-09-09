@@ -46,7 +46,7 @@ first one's file and never overwrites it:
 ```bash
 python3 scripts/build_leadership_photos.py   # leadership + all athletics staff
 python3 scripts/build_unmc_photos.py         # UNMC faculty, ~10 min
-python3 scripts/build_campus_photos.py       # UNL and UNO faculty, ~2 min
+python3 scripts/build_campus_photos.py       # UNL, UNO, UNK and IANR faculty
 python3 scripts/verify_photos.py             # drop anything that does not resolve
 ```
 
@@ -206,9 +206,9 @@ not an athletics employee.
 ## Headshots
 
 `data/leadership_photos.json` maps a name to a photo hosted by the university,
-hotlinked rather than copied. 2,310 of 12,588 people (18%) have one — UNMC 25%,
-UNL 23%, UNO 13%, UNK 5%. Every URL in it has been fetched and confirmed to
-return an actual image.
+hotlinked rather than copied. 2,670 of 12,588 people (21%) have one — NCTA 78%,
+UNMC 25%, UNL 23%, UNL-IANR 20%, UNO 14%, UNK 13%. Every URL in it has been
+fetched and confirmed to return an actual image.
 
 **Keyed by name, never by position number.** A position is a seat: 1,002
 changed occupant in a single year, so a position-keyed manifest starts serving
@@ -217,15 +217,22 @@ the previous occupant's face the moment the data rolls over.
 Sources: each university's own leadership pages, the three athletics staff
 directories (huskers.com, lopers.com, omahamavs.com), UNMC's department faculty
 listings (which embed a person record carrying first name, middle initial,
-surname and image URL as separate fields), and the UNL and UNO department
-directories.
+surname and image URL as separate fields), and the department directories of
+UNL, UNO, UNK and IANR.
 
-Neither UNL nor UNO publishes a sitemap or a central list of departments, so
-those directory URLs were found by crawling and are pinned in
-`build_campus_photos.py`. UNL's departments live on their own subdomains with
-no shared path convention; UNO is one host whose paths vary just as much, and
-its employee directory sits under `/search/`, which its robots.txt disallows,
-so that page is never fetched.
+None of those four publishes a usable sitemap or a central list of
+departments, so the directory URLs were found by crawling and are pinned in
+`build_campus_photos.py`. UNL and IANR departments live on their own subdomains
+with no shared path convention; UNO is one host whose paths vary just as much,
+and its employee directory sits under `/search/`, which its robots.txt
+disallows, so that page is never fetched. UNK's `sitemap.xml` is a CMS test
+page, and its A-to-Z department index is rendered by JavaScript, so its
+departments were found through its four college pages instead.
+
+Which path is chosen matters more than it looks. `agronomy.unl.edu/people/`
+lists 5 people and `agronomy.unl.edu/faculty/` lists 67, for a department of
+116 — taking the first URL that answered would have captured a fourteenth of
+it and reported nothing wrong.
 
 Both publish a display name rather than separate name fields, so matching there
 is narrower on purpose: a multi-word surname cannot be matched at all, because
@@ -294,15 +301,17 @@ person's cost-object lines rather than reporting one of them.
 * `personnel_data.csv` in this folder is the old single-year file the page used
   before this. It is superseded by `data/by_year/salaries_2025-2026.csv` and is
   no longer read by anything.
-* Headshot coverage is 18% and uneven. UNL-IANR (1,330 people, 1.5%), UNK (5%)
-  and NCTA have almost none, and a large share of UNL's headcount is in units
-  that publish no portraits at all — 199 in Custodial Services, 110 in Building
-  Systems Maintenance, 54 in University Police — so the realistic ceiling is
-  well below the headcount.
-* The UNL and UNO directory lists in `build_campus_photos.py` were found by
-  crawling and are certainly incomplete; neither campus publishes an index to
-  check them against. Departments whose sites use a path not in that list are
-  simply missed.
+* Headshot coverage is 21% and uneven, and the ceiling is far below 100%: a
+  large share of the headcount is in units that publish no portraits at all —
+  199 in Custodial Services, 110 in Building Systems Maintenance, 54 in
+  University Police, and 95 at USMARC, which is a federal USDA facility rather
+  than a university site.
+* The directory lists in `build_campus_photos.py` were found by crawling and
+  are certainly incomplete; no campus publishes an index to check them against.
+  A department whose site uses a path not in that list is simply missed.
+* IANR's School of Natural Resources (78 people) runs a different CMS on
+  `.aspx` pages with no photo markup this can read, so it is not scraped rather
+  than badly scraped.
 * The UNMC pass reads only listing pages whose URL ends in `/faculty/`,
   `/staff/` and similar. A trial that also walked nested listings found ~200
   more people; the tighter rule was kept because it is easier to reason about.

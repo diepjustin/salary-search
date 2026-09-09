@@ -141,12 +141,51 @@ UNO_DIRECTORIES = [
     UNO + "office-of-graduate-studies/staff-directory/index.php",
 ]
 
+UNK = "https://www.unk.edu/academics/"
+UNK_DIRECTORIES = [
+    UNK + "accounting-finance/faculty-staff/index.php",
+    UNK + "art/faculty/index.php",
+    UNK + "biology/faculty/index.php",
+    UNK + "communications/faculty/index.php",
+    UNK + "math/faculty-staff/index.php",
+    UNK + "physics/faculty-staff/index.php",
+    UNK + "social-work/faculty_staff/index.php",
+    UNK + "sociology/faculty-staff/index.php",
+    UNK + "theatre/faculty-staff/index.php",
+]
+
+# IANR's departments are UNL subdomains running the same Drupal theme, so they
+# are read with scrape_unl. The exact paths matter: agronomy.unl.edu/people/
+# lists 5 people and agronomy.unl.edu/faculty/ lists 67, so accepting the first
+# URL that answered would have quietly captured a fourteenth of the department.
+IANR_DIRECTORIES = [
+    "https://agecon.unl.edu/faculty/",
+    "https://agronomy.unl.edu/faculty/",
+    "https://agronomy.unl.edu/our-people/",
+    "https://animalscience.unl.edu/faculty/",
+    "https://biochem.unl.edu/faculty/",
+    "https://bse.unl.edu/about/faculty-staff/",
+    "https://entomology.unl.edu/people/",
+    "https://foodscience.unl.edu/people/faculty/",
+    "https://ncta.unl.edu/directory/",
+    "https://plantpathology.unl.edu/faculty/",
+    "https://scal.unl.edu/staff/",
+    "https://vbms.unl.edu/faculty/",
+]
+
 # A generic silhouette stands in for anyone without a portrait. Serving one as
 # a headshot is the failure that directory.unl.edu invites -- every employee
 # there has an imageURL and every one redirects to default-avatar-100.jpeg -- so
 # these are rejected by name rather than left to the filename heuristic below,
 # which only caught them by accident.
-PLACEHOLDER_RE = re.compile(r"default[-_]?avatar|placeholder|no[-_]?photo|silhouette", re.I)
+PLACEHOLDER_RE = re.compile(
+    r"default[-_]?avatar|placeholder|no[-_]?photo|silhouette|pending[-_]?person", re.I
+)
+
+# UNK renders its placeholder card without substituting the name, so the alt
+# text arrives as the literal template "${display}". Anything still carrying
+# template syntax is not a person.
+TEMPLATE_ALT_RE = re.compile(r"\$\{|\{\{")
 
 # Words that appear in these filenames but name nobody.
 FILENAME_NOISE = set(
@@ -187,6 +226,8 @@ def norm(text):
 def split_display_name(display):
     """'Arthur C. Allen' -> ('arthur', 'allen'). None when unusable."""
     cleaned = CREDENTIALS.sub("", display).strip(" ,")
+    # UNK prints "Dr. Jacob Cooper"; the honorific is not part of the name.
+    cleaned = re.sub(r"^(Dr|Prof|Professor|Mr|Ms|Mrs|Mx)\.?\s+", "", cleaned, flags=re.I)
     parts = [p for p in cleaned.split() if p.strip(".")]
     if len(parts) < 2:
         return None, None
@@ -198,7 +239,16 @@ def photo_src(img, page):
     if not src:
         srcset = img.get("srcset") or ""
         src = srcset.split(",")[0].strip().split(" ")[0] if srcset else None
-    return urljoin(page, src) if src else None
+    if not src:
+        return None
+    url = urljoin(page, src)
+    # Some of these paths contain literal spaces -- UNO files history portraits
+    # under "headshots/faculty headshots/". A browser encodes that silently;
+    # urllib raises InvalidURL and the photo is lost for no good reason.
+    parts = urllib.parse.urlsplit(url)
+    return urllib.parse.urlunsplit(
+        parts._replace(path=urllib.parse.quote(parts.path, safe="/%~"))
+    )
 
 
 def card_text(img, levels, minimum):
@@ -249,6 +299,26 @@ def scrape_uno(html, page):
                     "page": page,
                 }
             )
+    return out
+
+
+def scrape_unk(html, page):
+    """UNK's cards: <img alt="Dr. Jane Doe" class="bioImg" src=".../headshots/doeja.jpg">."""
+    soup = BeautifulSoup(html, "html.parser")
+    out = []
+    for img in soup.find_all("img", class_="bioImg"):
+        alt = (img.get("alt") or "").strip()
+        url = photo_src(img, page)
+        if not alt or not url or TEMPLATE_ALT_RE.search(alt):
+            continue
+        out.append(
+            {
+                "display": alt,
+                "photo": url,
+                "context": card_text(img, 5, 40),
+                "page": page,
+            }
+        )
     return out
 
 
@@ -378,14 +448,21 @@ def main():
 
     unl_rows = [r for r in everyone if r["Campus"] in ("UNL", "UNL-IANR", "NCTA")]
     uno_rows = [r for r in everyone if r["Campus"] == "UNO"]
+    unk_rows = [r for r in everyone if r["Campus"] == "UNK"]
 
     print("\nFetching directories...")
     unl_people = collect(UNL_DIRECTORIES, scrape_unl, "UNL")
     uno_people = collect(UNO_DIRECTORIES, scrape_uno, "UNO")
+    unk_people = collect(UNK_DIRECTORIES, scrape_unk, "UNK")
+    ianr_people = collect(IANR_DIRECTORIES, scrape_unl, "IANR")
 
     matched = {}
     matched.update(match(unl_people, build_index(unl_rows), shared, "UNL", "unl_faculty"))
     matched.update(match(uno_people, build_index(uno_rows), shared, "UNO", "uno_faculty"))
+    matched.update(match(unk_people, build_index(unk_rows), shared, "UNK", "unk_faculty"))
+    # IANR people are indexed against the whole Lincoln payroll: the campus
+    # label in the data splits UNL and UNL-IANR, but a department site does not.
+    matched.update(match(ianr_people, build_index(unl_rows), shared, "IANR", "ianr_faculty"))
 
     manifest = json.loads(MANIFEST.read_text()) if MANIFEST.exists() else {}
     before = len(manifest)
