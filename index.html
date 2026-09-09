@@ -109,6 +109,15 @@ table.history th, table.history td {
 table.history thead th { color: var(--muted-color); font-weight: 600; }
 table.history tbody th { font-weight: 600; text-align: left; }
 table.history td.delta { color: var(--muted-color); }
+.left.shared { font-style: italic; }
+.left {
+  display: inline-block; margin-left: .5rem; padding: .05rem .35rem;
+  font-size: .68rem; font-weight: 600; white-space: nowrap;
+  color: var(--muted-color); background: var(--head-bg);
+  border: 1px solid var(--border-color); border-radius: 3px;
+}
+td.num.past { color: var(--muted-color); }
+.hint { font-style: italic; }
 .hist-note { margin: .6rem 0 0; font-style: italic; color: var(--muted-color); }
 /* On narrow screens drop the secondary columns so the salary stays on screen;
    campus/department/FTE remain visible in the expandable row detail. */
@@ -259,7 +268,10 @@ table.history td.delta { color: var(--muted-color); }
   var photosByName = {};
 
   function avatarHtml(r) {
-    var photo = photosByName[r.name];
+    // Two employees share this name, so nothing here says which of them the
+    // photograph shows. Initials instead. Same rule that keeps a relative's
+    // face off the wrong salary line.
+    var photo = r.linked ? photosByName[r.name] : null;
     if (photo) {
       return '<img class="avatar-img" src="' + esc(photo.photo_url) + '" alt="" loading="lazy" ' +
         'referrerpolicy="no-referrer" ' +
@@ -288,11 +300,17 @@ table.history td.delta { color: var(--muted-color); }
         // Key into the history shards; not shown.
         id: (row[idx['Person ID']] || '').trim(),
         years: parseInt(row[idx['Years']], 10) || 1,
+        // Blank for current staff; the last year a departed person was budgeted.
+        lastYear: (row[idx['Last Year']] || '').trim(),
+        // "not linked" means two employees share this name, so this row is one
+        // year's record rather than a career.
+        linked: (row[idx['Link']] || '').trim() !== 'not linked',
         // Athletics is decided by cost object upstream, not by job title: the
         // university also employs an Early Childhood Coach and a Job Coach.
         athletics: (row[idx['Athletics']] || '').trim() === 'y'
       };
       rec.key = (rec.name + ' ' + rec.campus + ' ' + rec.department + ' ' + rec.title).toLowerCase();
+      rec.current = !rec.lastYear;
       recs.push(rec);
     }
     return recs;
@@ -348,10 +366,32 @@ table.history td.delta { color: var(--muted-color); }
       summaryEl.innerHTML = 'No matches. Try a last name, or part of a job title.';
       return;
     }
-    var med = median(view.map(function (r) { return r.salary; }));
-    summaryEl.innerHTML =
-      '<b>' + count.format(view.length) + '</b> ' + (view.length === 1 ? 'record' : 'records') +
-      ' &middot; median salary <b>' + money.format(med) + '</b>';
+    // The median covers current staff only. The table also lists people who
+    // have left, carrying the salary of whatever year they left in, and a
+    // median mixing a 2010 salary with a 2026 one would be a number about
+    // nothing.
+    var now = view.filter(function (r) { return r.current; });
+    // Only a linked record can be said to have ended. An unlinked one is a
+    // single year belonging to one of two people with the same name, and
+    // calling it a departure would assert something nobody knows.
+    var gone = view.filter(function (r) { return r.linked && !r.current; }).length;
+    var sharedName = view.filter(function (r) { return !r.linked; }).length;
+    var html = '<b>' + count.format(view.length) + '</b> ' +
+      (view.length === 1 ? 'record' : 'records');
+    if (now.length) {
+      html += ' &middot; median salary <b>' +
+        money.format(median(now.map(function (r) { return r.salary; }))) + '</b>' +
+        (gone ? ' <span class="hint">(current staff)</span>' : '');
+    }
+    if (gone) {
+      html += ' &middot; <span class="hint">' + count.format(gone) +
+        ' no longer employed, showing their last year</span>';
+    }
+    if (sharedName) {
+      html += ' &middot; <span class="hint">' + count.format(sharedName) +
+        ' single-year records under a name two employees share</span>';
+    }
+    summaryEl.innerHTML = html;
   }
 
   function render() {
@@ -361,12 +401,16 @@ table.history td.delta { color: var(--muted-color); }
       var r = view[i];
       html +=
         '<tr class="person" data-i="' + i + '" tabindex="0">' +
-        '<td class="name"><span class="avatar">' + avatarHtml(r) + '</span>' + esc(r.name) + '</td>' +
+        '<td class="name"><span class="avatar">' + avatarHtml(r) + '</span>' + esc(r.name) +
+          (r.linked
+            ? (r.current ? '' : '<span class="left">left after ' + esc(r.lastYear) + '</span>')
+            : '<span class="left shared">' + esc(r.lastYear || years[years.length - 1]) +
+              ' &middot; name shared</span>') + '</td>' +
         '<td class="col-campus">' + esc(r.campus) + '</td>' +
         '<td class="col-dept">' + esc(r.department) + '</td>' +
         '<td>' + esc(r.title) + '</td>' +
         '<td class="num col-fte">' + esc(r.fte) + '</td>' +
-        '<td class="num">' + money.format(r.salary) + '</td>' +
+        '<td class="num' + (r.current ? '' : ' past') + '">' + money.format(r.salary) + '</td>' +
         '</tr>';
     }
     rowsEl.insertAdjacentHTML('beforeend', html);

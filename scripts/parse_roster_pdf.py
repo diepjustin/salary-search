@@ -406,7 +406,11 @@ def is_placeholder(name):
     UNF lines are named endowment funds, not employees.
     """
     name = name.strip()
-    if not name or name.upper().startswith(("TBA", "UNF")):
+    # "T.B.A." written with dots, and forms carrying a parenthetical so they
+    # still contain a comma -- "T.B.A.(CHO,SELF- SUPPORTING) Spec" -- get past a
+    # plain startswith("TBA") test and reach the search index looking like
+    # people. Only visible once every year became searchable.
+    if not name or re.match(r"^(T\.?B\.?A\.?|UNF)\b", name, re.I):
         return True
     return "," not in name or name == name.upper()
 

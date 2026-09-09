@@ -180,6 +180,28 @@ Things that make a year-over-year comparison wrong, and what the page does:
   Neither is a move. UNL, IANR and NCTA are treated as one campus, because a
   UNL/IANR split is one employee.
 
+## Former employees
+
+The table lists everyone who has ever appeared, not just current staff, and
+marks anyone who has gone with the year they were last budgeted. Restricting it
+to the newest year hid 22,097 people — 64% of the dataset — behind a search
+that could not reach them: Scott Frost on $4,000,000, three former football
+coaches, a former system president and the former UNL chancellor. On a page
+about what public employees are paid, the person who just left is often the one
+being looked up.
+
+Two things follow from mixing years in one table:
+
+* **The median covers current staff only**, and says so. A median that averaged
+  a 2010 salary against a 2026 one would be a number about nothing.
+* **A single-year record under a shared name is not a departure.** 654 records
+  across 35 names could not be attributed to a person, because two employees
+  share the name (see below). Each is one year, so labelling it "left after
+  2015-2016" would assert something nobody knows — Kimberly Harper appears as
+  19 such records and is still employed. Those rows say "name shared" instead,
+  and are given no photograph, since nothing says which of the two people it
+  would show.
+
 ## Filtering athletics out
 
 The page has an Athletics control: include (default), exclude, or only. With

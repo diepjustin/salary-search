@@ -4,7 +4,10 @@
 The full dataset is 203,400 person-year records and will not fit down a phone
 connection, so the page gets two things instead:
 
-  * current.csv -- the newest year only, which is what the search table shows.
+  * current.csv -- one row per person, whoever they are and whenever they
+    worked, carrying their most recent year's record. Former employees are
+    included and marked: leaving them out hid 64% of the dataset behind a
+    search that could not reach them.
   * history/<letter>.json -- one shard per surname initial, fetched only when a
     reader expands somebody. Nobody should download 34,687 salary histories to
     look up one professor.
@@ -38,6 +41,8 @@ CURRENT_FIELDS = [
     "Salary",
     "Years",
     "Athletics",
+    "Last Year",
+    "Link",
 ]
 
 # Athletics is the 77xx cost-object block on every campus -- UNL 23-7701, UNO
@@ -106,32 +111,42 @@ def main():
             entries.append(entry)
         shards[shard_key(rows[-1]["Name"])][pid] = entries
 
-        # The table lists people as they appear in the newest year. Someone who
-        # has left still has a history in the shards, but they are not staff
-        # now and listing them as current would be wrong.
+        # Everyone who has ever appeared is listed, not just current staff.
+        # Restricting this to the newest year hid 22,098 people -- 64% of the
+        # dataset -- with no way to reach them: Scott Frost on $4,000,000,
+        # Rodney Bennett, Ted Carter, three former football coaches. For a page
+        # about what public employees are paid, the person who just left is
+        # frequently the one being looked up. Their last year travels with them
+        # so nobody reads a 2014 salary as current.
         newest = rows[-1]
-        if newest["Year"] == latest:
-            current.append(
-                {
-                    "Person ID": pid,
-                    "Name": newest["Name"],
-                    "Campus": newest["Campus"],
-                    "Department": newest["Department"] or newest["Unit"],
-                    "Title": newest["Title"],
-                    "FTE": newest["FTE"],
-                    "Salary": newest["Salary"],
-                    "Years": len(rows),
-                    # Their main appointment, not any athletics money they
-                    # happen to touch: the university's general counsel is paid
-                    # partly from an athletics cost object, and is not an
-                    # athletics employee.
-                    "Athletics": (
-                        "y"
-                        if ATHLETICS_RE.match(newest.get("Cost Center") or "")
-                        else ""
-                    ),
-                }
-            )
+        current.append(
+            {
+                "Person ID": pid,
+                "Name": newest["Name"],
+                "Campus": newest["Campus"],
+                "Department": newest["Department"] or newest["Unit"],
+                "Title": newest["Title"],
+                "FTE": newest["FTE"],
+                "Salary": newest["Salary"],
+                "Years": len(rows),
+                # Their main appointment, not any athletics money they happen
+                # to touch: the university's general counsel is paid partly
+                # from an athletics cost object, and is not an athletics
+                # employee.
+                "Athletics": (
+                    "y" if ATHLETICS_RE.match(newest.get("Cost Center") or "") else ""
+                ),
+                # Blank for current staff; the year they were last budgeted for
+                # anyone who has gone.
+                "Last Year": "" if newest["Year"] == latest else newest["Year"],
+                # "not linked" marks a single year that could not be attributed
+                # to a person because two employees share the name. Such a row
+                # is one year's record, NOT a career, and must not be presented
+                # as somebody who left that year -- Kimberly Harper is still
+                # here, and appears as 19 of these.
+                "Link": newest.get("Link", ""),
+            }
+        )
 
     SITE.mkdir(parents=True, exist_ok=True)
     (SITE / "history").mkdir(exist_ok=True)
