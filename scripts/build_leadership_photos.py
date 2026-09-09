@@ -1,20 +1,26 @@
 #!/usr/bin/env python3
 """
 Build a manifest of official headshot URLs for top administrators and the
-full athletics department staff in personnel_data.csv.
+full athletics department staff in the newest reconciled salary year.
 
 Scope (see conversation / README note): chancellors, vice chancellors,
 president, CFO/VPs, deans/associate deans -- plus every UNL/UNL-IANR, UNO,
 and UNK athletics-department employee findable on that school's own staff
 directory (coaches at every level, trainers, strength staff, operations,
-etc.), matched by name against personnel_data.csv. Department chairs outside
+etc.), matched by name against that year's data. Department chairs outside
 athletics are still NOT included (a separate, larger follow-up).
 
 This does a small, fixed number of GET requests (a couple dozen pages) against
 each university's own public leadership/athletics pages -- not a bulk crawl.
 It hotlinks to each university's own image URL rather than downloading and
 re-hosting the photos, so this script writes only a JSON manifest of
-{csv Position id -> photo_url, source_url}, never image bytes.
+{name -> photo_url, source_url}, never image bytes.
+
+Keyed by NAME, never by the CSV's position id: a position is a seat, not a
+person (1,002 changed occupant in a single year), so a position-keyed manifest
+serves the previous occupant's face as soon as the data rolls over. Where two
+people share one name, neither gets a photo -- nothing in the name says which
+of them is in the picture.
 
 Usage:
     python3 scripts/build_leadership_photos.py
@@ -22,6 +28,7 @@ Writes:
     data/leadership_photos.json
 """
 import csv
+from collections import Counter
 import json
 import re
 import time
@@ -36,8 +43,23 @@ except ImportError:
     raise SystemExit("pip3 install --user bs4")
 
 ROOT = Path(__file__).resolve().parent.parent
-CSV_PATH = ROOT / "personnel_data.csv"
 OUT_PATH = ROOT / "data" / "leadership_photos.json"
+
+
+def newest_salary_csv():
+    """The most recent reconciled year.
+
+    Matching against a stale year quietly rots the manifest: built against
+    2025-26 and read against 2026-27, 54 of its 317 photos belonged to people
+    who no longer work here.
+    """
+    files = sorted((ROOT / "data" / "by_year").glob("salaries_*.csv"))
+    if not files:
+        raise SystemExit("No data/by_year/salaries_*.csv -- run reconcile.py first.")
+    return files[-1]
+
+
+CSV_PATH = newest_salary_csv()
 
 UA = (
     "diepjustin.github.io-salary-search/1.0 "
@@ -83,6 +105,11 @@ GROUP_PATTERNS = {
     "dean": re.compile(r"^(Dean|Associate Dean|Assoc Dean)$", re.I),
     "athletic_director": re.compile(r"athletic director", re.I),
 }
+
+
+def load_all_rows():
+    """Every person in the newest reconciled year."""
+    return list(csv.DictReader(CSV_PATH.open(newline="", encoding="utf-8-sig")))
 
 
 def load_targets():
@@ -463,10 +490,31 @@ def main():
     for t in sorted(unmatched, key=lambda t: (t["campus"], t["group"], t["name"])):
         print(f"  [{t['group']:18}] {t['campus']:9} {t['name']}")
 
+    # Keyed by name, not by position id. A position is a seat: 1,002 of them
+    # changed occupant between 2024-25 and 2025-26, so a position-keyed photo
+    # file hands the new occupant the old one's face the moment the data rolls
+    # over. The page looks these up by name for the same reason.
+    #
+    # shared_names are the people this cannot safely serve at all: where two
+    # people hold one name, no photo can be attached to either, because there is
+    # nothing in the name to say which of them is in the picture. That is the
+    # Hoiberg rule -- a relative's photo on the wrong salary line -- and it is
+    # cheaper to show initials than to be confidently wrong.
+    shared_names = {
+        name
+        for name, n in Counter(r["Name"].strip() for r in load_all_rows()).items()
+        if n > 1
+    }
+
     manifest = {}
+    skipped_shared = 0
     for pos_id, info in found.items():
-        manifest[pos_id] = {
-            **targets[pos_id],
+        entry = targets[pos_id]
+        if entry["name"] in shared_names:
+            skipped_shared += 1
+            continue
+        manifest[entry["name"]] = {
+            **entry,
             "photo_url": info["photo_url"],
             "source_url": info["source_url"],
         }
@@ -541,9 +589,10 @@ def main():
     print(f"\nAthletics pass matched {len(athletics_found)} additional people")
     for pos_id, info in athletics_found.items():
         row = rows_by_position.get(pos_id)
-        if row is None:
+        if row is None or row["Name"].strip() in shared_names:
+            skipped_shared += row is not None
             continue
-        manifest[pos_id] = {
+        manifest[row["Name"].strip()] = {
             "name": row["Name"].strip(),
             "title": norm_title(row["Title"]),
             "campus": row["Campus"],
@@ -555,6 +604,7 @@ def main():
 
     OUT_PATH.parent.mkdir(exist_ok=True)
     OUT_PATH.write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
+    print(f"\nSkipped {skipped_shared} match(es) whose name is shared by two people")
     print(f"\nWrote {OUT_PATH} ({len(manifest)} total entries)")
 
 

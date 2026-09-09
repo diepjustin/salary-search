@@ -37,7 +37,17 @@ CURRENT_FIELDS = [
     "FTE",
     "Salary",
     "Years",
+    "Athletics",
 ]
+
+# Athletics is the 77xx cost-object block on every campus -- UNL 23-7701, UNO
+# 43-7701/7705/7710, UNK 53-7701/7702/7711/7712/7713. This is the only reliable
+# test. Department name fails: only UNL calls it "Athletics", while UNO and UNK
+# file staff under sport names (Football, Hockey, Volleyball, Training Room).
+# Job title fails worse -- the university employs an Early Childhood Coach, an
+# Academic Success Coach and a Trailblazer Program Job Coach, none of whom have
+# anything to do with sport.
+ATHLETICS_RE = re.compile(r"^\d\d-77\d\d")
 
 
 def to_int(text):
@@ -111,6 +121,15 @@ def main():
                     "FTE": newest["FTE"],
                     "Salary": newest["Salary"],
                     "Years": len(rows),
+                    # Their main appointment, not any athletics money they
+                    # happen to touch: the university's general counsel is paid
+                    # partly from an athletics cost object, and is not an
+                    # athletics employee.
+                    "Athletics": (
+                        "y"
+                        if ATHLETICS_RE.match(newest.get("Cost Center") or "")
+                        else ""
+                    ),
                 }
             )
 

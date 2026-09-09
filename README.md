@@ -40,6 +40,14 @@ python3 scripts/build_people.py        # join across years
 python3 scripts/build_site_data.py     # the files the page loads
 ```
 
+Headshots are a separate chain, run in this order because the second adds to the
+first one's file and never overwrites it:
+
+```bash
+python3 scripts/build_leadership_photos.py   # leadership + all athletics staff
+python3 scripts/build_unmc_photos.py         # UNMC faculty, ~10 min
+```
+
 `fetch_sources.py --verify` re-hashes local files against
 `data/source_manifest.json`, so a later re-fetch can be proven identical to the
 one that produced the committed CSVs.
@@ -164,6 +172,75 @@ Things that make a year-over-year comparison wrong, and what the page does:
   Neither is a move. UNL, IANR and NCTA are treated as one campus, because a
   UNL/IANR split is one employee.
 
+## Filtering athletics out
+
+The page has an Athletics control: include (default), exclude, or only. With
+athletics excluded the top of the list stops being a $6.4M football coach and
+becomes the university president at $1.06M.
+
+Athletics is decided by **cost object** — the `77xx` block, on every campus
+(UNL `23-7701`, UNO `43-7701/7705/7710`, UNK `53-7701/7702/7711/7712/7713`).
+That is 427 people in 2026-27.
+
+The two obvious tests are both wrong:
+
+* **Job title.** The university employs an Early Childhood Coach, an Academic
+  Success Coach and a Trailblazer Program Job Coach. 37 people have "coach" in
+  their title and nothing to do with sport.
+* **Department name.** Only UNL files them under a department called
+  "Athletics". UNO and UNK use sport names — Football, Hockey, Volleyball,
+  Training Room — which no keyword list catches reliably.
+
+A person's *primary* cost object decides it, not any athletics money they
+touch: the general counsel is paid partly from an athletics cost object and is
+not an athletics employee.
+
+## Headshots
+
+`data/leadership_photos.json` maps a name to a photo hosted by the university,
+hotlinked rather than copied. 1,499 of 12,588 people (12%) have one — UNMC 25%,
+UNL 6%, UNO 4%, UNK 5%.
+
+**Keyed by name, never by position number.** A position is a seat: 1,002
+changed occupant in a single year, so a position-keyed manifest starts serving
+the previous occupant's face the moment the data rolls over.
+
+Sources: each university's own leadership pages, the three athletics staff
+directories (huskers.com, lopers.com, omahamavs.com), and UNMC's department
+faculty listings, which embed a person record carrying first name, middle
+initial, surname and image URL as separate fields.
+
+### What has to agree before a photo is attached
+
+Three independent things, because a name alone is not enough:
+
+1. Surname exact, first name matching or a prefix ("J Bruce" for "Joseph
+   Bavitz"), and exactly one payroll person fitting.
+2. A word from the web page's job title also appearing in that person's payroll
+   title, department or unit. 1,149 of 1,157 UNMC matches cleared this.
+3. The image filename not naming somebody else. UNMC names these files after
+   their subject, so an unexplained surname is evidence — this is what caught
+   `krause1.jpg` being served on Monica Johnson's entry.
+
+And a photo is refused outright when **two employees share a name**, because
+nothing in the name says which of them is in the picture. That check has to run
+across all campuses, not one: `Gumenyuk, Valentina` is a UNMC assistant
+professor on $144,418 *and* a UNL dining services team leader on $49,870, and a
+UNMC-only check let the professor's face through onto the dining worker's row
+before this was caught.
+
+A shortened or changed surname is never bridged either. UNMC lists Michele
+Aizenberg; payroll says `Aizenberg Ansari, Michele R`. Probably the same
+person; "probably" gets initials.
+
+### A source that looks usable and is not
+
+UNL's directory at `directory.unl.edu` has a clean JSON API
+(`?q=<name>&format=json`) with an `imageURL` for every employee. **Every one of
+those URLs redirects to `default-avatar-100.jpeg`.** Taking the field at face
+value would put the same silhouette on 4,000 people and call them headshots.
+UNL photos here come from department and leadership pages instead.
+
 ## Relationship to Matt Waite's version
 
 Matt Waite publishes 2024-25 and 2025-26 at
@@ -186,3 +263,10 @@ person's cost-object lines rather than reporting one of them.
 * `personnel_data.csv` in this folder is the old single-year file the page used
   before this. It is superseded by `data/by_year/salaries_2025-2026.csv` and is
   no longer read by anything.
+* Headshot coverage is 12%, and uneven: UNMC is at 25% because its department
+  sites publish structured person lists, while UNL and UNO faculty photos live
+  on per-department pages that have not been mapped. UNL-IANR (1,330 people)
+  and NCTA have almost none.
+* The UNMC pass reads only listing pages whose URL ends in `/faculty/`,
+  `/staff/` and similar. A trial that also walked nested listings found ~200
+  more people; the tighter rule was kept because it is easier to reason about.

@@ -59,6 +59,7 @@ HISTORY_FIELDS = [
     "FTE",
     "Term",
     "Position",
+    "Cost Center",
     "Link",
 ]
 
@@ -109,6 +110,11 @@ def record(pid, name, year, row, link):
         "FTE": row.get("FTE", ""),
         "Term": row.get("Term", ""),
         "Position": row.get("Position", ""),
+        # Carried through because it is the only reliable way to tell who works
+        # in athletics: only UNL files them under a department called
+        # "Athletics", while UNO and UNK use sport names (Football, Hockey,
+        # Training Room). See build_site_data.ATHLETICS_RE.
+        "Cost Center": row.get("Cost Center", ""),
         "Link": link,
     }
 

@@ -109,7 +109,7 @@ table.history th, table.history td {
 table.history thead th { color: var(--muted-color); font-weight: 600; }
 table.history tbody th { font-weight: 600; text-align: left; }
 table.history td.delta { color: var(--muted-color); }
-.note { margin: .6rem 0 0; font-style: italic; }
+.hist-note { margin: .6rem 0 0; font-style: italic; color: var(--muted-color); }
 /* On narrow screens drop the secondary columns so the salary stays on screen;
    campus/department/FTE remain visible in the expandable row detail. */
 @media (max-width: 760px) {
@@ -142,6 +142,14 @@ table.history td.delta { color: var(--muted-color); }
   <div class="field narrow">
     <label for="campus">Campus</label>
     <select id="campus"><option value="">All campuses</option></select>
+  </div>
+  <div class="field narrow">
+    <label for="athletics">Athletics</label>
+    <select id="athletics">
+      <option value="">Include athletics</option>
+      <option value="exclude">Exclude athletics</option>
+      <option value="only">Athletics only</option>
+    </select>
   </div>
   <div class="field narrow">
     <label for="sort">Sort by</label>
@@ -194,6 +202,7 @@ table.history td.delta { color: var(--muted-color); }
   var all = [], view = [], shown = 0, years = [];
   var qEl = document.getElementById('q');
   var campusEl = document.getElementById('campus');
+  var athleticsEl = document.getElementById('athletics');
   var sortEl = document.getElementById('sort');
   var rowsEl = document.getElementById('rows');
   var summaryEl = document.getElementById('summary');
@@ -278,7 +287,10 @@ table.history td.delta { color: var(--muted-color); }
         salary: parseFloat((row[idx['Salary']] || '0').replace(/[^0-9.]/g, '')) || 0,
         // Key into the history shards; not shown.
         id: (row[idx['Person ID']] || '').trim(),
-        years: parseInt(row[idx['Years']], 10) || 1
+        years: parseInt(row[idx['Years']], 10) || 1,
+        // Athletics is decided by cost object upstream, not by job title: the
+        // university also employs an Early Childhood Coach and a Job Coach.
+        athletics: (row[idx['Athletics']] || '').trim() === 'y'
       };
       rec.key = (rec.name + ' ' + rec.campus + ' ' + rec.department + ' ' + rec.title).toLowerCase();
       recs.push(rec);
@@ -296,8 +308,11 @@ table.history td.delta { color: var(--muted-color); }
   function apply() {
     var terms = qEl.value.toLowerCase().split(/\s+/).filter(Boolean);
     var campus = campusEl.value;
+    var athletics = athleticsEl.value;
     view = all.filter(function (r) {
       if (campus && r.campus !== campus) return false;
+      if (athletics === 'exclude' && r.athletics) return false;
+      if (athletics === 'only' && !r.athletics) return false;
       for (var i = 0; i < terms.length; i++) {
         if (r.key.indexOf(terms[i]) === -1) return false;
       }
@@ -383,7 +398,7 @@ table.history td.delta { color: var(--muted-color); }
 
   function historyHtml(rows) {
     if (!rows || rows.length < 2) {
-      return '<p class="note">Only one year of records for this name.</p>';
+      return '<p class="hist-note">Only one year of records for this name.</p>';
     }
     // Title, campus, department and FTE are carried forward from the last year
     // that stated them; the payload only repeats them when they change.
@@ -418,7 +433,7 @@ table.history td.delta { color: var(--muted-color); }
       '<th scope="col">Department</th></tr></thead><tbody>' + html + '</tbody></table>' +
       // Without this a first row of 2019-2020 reads as a hire date, which it is
       // not: it is the first year this name was matched.
-      '<p class="note">Earliest year shown is the first year this name appears ' +
+      '<p class="hist-note">Earliest year shown is the first year this name appears ' +
       'in these records, not necessarily a hire date.</p>';
   }
 
@@ -469,6 +484,7 @@ table.history td.delta { color: var(--muted-color); }
     timer = setTimeout(apply, 120);
   });
   campusEl.addEventListener('change', apply);
+  athleticsEl.addEventListener('change', apply);
   sortEl.addEventListener('change', apply);
 
   // Leadership photos are a nice-to-have for a small subset of rows -- if
