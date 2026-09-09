@@ -1,0 +1,74 @@
+Year,Status,Count
+2010-2011,single-source,11160
+2011-2012,single-source,11081
+2012-2013,single-source,11214
+2013-2014,single-source,11287
+2014-2015,SALARY MISMATCH,1
+2014-2015,match,11318
+2014-2015,name repaired,1
+2014-2015,roster only,61
+2014-2015,shared name,21
+2014-2015,spreadsheet only,68
+2015-2016,SALARY MISMATCH,1
+2015-2016,match,11491
+2015-2016,roster only,3
+2015-2016,shared name,20
+2015-2016,spreadsheet only,10
+2016-2017,SALARY MISMATCH,2
+2016-2017,match,11708
+2016-2017,roster only,1
+2016-2017,shared name,22
+2016-2017,spreadsheet only,11
+2017-2018,SALARY MISMATCH,1
+2017-2018,match,12027
+2017-2018,name repaired,1
+2017-2018,roster only,3
+2017-2018,shared name,22
+2017-2018,spreadsheet only,14
+2018-2019,SALARY MISMATCH,1
+2018-2019,match,11912
+2018-2019,name repaired,3
+2018-2019,roster only,1
+2018-2019,shared name,24
+2018-2019,spreadsheet only,14
+2019-2020,SALARY MISMATCH,1
+2019-2020,match,12152
+2019-2020,name repaired,2
+2019-2020,roster only,2
+2019-2020,shared name,26
+2019-2020,spreadsheet only,15
+2020-2021,SALARY MISMATCH,2
+2020-2021,match,12499
+2020-2021,name repaired,2
+2020-2021,roster only,3
+2020-2021,shared name,18
+2020-2021,spreadsheet only,11
+2021-2022,SALARY MISMATCH,1
+2021-2022,match,12239
+2021-2022,name repaired,2
+2021-2022,roster only,1
+2021-2022,shared name,16
+2021-2022,spreadsheet only,10
+2022-2023,match,12365
+2022-2023,name repaired,3
+2022-2023,roster only,2
+2022-2023,shared name,18
+2022-2023,spreadsheet only,13
+2023-2024,match,12630
+2023-2024,name repaired,5
+2023-2024,shared name,16
+2023-2024,spreadsheet only,9
+2024-2025,match,12604
+2024-2025,name repaired,2
+2024-2025,roster only,1
+2024-2025,shared name,18
+2024-2025,spreadsheet only,11
+2025-2026,match,12771
+2025-2026,name repaired,3
+2025-2026,roster only,1
+2025-2026,shared name,20
+2025-2026,spreadsheet only,11
+2026-2027,match,12564
+2026-2027,name repaired,2
+2026-2027,shared name,22
+2026-2027,spreadsheet only,11

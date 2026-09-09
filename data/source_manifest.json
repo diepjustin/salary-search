@@ -1,0 +1,299 @@
+{
+ "generated": "2026-09-09",
+ "source_pages": [
+  "https://nebraska.edu/offices/business-finance/budget-and-planning/",
+  "https://nebraska.edu/offices/business-finance/budget-and-planning/budgeted-employees-as-of-july-1",
+  "https://nebraska.edu/offices/business-finance/budget-and-planning/archive"
+ ],
+ "unclaimed": [],
+ "files": [
+  {
+   "year": "2010-2011",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-vol-1-2010-11.pdf",
+   "file": "raw/2010-2011/personnel-roster-vol-1-2010-11.pdf",
+   "bytes": 1505982,
+   "sha256": "1afe278b6ed9c6d00a9b03cf99d5ba869eb183e76951442ae8ec915662666aba"
+  },
+  {
+   "year": "2010-2011",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-vol-2-2010-11.pdf",
+   "file": "raw/2010-2011/personnel-roster-vol-2-2010-11.pdf",
+   "bytes": 1900862,
+   "sha256": "6e9fc121a95e101b98f6b14f560d430a0ba4ef3c1d701be52c50ad1fef796b2d"
+  },
+  {
+   "year": "2010-2011",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-vol-3-2010-11.pdf",
+   "file": "raw/2010-2011/personnel-roster-vol-3-2010-11.pdf",
+   "bytes": 783016,
+   "sha256": "c035a96685fb010d3674ab5887b335cd3f8e76a48a2850a011729a895895a3e8"
+  },
+  {
+   "year": "2011-2012",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-vol-1-2011-12.pdf",
+   "file": "raw/2011-2012/personnel-roster-vol-1-2011-12.pdf",
+   "bytes": 1502562,
+   "sha256": "2b6ff7eb4c6ee530ddfa804659ac2e783ff41a63bedc42e195c5b157fa40c292"
+  },
+  {
+   "year": "2011-2012",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-vol-2-2011-12.pdf",
+   "file": "raw/2011-2012/personnel-roster-vol-2-2011-12.pdf",
+   "bytes": 1962172,
+   "sha256": "12cb6c3280ec578f4574974b013633fd5b696938589c8d27a00521cb272b774d"
+  },
+  {
+   "year": "2011-2012",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-vol-3-2011-12.pdf",
+   "file": "raw/2011-2012/personnel-roster-vol-3-2011-12.pdf",
+   "bytes": 787251,
+   "sha256": "ec5565a5fc7df4e44424bb6fc4ca58860570b6b2cc80efcc8abf906a48e3d1ce"
+  },
+  {
+   "year": "2012-2013",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-vol-1-2012-13.pdf",
+   "file": "raw/2012-2013/personnel-roster-vol-1-2012-13.pdf",
+   "bytes": 2089173,
+   "sha256": "38370e35800652bd629ebc6067f32d9207a41bc754e7002f3ccc807ead19820d"
+  },
+  {
+   "year": "2012-2013",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-vol-2-2012-13.pdf",
+   "file": "raw/2012-2013/personnel-roster-vol-2-2012-13.pdf",
+   "bytes": 2145545,
+   "sha256": "62a899ff3d11e4305a9c0763ed3f0fc741746c3788d95bb044d4a4b7fc25c2e5"
+  },
+  {
+   "year": "2012-2013",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-vol-3-2012-13.pdf",
+   "file": "raw/2012-2013/personnel-roster-vol-3-2012-13.pdf",
+   "bytes": 1266942,
+   "sha256": "dad5040e88b394bf04be3b221715ca31c4fdfdac587074245aad63992dbdafc1"
+  },
+  {
+   "year": "2013-2014",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-2013-14.pdf",
+   "file": "raw/2013-2014/personnel-roster-2013-14.pdf",
+   "bytes": 21316961,
+   "sha256": "ef818603e7715daa7dc6f11f30161020de2c345e6638e470180088c9d9bddf77"
+  },
+  {
+   "year": "2014-2015",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-2014-15.pdf",
+   "file": "raw/2014-2015/personnel-roster-2014-15.pdf",
+   "bytes": 36641418,
+   "sha256": "02def7f99cd1d122b12f254eeca8f086ab82c043f3e89e3bf0d182f828c0896c"
+  },
+  {
+   "year": "2014-2015",
+   "kind": "xlsx",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2015NUSalariesJuly1FY201415.xlsx",
+   "file": "raw/2014-2015/2015NUSalariesJuly1FY201415.xlsx",
+   "bytes": 721117,
+   "sha256": "b3044d88b965cf8a5261daec6be28c4fe2efd219d36f8627635fdcade127064c"
+  },
+  {
+   "year": "2015-2016",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-2015-16.pdf",
+   "file": "raw/2015-2016/personnel-roster-2015-16.pdf",
+   "bytes": 23093292,
+   "sha256": "228bc5b0964fa8318a4c091c5bd1dfa59da137b2889822a427872b898992277b"
+  },
+  {
+   "year": "2015-2016",
+   "kind": "xlsx",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2016NUSalariesJuly1FY201516.xlsx",
+   "file": "raw/2015-2016/2016NUSalariesJuly1FY201516.xlsx",
+   "bytes": 717804,
+   "sha256": "aa14083095bc4261589e06165cc15fc11dbffd73c75ab853aadb4150baf3553f"
+  },
+  {
+   "year": "2016-2017",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-2016-17.pdf",
+   "file": "raw/2016-2017/personnel-roster-2016-17.pdf",
+   "bytes": 13738816,
+   "sha256": "72dd5df82bf9fe628a895f46feddbb574efa1be2f650dacf6235076e930ec373"
+  },
+  {
+   "year": "2016-2017",
+   "kind": "xlsx",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2016-2017-Salaries.xlsx",
+   "file": "raw/2016-2017/2016-2017-Salaries.xlsx",
+   "bytes": 740320,
+   "sha256": "6f9c05b0c8f6f8f917d1a0d0a3a6ca999151956a5ffa3e18f3f82bdb7ec1a8c7"
+  },
+  {
+   "year": "2017-2018",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-2017-18.pdf",
+   "file": "raw/2017-2018/personnel-roster-2017-18.pdf",
+   "bytes": 8987069,
+   "sha256": "a12982bedfbfcb3591f6831aa4c23826e8afa2706cdad5b33e89cb4c6a8c7611"
+  },
+  {
+   "year": "2017-2018",
+   "kind": "xlsx",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2017-2018-Salaries.xlsx",
+   "file": "raw/2017-2018/2017-2018-Salaries.xlsx",
+   "bytes": 752465,
+   "sha256": "9cec8d802ed0f25b0b2a23f0266d1ee10a18e459c0d990ab131021a2896f6db9"
+  },
+  {
+   "year": "2018-2019",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-2018-19.pdf",
+   "file": "raw/2018-2019/personnel-roster-2018-19.pdf",
+   "bytes": 9955762,
+   "sha256": "e7874492fc947c206335c7d2869adcb1614bc60114d57a3cc1b9577557c43d5d"
+  },
+  {
+   "year": "2018-2019",
+   "kind": "xlsx",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2018-2019-Salaries.xlsx",
+   "file": "raw/2018-2019/2018-2019-Salaries.xlsx",
+   "bytes": 746979,
+   "sha256": "2b1c5d26ea24d868de0ce89748442c51a3f67172aaf2e2a3d58fec3190c785b0"
+  },
+  {
+   "year": "2019-2020",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-2019-20.pdf",
+   "file": "raw/2019-2020/personnel-roster-2019-20.pdf",
+   "bytes": 14460481,
+   "sha256": "67953ce4dc33d406ab16f625738180244a23d04e7930c687aca46be285381091"
+  },
+  {
+   "year": "2019-2020",
+   "kind": "xlsx",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2019-2020-Salaries.xlsx",
+   "file": "raw/2019-2020/2019-2020-Salaries.xlsx",
+   "bytes": 762787,
+   "sha256": "eff680083aed724850db461d55a92e84d4a1bd306027a53ae7a84007d2b3e74f"
+  },
+  {
+   "year": "2020-2021",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/personnel-roster-2020-21.pdf",
+   "file": "raw/2020-2021/personnel-roster-2020-21.pdf",
+   "bytes": 29714360,
+   "sha256": "0b8f57bb770017bda7c0dc420cf59f8d209ac3acbf45e9de2122c09dabe1d9b9"
+  },
+  {
+   "year": "2020-2021",
+   "kind": "xlsx",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2020_2021_Salaries.xlsx",
+   "file": "raw/2020-2021/2020_2021_Salaries.xlsx",
+   "bytes": 785204,
+   "sha256": "f2dbc7a775c7ac6c91c7f70eb01b1ad36233a0d73512c2000aab63bf07e1252e"
+  },
+  {
+   "year": "2021-2022",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2021-2022/Personnel%20Roster%202021-22.pdf",
+   "file": "raw/2021-2022/Personnel_Roster_2021-22.pdf",
+   "bytes": 12320969,
+   "sha256": "e51425d5d8c84c2f16e8a11be2495c8162639822cb09b8f2bebf00b816dc5f0f"
+  },
+  {
+   "year": "2021-2022",
+   "kind": "xlsx",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2021-2022/Budgeted%20Employees%20as%20of%20July%201%202021.xlsx",
+   "file": "raw/2021-2022/Budgeted_Employees_as_of_July_1_2021.xlsx",
+   "bytes": 775655,
+   "sha256": "22bb02e92307a117b75f8843bbddf1303779db916050dbb79f0daff4c11421bc"
+  },
+  {
+   "year": "2022-2023",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2022-2023/Personnel%20Roster%202022-2023.pdf",
+   "file": "raw/2022-2023/Personnel_Roster_2022-2023.pdf",
+   "bytes": 7800157,
+   "sha256": "77ed3278fa66810f7ac68eb9f5cf0f43db41472773649319cc83330694629c34"
+  },
+  {
+   "year": "2022-2023",
+   "kind": "xlsx",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2022-2023/Budgeted%20Employees%20as%20of%20July%201%202022.xlsx",
+   "file": "raw/2022-2023/Budgeted_Employees_as_of_July_1_2022.xlsx",
+   "bytes": 794565,
+   "sha256": "f367be4fae0cad67db35cfce3662c38d3f8186d3d0b6766a1d729a7f0e514611"
+  },
+  {
+   "year": "2023-2024",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2023-2024/Personnel%20Roster%202023-2024.pdf",
+   "file": "raw/2023-2024/Personnel_Roster_2023-2024.pdf",
+   "bytes": 18829574,
+   "sha256": "e8f3695965f8d1c1e647435400273f7ea58c6815d361bdf175b695a4733b8a5d"
+  },
+  {
+   "year": "2023-2024",
+   "kind": "xlsx",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2023-2024/Budgeted%20Employees%20as%20of%20July%201%202023.xlsx",
+   "file": "raw/2023-2024/Budgeted_Employees_as_of_July_1_2023.xlsx",
+   "bytes": 816992,
+   "sha256": "08e9ca07693c482d3113091bde9a99505c7576f6ddbc29235dcb1731994b7b0b"
+  },
+  {
+   "year": "2024-2025",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2024-2025/PERSONNEL_ROSTERS_2024_2025.pdf",
+   "file": "raw/2024-2025/PERSONNEL_ROSTERS_2024_2025.pdf",
+   "bytes": 11006817,
+   "sha256": "bd609fda220321616e3478064cdfdff057cd05e393f6f87e0ffda41bf450e7d6"
+  },
+  {
+   "year": "2024-2025",
+   "kind": "xlsx",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2024-2025/3%20Budgeted%20Employees%20as%20of%20July%201%202024.xlsx",
+   "file": "raw/2024-2025/3_Budgeted_Employees_as_of_July_1_2024.xlsx",
+   "bytes": 803363,
+   "sha256": "c4878977374d1af75c17c84b5e64fffd68913a4070f3fceffa5350d0b20ac175"
+  },
+  {
+   "year": "2025-2026",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2025-2026/PERSONNEL_ROSTERS_2025_2026.pdf",
+   "file": "raw/2025-2026/PERSONNEL_ROSTERS_2025_2026.pdf",
+   "bytes": 11624937,
+   "sha256": "e0be11373032478df4fb3fb5d525484ef260712d58421d84a56ec4b20f0b7629"
+  },
+  {
+   "year": "2025-2026",
+   "kind": "xlsx",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2025-2026/3%20Budgeted%20Employees%20as%20of%20July%201%202025.xlsx",
+   "file": "raw/2025-2026/3_Budgeted_Employees_as_of_July_1_2025.xlsx",
+   "bytes": 812423,
+   "sha256": "a452c6c2263ff7d8f49fc88ffd174a21eaeffa2f01422afe4aa9dd2a212d10a9"
+  },
+  {
+   "year": "2026-2027",
+   "kind": "roster",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2026-2027/PERSONNEL_ROSTERS_2026_2027.pdf",
+   "file": "raw/2026-2027/PERSONNEL_ROSTERS_2026_2027.pdf",
+   "bytes": 34182458,
+   "sha256": "b720f1f4d1937c14bfb8beec46d946273a78f69970ffaec46063411808956b08"
+  },
+  {
+   "year": "2026-2027",
+   "kind": "xlsx",
+   "url": "https://docs.nebraska.edu/unop/docs/Business%20and%20Finance/budget-salary/2026-2027/Budgeted%20Employees%20as%20of%20July%201%202026.xlsx",
+   "file": "raw/2026-2027/Budgeted_Employees_as_of_July_1_2026.xlsx",
+   "bytes": 795612,
+   "sha256": "3df47e69a5c6883bd6824cf6d17f23d137b1a7954fdb3c00d531b9be934159f9"
+  }
+ ]
+}

@@ -94,10 +94,26 @@ button.more {
 }
 button.more:hover { border-color: var(--link-color); color: var(--link-color); }
 footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-width: 65ch; }
+/* Salary history inside an expanded row. Its own scroll container so a wide
+   history never makes the whole page scroll sideways on a phone. */
+.hist { margin-top: .6rem; overflow-x: auto; }
+table.history { width: 100%; min-width: 30rem; border-collapse: collapse; }
+table.history caption {
+  text-align: left; font-weight: 600; color: var(--text-color);
+  padding-bottom: .3rem;
+}
+table.history th, table.history td {
+  padding: .3rem .5rem; border-bottom: 1px solid var(--border-color);
+  font-size: .82rem; white-space: nowrap;
+}
+table.history thead th { color: var(--muted-color); font-weight: 600; }
+table.history tbody th { font-weight: 600; text-align: left; }
+table.history td.delta { color: var(--muted-color); }
+.note { margin: .6rem 0 0; font-style: italic; }
 /* On narrow screens drop the secondary columns so the salary stays on screen;
-   campus/FTE remain visible in the expandable row detail. */
+   campus/department/FTE remain visible in the expandable row detail. */
 @media (max-width: 760px) {
-  .col-fte { display: none; }
+  .col-fte, .col-dept { display: none; }
 }
 @media (max-width: 560px) {
   body { padding: 1.25rem .75rem 3rem; }
@@ -146,6 +162,7 @@ footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-w
       <tr>
         <th class="sortable" data-key="name" scope="col">Name <span class="arrow"></span></th>
         <th class="col-campus" scope="col">Campus</th>
+        <th class="col-dept" scope="col">Department</th>
         <th scope="col">Title</th>
         <th class="num col-fte" scope="col">FTE</th>
         <th class="sortable num" data-key="salary" scope="col">Salary <span class="arrow"></span></th>
@@ -169,10 +186,12 @@ footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-w
 
 <script>
 (function () {
-  var SOURCE_FILE = 'personnel_data.csv';
+  var SOURCE_FILE = 'data/site/current.csv';
   var PHOTOS_FILE = 'data/leadership_photos.json';
+  var YEARS_FILE = 'data/site/years.json';
+  var HISTORY_DIR = 'data/site/history/';
   var PAGE = 100;
-  var all = [], view = [], shown = 0;
+  var all = [], view = [], shown = 0, years = [];
   var qEl = document.getElementById('q');
   var campusEl = document.getElementById('campus');
   var sortEl = document.getElementById('sort');
@@ -224,10 +243,14 @@ footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-w
   // deans, athletic directors, head coaches) -- hotlinked to each
   // university's own site, keyed by the CSV's Position id. Most rows have
   // no entry here; those get an initials placeholder instead.
-  var photosByPosition = {};
+  // Keyed by name, deliberately NOT by position number. A position is a seat,
+  // not a person -- 1,002 of them changed occupant between 2024-25 and 2025-26
+  // alone -- so looking a photo up by seat number shows the face of whoever
+  // used to hold the job. The manifest carries the name it was matched to.
+  var photosByName = {};
 
   function avatarHtml(r) {
-    var photo = photosByPosition[r.position];
+    var photo = photosByName[r.name];
     if (photo) {
       return '<img class="avatar-img" src="' + esc(photo.photo_url) + '" alt="" loading="lazy" ' +
         'referrerpolicy="no-referrer" ' +
@@ -249,13 +272,15 @@ footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-w
       var rec = {
         name: name,
         campus: (row[idx['Campus']] || '').trim(),
+        department: (row[idx['Department']] || '').trim(),
         title: (row[idx['Title']] || '').trim(),
         fte: (row[idx['FTE']] || '').trim(),
         salary: parseFloat((row[idx['Salary']] || '0').replace(/[^0-9.]/g, '')) || 0,
-        // internal-only join key for the leadership-photo manifest; never rendered
-        position: (row[idx['Position']] || '').trim()
+        // Key into the history shards; not shown.
+        id: (row[idx['Person ID']] || '').trim(),
+        years: parseInt(row[idx['Years']], 10) || 1
       };
-      rec.key = (rec.name + ' ' + rec.campus + ' ' + rec.title).toLowerCase();
+      rec.key = (rec.name + ' ' + rec.campus + ' ' + rec.department + ' ' + rec.title).toLowerCase();
       recs.push(rec);
     }
     return recs;
@@ -323,6 +348,7 @@ footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-w
         '<tr class="person" data-i="' + i + '" tabindex="0">' +
         '<td class="name"><span class="avatar">' + avatarHtml(r) + '</span>' + esc(r.name) + '</td>' +
         '<td class="col-campus">' + esc(r.campus) + '</td>' +
+        '<td class="col-dept">' + esc(r.department) + '</td>' +
         '<td>' + esc(r.title) + '</td>' +
         '<td class="num col-fte">' + esc(r.fte) + '</td>' +
         '<td class="num">' + money.format(r.salary) + '</td>' +
@@ -340,17 +366,79 @@ footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-w
     }
   }
 
+  // Salary histories are split into one file per surname initial and fetched
+  // only when a reader opens somebody, so nobody downloads 34,687 careers to
+  // look up one professor. Shards are cached for the life of the page.
+  var shardCache = {};
+
+  function loadHistory(name) {
+    var letter = /^[a-z]/i.test(name) ? name[0].toLowerCase() : '_';
+    if (!shardCache[letter]) {
+      shardCache[letter] = fetch(HISTORY_DIR + letter + '.json')
+        .then(function (res) { return res.ok ? res.json() : {}; })
+        .catch(function () { return {}; });
+    }
+    return shardCache[letter];
+  }
+
+  function historyHtml(rows) {
+    if (!rows || rows.length < 2) {
+      return '<p class="note">Only one year of records for this name.</p>';
+    }
+    // Title, campus, department and FTE are carried forward from the last year
+    // that stated them; the payload only repeats them when they change.
+    var title = '', campus = '', dept = '', fte = '';
+    var prev = null, prevFte = null;
+    var html = rows.map(function (e) {
+      if (e.length > 2) { title = e[2]; campus = e[3]; dept = e[4]; fte = e[5]; }
+      var salary = e[1], delta;
+      if (prev === null) {
+        // Nothing to compare the first year against.
+        delta = '';
+      } else if (fte !== prevFte) {
+        // Someone going from half-time to full-time is not getting a 100% pay
+        // rise, and printing one figure next to another would say they are.
+        delta = 'FTE changed';
+      } else {
+        delta = (salary - prev > 0 ? '+' : '') + money.format(salary - prev);
+      }
+      prev = salary;
+      prevFte = fte;
+      return '<tr><th scope="row">' + esc(years[e[0]] || '') + '</th>' +
+        '<td class="num">' + money.format(salary) + '</td>' +
+        '<td class="num delta">' + esc(delta) + '</td>' +
+        '<td class="num">' + esc(fte) + '</td>' +
+        '<td>' + esc(title) + '</td>' +
+        '<td>' + esc(dept || campus) + '</td></tr>';
+    }).join('');
+    return '<table class="history"><caption>Budgeted salary by year</caption>' +
+      '<thead><tr><th scope="col">Year</th><th class="num" scope="col">Salary</th>' +
+      '<th class="num" scope="col">Change</th><th class="num" scope="col">FTE</th>' +
+      '<th scope="col">Title</th>' +
+      '<th scope="col">Department</th></tr></thead><tbody>' + html + '</tbody></table>' +
+      // Without this a first row of 2019-2020 reads as a hire date, which it is
+      // not: it is the first year this name was matched.
+      '<p class="note">Earliest year shown is the first year this name appears ' +
+      'in these records, not necessarily a hire date.</p>';
+  }
+
   function toggleDetail(tr) {
     var next = tr.nextElementSibling;
     if (next && next.classList.contains('detail')) { next.remove(); return; }
     var r = view[+tr.dataset.i];
     var detail = document.createElement('tr');
     detail.className = 'detail';
-    detail.innerHTML = '<td colspan="5"><dl>' +
+    detail.innerHTML = '<td colspan="6"><dl>' +
       '<div><dt>Campus:</dt><dd>' + esc(r.campus || '—') + '</dd></div>' +
+      '<div><dt>Department:</dt><dd>' + esc(r.department || '—') + '</dd></div>' +
       '<div><dt>FTE:</dt><dd>' + esc(r.fte || '—') + '</dd></div>' +
-      '</dl></td>';
+      '</dl><div class="hist">Loading salary history…</div></td>';
     tr.after(detail);
+
+    var slot = detail.querySelector('.hist');
+    loadHistory(r.name).then(function (shard) {
+      slot.innerHTML = historyHtml(shard[r.id]);
+    });
   }
 
   rowsEl.addEventListener('click', function (e) {
@@ -388,15 +476,28 @@ footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-w
   // initials fallback instead of a broken page.
   var photosReady = fetch(PHOTOS_FILE)
     .then(function (res) { return res.ok ? res.json() : {}; })
-    .then(function (data) { photosByPosition = data; })
+    .then(function (data) {
+      Object.keys(data).forEach(function (k) {
+        if (data[k] && data[k].name) photosByName[data[k].name] = data[k];
+      });
+    })
     .catch(function () { /* no photos available; initials fallback covers it */ });
+
+  // The year labels the history tables are keyed by. Small, and needed before
+  // any row can be expanded.
+  var yearsReady = fetch(YEARS_FILE)
+    .then(function (res) { return res.ok ? res.json() : []; })
+    .then(function (data) { years = data; })
+    .catch(function () { years = []; });
 
   fetch(SOURCE_FILE)
     .then(function (res) {
       if (!res.ok) throw new Error('HTTP ' + res.status);
       return res.text();
     })
-    .then(function (text) { return photosReady.then(function () { return text; }); })
+    .then(function (text) {
+      return Promise.all([photosReady, yearsReady]).then(function () { return text; });
+    })
     .then(function (text) {
       all = build(parseCSV(text));
       var campuses = {};
@@ -408,7 +509,9 @@ footer { margin-top: 2.5rem; font-size: .82rem; color: var(--muted-color); max-w
         campusEl.appendChild(opt);
       });
       document.getElementById('source').textContent =
-        'Data: ' + count.format(all.length) + ' records from ' + SOURCE_FILE + '.';
+        'Data: ' + count.format(all.length) + ' budgeted employees for ' +
+        (years[years.length - 1] || 'the current year') +
+        (years.length > 1 ? ', with salary history back to ' + years[0] : '') + '.';
       apply();
     })
     .catch(function (err) {

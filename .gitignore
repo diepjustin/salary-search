@@ -1,0 +1,25 @@
+# Source documents downloaded by scripts/fetch_sources.py: ~250 MB of personnel
+# roster PDFs and budgeted-employee spreadsheets straight from nebraska.edu.
+# Reproducible from data/source_manifest.json, which IS committed and carries a
+# SHA-256 per file, so a re-fetch can be proven identical to the one that built
+# the CSVs. Same split as ne-campaign-finance: raw stays out, derived comes in.
+data/raw/
+
+# Intermediates. roster_* and appointments_* are each one source read on its
+# own; salaries_* is the reconciled result of the two and is what gets
+# committed. Regenerate with parse_roster_pdf.py / parse_xlsx.py -- about 30
+# minutes for all 17 years.
+data/by_year/roster_*.csv
+data/by_year/appointments_*.csv
+
+# The row-by-row reconciliation trail: 158,280 comparisons, 10 MB, and almost
+# all of it is rows recording that the two sources agreed. The interesting part
+# -- what disagreed and why -- is summarised in reconciliation_summary.csv,
+# which IS committed. Regenerate the detail with reconcile.py.
+data/reconciliation/recon_*.csv
+
+# 203,400 rows, 28 MB, and nothing in it that the committed files do not
+# already hold: it is the per-year salaries_*.csv stacked with a person id
+# attached. The page reads data/site/history/ instead, and people.csv carries
+# the one-row-per-person summary. Regenerate with build_people.py in seconds.
+data/salary_history.csv
