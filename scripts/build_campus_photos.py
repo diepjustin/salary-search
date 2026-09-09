@@ -173,6 +173,15 @@ IANR_DIRECTORIES = [
     "https://vbms.unl.edu/faculty/",
 ]
 
+# The system office publishes photos in two shapes: its own directory tags them
+# "<name> bio pic" / "<name> headshot", while the Buffett Institute writes a
+# whole bio sentence into the alt and puts the name in a nearby heading.
+NU_DIRECTORIES = [
+    "https://nebraska.edu/directory",
+    "https://buffettinstitute.nebraska.edu/about-us/our-people/index",
+]
+NU_ALT_SUFFIX = re.compile(r"\s*[-,]?\s*(bio pic|bio photo|headshot|portrait|photo)\s*$", re.I)
+
 # A generic silhouette stands in for anyone without a portrait. Serving one as
 # a headshot is the failure that directory.unl.edu invites -- every employee
 # there has an imageURL and every one redirects to default-avatar-100.jpeg -- so
@@ -322,6 +331,54 @@ def scrape_unk(html, page):
     return out
 
 
+def scrape_nu(html, page):
+    """The system office, in its two shapes.
+
+    Where the alt text is a name with a suffix ("Anne Barnes headshot") that is
+    the name. Where it is a paragraph of biography -- which is how the Buffett
+    Institute writes them -- the alt is useless as a name and the heading beside
+    the photo is used instead. Reading a name out of prose would be guessing.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    out = []
+    for img in soup.find_all("img", src=re.compile(r"/(people|staff)/", re.I)):
+        url = photo_src(img, page)
+        if not url:
+            continue
+        alt = (img.get("alt") or "").strip()
+        name = ""
+        if alt and len(alt) < 60 and NU_ALT_SUFFIX.search(alt):
+            name = NU_ALT_SUFFIX.sub("", alt).strip()
+        else:
+            node = img
+            for _ in range(5):
+                node = node.parent
+                if node is None:
+                    break
+                heading = node.find(["h1", "h2", "h3", "h4", "h5", "strong"])
+                if not heading:
+                    continue
+                text = re.sub(r"\s+", " ", heading.get_text(strip=True))
+                # Section labels sit in the same headings as names.
+                if text and not re.fullmatch(
+                    r"(executive office|our people|leadership|staff|team|directory)",
+                    text,
+                    re.I,
+                ):
+                    name = text
+                    break
+        if name:
+            out.append(
+                {
+                    "display": name,
+                    "photo": url,
+                    "context": card_text(img, 5, 40),
+                    "page": page,
+                }
+            )
+    return out
+
+
 def names_someone_else(payroll_name, image_url, display_name=""):
     """True when the image filename names a person who is not this one.
 
@@ -449,12 +506,14 @@ def main():
     unl_rows = [r for r in everyone if r["Campus"] in ("UNL", "UNL-IANR", "NCTA")]
     uno_rows = [r for r in everyone if r["Campus"] == "UNO"]
     unk_rows = [r for r in everyone if r["Campus"] == "UNK"]
+    nu_rows = [r for r in everyone if r["Campus"] == "NU System"]
 
     print("\nFetching directories...")
     unl_people = collect(UNL_DIRECTORIES, scrape_unl, "UNL")
     uno_people = collect(UNO_DIRECTORIES, scrape_uno, "UNO")
     unk_people = collect(UNK_DIRECTORIES, scrape_unk, "UNK")
     ianr_people = collect(IANR_DIRECTORIES, scrape_unl, "IANR")
+    nu_people = collect(NU_DIRECTORIES, scrape_nu, "NU System")
 
     matched = {}
     matched.update(match(unl_people, build_index(unl_rows), shared, "UNL", "unl_faculty"))
@@ -463,6 +522,7 @@ def main():
     # IANR people are indexed against the whole Lincoln payroll: the campus
     # label in the data splits UNL and UNL-IANR, but a department site does not.
     matched.update(match(ianr_people, build_index(unl_rows), shared, "IANR", "ianr_faculty"))
+    matched.update(match(nu_people, build_index(nu_rows), shared, "NU System", "nu_system"))
 
     manifest = json.loads(MANIFEST.read_text()) if MANIFEST.exists() else {}
     before = len(manifest)

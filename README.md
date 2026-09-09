@@ -46,7 +46,7 @@ first one's file and never overwrites it:
 ```bash
 python3 scripts/build_leadership_photos.py   # leadership + all athletics staff
 python3 scripts/build_unmc_photos.py         # UNMC faculty, ~10 min
-python3 scripts/build_campus_photos.py       # UNL, UNO, UNK and IANR faculty
+python3 scripts/build_campus_photos.py       # UNL, UNO, UNK, IANR, NU System
 python3 scripts/verify_photos.py             # drop anything that does not resolve
 ```
 
@@ -206,9 +206,9 @@ not an athletics employee.
 ## Headshots
 
 `data/leadership_photos.json` maps a name to a photo hosted by the university,
-hotlinked rather than copied. 2,670 of 12,588 people (21%) have one — NCTA 78%,
-UNMC 25%, UNL 23%, UNL-IANR 20%, UNO 14%, UNK 13%. Every URL in it has been
-fetched and confirmed to return an actual image.
+hotlinked rather than copied. 2,697 of 12,588 people (21%) have one — NCTA 78%,
+UNMC 25%, UNL 23%, UNL-IANR 20%, UNO 14%, UNK 13%, NU System 7%. Every URL in
+it has been fetched and confirmed to return an actual image.
 
 **Keyed by name, never by position number.** A position is a seat: 1,002
 changed occupant in a single year, so a position-keyed manifest starts serving
@@ -217,8 +217,9 @@ the previous occupant's face the moment the data rolls over.
 Sources: each university's own leadership pages, the three athletics staff
 directories (huskers.com, lopers.com, omahamavs.com), UNMC's department faculty
 listings (which embed a person record carrying first name, middle initial,
-surname and image URL as separate fields), and the department directories of
-UNL, UNO, UNK and IANR.
+surname and image URL as separate fields), the department directories of UNL,
+UNO, UNK and IANR, and the system office's own directory plus the Buffett Early
+Childhood Institute.
 
 None of those four publishes a usable sitemap or a central list of
 departments, so the directory URLs were found by crawling and are pinned in
@@ -312,6 +313,11 @@ person's cost-object lines rather than reporting one of them.
 * IANR's School of Natural Resources (78 people) runs a different CMS on
   `.aspx` pages with no photo markup this can read, so it is not scraped rather
   than badly scraped.
+* NU System sits at 7% because it is mostly back-office: 210 of its 469 people
+  are central IT, plus 36 in Procure-to-Pay and 34 in Facilities Planning, none
+  of whom publish portraits. ITS has no staff page at all. Its reachable
+  population is leadership and the Buffett Early Childhood Institute, and that
+  is what the 32 photos are.
 * The UNMC pass reads only listing pages whose URL ends in `/faculty/`,
   `/staff/` and similar. A trial that also walked nested listings found ~200
   more people; the tighter rule was kept because it is easier to reason about.
