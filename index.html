@@ -276,7 +276,7 @@ td.num.past { color: var(--muted-color); }
       return '<img class="avatar-img" src="' + esc(photo.photo_url) + '" alt="" loading="lazy" ' +
         'referrerpolicy="no-referrer" ' +
         'onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),' +
-        '{className:\'avatar-fallback\',textContent:' + JSON.stringify(initials(r.name)) + '}))">';
+        '{className:\'avatar-fallback\',textContent:' + esc(JSON.stringify(initials(r.name))) + '}))">';
     }
     return '<span class="avatar-fallback">' + esc(initials(r.name)) + '</span>';
   }
@@ -400,7 +400,7 @@ td.num.past { color: var(--muted-color); }
     for (var i = shown; i < stop; i++) {
       var r = view[i];
       html +=
-        '<tr class="person" data-i="' + i + '" tabindex="0">' +
+        '<tr class="person" data-i="' + i + '" tabindex="0" aria-expanded="false">' +
         '<td class="name"><span class="avatar">' + avatarHtml(r) + '</span>' + esc(r.name) +
           (r.linked
             ? (r.current ? '' : '<span class="left">left after ' + esc(r.lastYear) + '</span>')
@@ -483,7 +483,12 @@ td.num.past { color: var(--muted-color); }
 
   function toggleDetail(tr) {
     var next = tr.nextElementSibling;
-    if (next && next.classList.contains('detail')) { next.remove(); return; }
+    if (next && next.classList.contains('detail')) {
+      next.remove();
+      tr.setAttribute('aria-expanded', 'false');
+      return;
+    }
+    tr.setAttribute('aria-expanded', 'true');
     var r = view[+tr.dataset.i];
     var detail = document.createElement('tr');
     detail.className = 'detail';
