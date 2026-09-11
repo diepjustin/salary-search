@@ -1,0 +1,5 @@
+# pdfplumber pinned to 0.11.8, not the latest 0.11.10: newer releases pull in
+# Pillow>=12.2.0, which dropped Python 3.9 support. 0.11.8 is the newest
+# version whose dependency chain still installs cleanly on 3.9.
+pdfplumber==0.11.8
+openpyxl==3.1.5
