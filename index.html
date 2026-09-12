@@ -561,6 +561,13 @@ td.num.past { color: var(--ink-muted); }
         }).join('') + '</ul>'
       : '';
 
+    var sources = (c.source_pdfs || []).length
+      ? '<p class="hist-note">Source: ' + c.source_pdfs.map(function (s) {
+          return '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' +
+            esc(s.label) + ' (PDF)</a>';
+        }).join(', ') + '</p>'
+      : '';
+
     return '<div class="contract">' +
       '<h4>Employment contract' + (c.contract_type ? ': ' + esc(c.contract_type) : '') + '</h4>' +
       (c.stale
@@ -573,6 +580,7 @@ td.num.past { color: var(--ink-muted); }
       '<th scope="col">Note</th></tr></thead><tbody>' + rows + '</tbody></table>' +
       notable + bonuses + deferred +
       (c.name_note ? '<p class="hist-note">' + esc(c.name_note) + '</p>' : '') +
+      sources +
       '</div>';
   }
 
