@@ -150,6 +150,20 @@ table.history td.delta { color: var(--ink-muted); }
 td.num.past { color: var(--ink-muted); }
 .hint { font-style: italic; }
 .hist-note { margin: .6rem 0 0; font-style: italic; color: var(--ink-muted); }
+/* Employment-contract section for the small, hand-curated set of people it
+   exists for. Its own scroll container, same reasoning as .hist. */
+.contract { margin-top: .9rem; padding-top: .7rem; border-top: 1px dashed var(--paper-border); overflow-x: auto; }
+.contract h4 {
+  font-family: var(--font-serif); font-size: .82rem; text-transform: uppercase;
+  letter-spacing: .04em; color: var(--ink-black); margin: 0 0 .4rem;
+}
+.contract table.history td:last-child, .contract table.history th:last-child { white-space: normal; }
+.contract-notes { margin: .5rem 0 0; padding-left: 1.1rem; font-size: .82rem; color: var(--ink-charcoal); }
+.contract-notes li { margin-bottom: .3rem; }
+.stale-note {
+  background: #fdf1f1; border-left: 3px solid var(--red); color: var(--ink-charcoal);
+  padding: .5rem .65rem; margin: 0 0 .6rem; font-size: .82rem;
+}
 /* On narrow screens drop the secondary columns so the salary stays on screen;
    campus/department/FTE remain visible in the expandable row detail. */
 @media (max-width: 760px) {
@@ -266,8 +280,9 @@ td.num.past { color: var(--ink-muted); }
   var SOURCE_FILE = 'data/site/current.csv';
   var YEARS_FILE = 'data/site/years.json';
   var HISTORY_DIR = 'data/site/history/';
+  var CONTRACTS_FILE = 'data/contracts.json';
   var PAGE = 100;
-  var all = [], view = [], shown = 0, years = [];
+  var all = [], view = [], shown = 0, years = [], contracts = {};
   var qEl = document.getElementById('q');
   var campusEl = document.getElementById('campus');
   var athleticsEl = document.getElementById('athletics');
@@ -491,6 +506,61 @@ td.num.past { color: var(--ink-muted); }
       'can show a decrease here even while the person&rsquo;s pay is rising overall.</p>';
   }
 
+  var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+    'August', 'September', 'October', 'November', 'December'];
+
+  // Formats an ISO "YYYY-MM-DD" string without going through Date, which
+  // parses a bare date as UTC midnight and can print the wrong day in a
+  // negative-UTC-offset timezone.
+  function fmtDate(iso) {
+    if (!iso) return null;
+    var p = iso.split('-');
+    return MONTHS[+p[1] - 1] + ' ' + (+p[2]) + ', ' + p[0];
+  }
+
+  // A small, hand-curated set of employment contracts for a handful of head
+  // coaches and top administrators -- not the budget snapshot shown above,
+  // but the underlying agreement it is drawn from. See data/contracts.json.
+  function contractHtml(c) {
+    var rows = (c.salary_schedule || []).map(function (row) {
+      var from = fmtDate(row.from), to = fmtDate(row.to);
+      var range = from && to ? (from + ' &ndash; ' + to)
+        : to ? ('Through ' + to)
+        : from ? (from + ' onward')
+        : '';
+      return '<tr><td>' + range + '</td>' +
+        '<td class="num">' + money.format(row.amount) + '</td>' +
+        '<td>' + esc(row.note || '') + '</td></tr>';
+    }).join('');
+
+    var term = c.term_end
+      ? 'Through ' + fmtDate(c.term_end) + (c.term_end_note ? ' (' + esc(c.term_end_note) + ')' : '')
+      : 'No fixed end date stated in this document';
+    var effective = c.effective_date
+      ? fmtDate(c.effective_date) + (c.effective_date_note ? ' &mdash; ' + esc(c.effective_date_note) : '')
+      : '';
+
+    var notable = (c.notable || []).length
+      ? '<ul class="contract-notes">' + c.notable.map(function (n) {
+          return '<li>' + esc(n) + '</li>';
+        }).join('') + '</ul>'
+      : '';
+
+    return '<div class="contract">' +
+      '<h4>Employment contract' + (c.contract_type ? ': ' + esc(c.contract_type) : '') + '</h4>' +
+      (c.stale
+        ? '<p class="stale-note"><strong>Note:</strong> ' + esc(c.stale_note) + '</p>'
+        : '') +
+      '<p class="hist-note">Term: ' + term +
+        (effective ? ' &middot; Effective ' + effective : '') + '</p>' +
+      '<table class="history"><caption>Scheduled base salary, per the contract</caption>' +
+      '<thead><tr><th scope="col">Period</th><th class="num" scope="col">Base salary</th>' +
+      '<th scope="col">Note</th></tr></thead><tbody>' + rows + '</tbody></table>' +
+      notable +
+      (c.name_note ? '<p class="hist-note">' + esc(c.name_note) + '</p>' : '') +
+      '</div>';
+  }
+
   function toggleDetail(tr) {
     var next = tr.nextElementSibling;
     if (next && next.classList.contains('detail')) {
@@ -500,13 +570,15 @@ td.num.past { color: var(--ink-muted); }
     }
     tr.setAttribute('aria-expanded', 'true');
     var r = view[+tr.dataset.i];
+    var contract = contracts[r.name];
     var detail = document.createElement('tr');
     detail.className = 'detail';
     detail.innerHTML = '<td colspan="6"><dl>' +
       '<div><dt>Campus:</dt><dd>' + esc(r.campus || '—') + '</dd></div>' +
       '<div><dt>Department:</dt><dd>' + esc(r.department || '—') + '</dd></div>' +
       '<div><dt>FTE:</dt><dd>' + esc(r.fte || '—') + '</dd></div>' +
-      '</dl><div class="hist">Loading salary history…</div></td>';
+      '</dl>' + (contract ? contractHtml(contract) : '') +
+      '<div class="hist">Loading salary history…</div></td>';
     tr.after(detail);
 
     var slot = detail.querySelector('.hist');
@@ -554,13 +626,21 @@ td.num.past { color: var(--ink-muted); }
     .then(function (data) { years = data; })
     .catch(function () { years = []; });
 
+  // A small, hand-curated set of employment contracts for a handful of head
+  // coaches and top administrators -- a nice-to-have for those rows, so a
+  // missing or failed fetch just means nobody sees a contract section.
+  var contractsReady = fetch(CONTRACTS_FILE)
+    .then(function (res) { return res.ok ? res.json() : {}; })
+    .then(function (data) { contracts = data; })
+    .catch(function () { contracts = {}; });
+
   fetch(SOURCE_FILE)
     .then(function (res) {
       if (!res.ok) throw new Error('HTTP ' + res.status);
       return res.text();
     })
     .then(function (text) {
-      return yearsReady.then(function () { return text; });
+      return Promise.all([yearsReady, contractsReady]).then(function () { return text; });
     })
     .then(function (text) {
       all = build(parseCSV(text));

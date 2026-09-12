@@ -1,0 +1,279 @@
+{
+  "Rhule, Matthew K": {
+    "name": "Rhule, Matthew K",
+    "title": "Head Coach-Football",
+    "campus": "UNL",
+    "contract_type": "First Amended and Restated Employment Agreement",
+    "term_end": "2033-01-31",
+    "term_end_note": "or the last day of the 2032-33 season, whichever is later",
+    "salary_schedule": [
+      {"from": "2025-01-01", "to": "2025-10-29", "amount": 7500000},
+      {"from": "2025-10-30", "to": "2026-03-31", "amount": 8500000},
+      {"from": "2026-04-01", "to": "2026-12-31", "amount": 6375000, "note": "annualized rate for this partial period"},
+      {"from": "2027-01-01", "to": "2027-12-31", "amount": 7500000},
+      {"from": "2028-01-01", "to": "2028-12-31", "amount": 8625000},
+      {"from": "2029-01-01", "to": "2029-12-31", "amount": 9000000},
+      {"from": "2030-01-01", "to": "2030-12-31", "amount": 9375000},
+      {"from": "2031-01-01", "to": "2031-12-31", "amount": 9375000},
+      {"from": "2032-01-01", "to": "2033-01-31", "amount": 9375000}
+    ],
+    "notable": [
+      "Base salary rises by $1,000,000 for the rest of the contract each time the team first qualifies for the College Football Playoff",
+      "Three $1,000,000 retention bonuses if still employed on March 1, 2027, March 1, 2029, and December 31, 2030",
+      "Up to $7,000,000 of the assistant-coach salary pool is budgeted separately and does not count toward Rhule's own pay"
+    ],
+    "stale": false
+  },
+  "Dannen, Troy A": {
+    "name": "Dannen, Troy A",
+    "title": "Athletic Director",
+    "campus": "UNL",
+    "contract_type": "Employment Agreement",
+    "effective_date": "2024-03-22",
+    "term_end": "2030-03-31",
+    "salary_schedule": [
+      {"from": "2024-03-22", "to": "2025-03-31", "amount": 1600000},
+      {"from": "2025-04-01", "to": "2026-03-31", "amount": 1700000},
+      {"from": "2026-04-01", "to": "2027-03-31", "amount": 1800000},
+      {"from": "2027-04-01", "to": "2028-03-31", "amount": 1900000},
+      {"from": "2028-04-01", "to": "2029-03-31", "amount": 2000000},
+      {"from": "2029-04-01", "to": "2030-03-31", "amount": 2100000}
+    ],
+    "notable": [
+      "$1,000,000 signing bonus paid by May 31, 2024",
+      "University committed $1,500,000 toward the cost of terminating the previous Athletic Director's contract",
+      "If Dannen resigns early, he owes the University a declining liquidated-damages payment (from $12,200,000 down to $0 by the end of the term)"
+    ],
+    "stale": false
+  },
+  "Hoiberg, Fredrick K": {
+    "name": "Hoiberg, Fredrick K",
+    "title": "Head Coach-Basketball",
+    "campus": "UNL",
+    "contract_type": "Second Amended and Restated Employment Agreement",
+    "term_end": "2032-03-31",
+    "term_end_note": "or the last day of the 2031-32 season, whichever is later",
+    "salary_schedule": [
+      {"from": null, "to": "2026-03-31", "amount": 4350000, "note": "before the current amendment's escalation begins"},
+      {"from": "2026-04-01", "to": "2027-03-31", "amount": 5000000},
+      {"from": "2027-04-01", "to": "2028-03-31", "amount": 5100000},
+      {"from": "2028-04-01", "to": "2029-03-31", "amount": 5200000},
+      {"from": "2029-04-01", "to": "2030-03-31", "amount": 5300000},
+      {"from": "2030-04-01", "to": "2031-03-31", "amount": 5400000},
+      {"from": "2031-04-01", "to": "2032-03-31", "amount": 5500000}
+    ],
+    "notable": [
+      "Includes retention (\"stay\") bonuses and performance bonuses defined in a separate appendix",
+      "If Hoiberg resigns early, he owes a declining liquidated-damages payment (from $8,000,000 down to $0 by the end of the term)"
+    ],
+    "stale": false
+  },
+  "Bolt, William E": {
+    "name": "Bolt, William E",
+    "title": "Head Coach-Baseball",
+    "campus": "UNL",
+    "contract_type": "Second Amended and Restated Employment Agreement",
+    "term_end": "2032-06-30",
+    "term_end_note": "or the last day of the 2031-32 season, whichever is later",
+    "salary_schedule": [
+      {"from": null, "to": "2027-06-30", "amount": 650000},
+      {"from": "2027-07-01", "to": "2028-06-30", "amount": 670000},
+      {"from": "2028-07-01", "to": "2029-06-30", "amount": 690000},
+      {"from": "2029-07-01", "to": "2030-06-30", "amount": 710000},
+      {"from": "2030-07-01", "to": "2031-06-30", "amount": 730000},
+      {"from": "2031-07-01", "to": "2032-06-30", "amount": 750000}
+    ],
+    "notable": [],
+    "stale": false
+  },
+  "Williams, Amy M": {
+    "name": "Williams, Amy M",
+    "title": "Head Coach-Women's Basketball",
+    "campus": "UNL",
+    "contract_type": "Second Amended and Restated Employment Agreement",
+    "effective_date": "2024-03-20",
+    "term_end": "2029-04-30",
+    "salary_schedule": [
+      {"from": "2024-03-20", "to": "2024-04-30", "amount": 715000},
+      {"from": "2024-05-01", "to": "2025-04-30", "amount": 950000},
+      {"from": "2025-05-01", "to": "2026-04-30", "amount": 975000},
+      {"from": "2026-05-01", "to": "2027-04-30", "amount": 1000000},
+      {"from": "2027-05-01", "to": "2028-04-30", "amount": 1025000},
+      {"from": "2028-05-01", "to": "2029-04-30", "amount": 1050000}
+    ],
+    "notable": [],
+    "stale": false
+  },
+  "Busboom, Danielle B": {
+    "name": "Busboom, Danielle B",
+    "title": "Head Coach-Volleyball",
+    "campus": "UNL",
+    "contract_type": "Employment Agreement",
+    "name_note": "Contract is signed as \"Danielle Busboom-Kelly\"; budget records file her under \"Busboom\" alone",
+    "term_end": null,
+    "salary_schedule": [
+      {"from": null, "to": "2026-01-31", "amount": 700000},
+      {"from": "2026-02-01", "to": "2027-01-31", "amount": 725000},
+      {"from": "2027-02-01", "to": "2028-01-31", "amount": 750000},
+      {"from": "2028-02-01", "to": "2029-01-31", "amount": 775000},
+      {"from": "2029-02-01", "to": "2030-01-31", "amount": 800000},
+      {"from": "2030-02-01", "to": "2031-01-31", "amount": 825000}
+    ],
+    "notable": [
+      "Base salary rises $25,000 for each additional year the contract is automatically extended"
+    ],
+    "stale": false
+  },
+  "Revelle, Rhonda": {
+    "name": "Revelle, Rhonda",
+    "title": "Head Coach-Softball",
+    "campus": "UNL",
+    "contract_type": "Employment Agreement",
+    "effective_date": "2026-07-01",
+    "effective_date_note": "a new agreement, not yet in effect as of the current budget snapshot",
+    "term_end": "2031-06-30",
+    "salary_schedule": [
+      {"from": "2026-07-01", "to": "2027-06-30", "amount": 375000},
+      {"from": "2027-07-01", "to": "2028-06-30", "amount": 385000},
+      {"from": "2028-07-01", "to": "2029-06-30", "amount": 395000},
+      {"from": "2029-07-01", "to": "2030-06-30", "amount": 405000},
+      {"from": "2030-07-01", "to": "2031-06-30", "amount": 415000}
+    ],
+    "notable": [],
+    "stale": false
+  },
+  "Carey, Jamie I": {
+    "name": "Carey, Jamie I",
+    "title": "Head Coach, Women's Basketball",
+    "campus": "UNO",
+    "contract_type": "Employment Agreement",
+    "term_end": "2030-03-31",
+    "salary_schedule": [
+      {"from": null, "to": "2030-03-31", "amount": 200000}
+    ],
+    "notable": [
+      "If Carey resigns early, she owes the University a declining liquidated-damages payment (from $450,000 down to $75,000 by the end of the term)"
+    ],
+    "stale": false
+  },
+  "Crutchfield, Chris": {
+    "name": "Crutchfield, Chris",
+    "title": "Head Coach, Men's Basketball",
+    "campus": "UNO",
+    "contract_type": "First Amended and Restated Employment Agreement",
+    "term_end": "2030-04-30",
+    "term_end_note": "extendable one year for a Conference Tournament title or NCAA Tournament berth",
+    "salary_schedule": [
+      {"from": null, "to": "2025-03-31", "amount": 275000},
+      {"from": "2025-04-01", "to": "2026-04-30", "amount": 335000},
+      {"from": "2026-05-01", "to": "2027-04-30", "amount": 345000},
+      {"from": "2027-05-01", "to": "2028-04-30", "amount": 345000},
+      {"from": "2028-05-01", "to": "2029-04-30", "amount": 345000}
+    ],
+    "notable": [
+      "$20,000 signing bonus",
+      "Base salary rises up to $30,000 more for each year the contract is automatically extended by tournament results"
+    ],
+    "stale": false
+  },
+  "Gabinet, Michael C": {
+    "name": "Gabinet, Michael C",
+    "title": "Head Coach, Hockey",
+    "campus": "UNO",
+    "contract_type": "Third Amended and Restated Employment Agreement",
+    "effective_date": "2023-01-03",
+    "term_end": "2028-04-30",
+    "salary_schedule": [
+      {"from": "2023-01-03", "to": "2024-08-31", "amount": 271256},
+      {"from": "2024-09-01", "to": "2028-04-30", "amount": 365000}
+    ],
+    "notable": [],
+    "stale": false
+  },
+  "Heard, Michael N": {
+    "name": "Heard, Michael N",
+    "title": "Head Coach, Softball",
+    "campus": "UNO",
+    "contract_type": "Third Amended and Restated Employment Agreement",
+    "effective_date": "2025-05-27",
+    "term_end": "2030-05-31",
+    "salary_schedule": [
+      {"from": "2025-07-01", "to": "2030-05-31", "amount": 125000}
+    ],
+    "notable": [
+      "Includes a University-provided cellphone and an annually provided automobile for personal use"
+    ],
+    "stale": false
+  },
+  "Dowell Jr, Adrian E": {
+    "name": "Dowell Jr, Adrian E",
+    "title": "Vice Chancellor & Director of Athletics",
+    "campus": "UNO",
+    "contract_type": "Restated Employment Agreement",
+    "effective_date": "2024-07-01",
+    "term_end": "2028-11-30",
+    "salary_schedule": [
+      {"from": "2024-07-01", "to": "2028-11-30", "amount": 350000}
+    ],
+    "notable": [],
+    "stale": false
+  },
+  "Gold, Jeffrey P": {
+    "name": "Gold, Jeffrey P",
+    "title": "President",
+    "campus": "NU System",
+    "contract_type": "Contract of Employment",
+    "effective_date": "2024-07-01",
+    "term_end": "2029-06-30",
+    "salary_schedule": [
+      {"from": "2024-07-01", "to": "2029-06-30", "amount": 1062573}
+    ],
+    "notable": [],
+    "stale": false
+  },
+  "Schnoor, Neal H": {
+    "name": "Schnoor, Neal H",
+    "title": "Chancellor",
+    "campus": "UNK",
+    "contract_type": "Contract of Employment",
+    "effective_date": "2025-07-01",
+    "term_end": "2028-06-30",
+    "term_end_note": "initial term; extendable by mutual written agreement",
+    "salary_schedule": [
+      {"from": "2025-07-01", "to": "2028-06-30", "amount": 355000}
+    ],
+    "notable": [],
+    "stale": false
+  },
+  "Bauer, Marc D": {
+    "name": "Bauer, Marc D",
+    "title": "Athletic Director",
+    "campus": "UNK",
+    "contract_type": "Employment Agreement",
+    "effective_date": "2019-05-01",
+    "term_end": null,
+    "salary_schedule": [
+      {"from": "2019-05-01", "to": null, "amount": 137000}
+    ],
+    "notable": [],
+    "stale": true,
+    "stale_note": "Contract on file is the original 2019 hire letter ($137,000 base salary, no stated end date). Current budgeted salary is $156,509, so a later raise or amendment exists that is not in this document."
+  },
+  "Li, Joanne W": {
+    "name": "Li, Joanne W",
+    "title": "Chancellor",
+    "campus": "UNO",
+    "contract_type": "Contract of Employment",
+    "effective_date": "2021-07-01",
+    "term_end": null,
+    "salary_schedule": [
+      {"from": "2021-06-01", "to": "2021-06-30", "amount": 430000, "note": "as Chancellor-Elect"},
+      {"from": "2021-07-01", "to": null, "amount": 440000, "note": "raised effective the following July 1 per the contract's own terms"}
+    ],
+    "notable": [
+      "A separate Deferred Compensation Agreement on file vests in stages tied to years served as Chancellor"
+    ],
+    "stale": true,
+    "stale_note": "Contract on file is from 2021 ($430,000-440,000 base salary). Current budgeted salary is $689,969, so at least one later restated contract exists that is not in this document."
+  }
+}
