@@ -155,8 +155,9 @@ td.num.past { color: var(--ink-muted); }
 .contract { margin-top: .9rem; padding-top: .7rem; border-top: 1px dashed var(--paper-border); overflow-x: auto; }
 .contract h4 {
   font-family: var(--font-serif); font-size: .82rem; text-transform: uppercase;
-  letter-spacing: .04em; color: var(--ink-black); margin: 0 0 .4rem;
+  letter-spacing: .04em; color: var(--ink-black); margin: .9rem 0 .4rem;
 }
+.contract h4:first-child { margin-top: 0; }
 .contract table.history td:last-child, .contract table.history th:last-child { white-space: normal; }
 .contract-notes { margin: .5rem 0 0; padding-left: 1.1rem; font-size: .82rem; color: var(--ink-charcoal); }
 .contract-notes li { margin-bottom: .3rem; }
@@ -546,6 +547,20 @@ td.num.past { color: var(--ink-muted); }
         }).join('') + '</ul>'
       : '';
 
+    var bonuses = (c.bonuses || []).length
+      ? '<h4>Potential bonuses</h4><ul class="contract-notes">' + c.bonuses.map(function (n) {
+          return '<li>' + esc(n) + '</li>';
+        }).join('') + '</ul>'
+      : '';
+
+    var deferred = c.deferred_compensation
+      ? '<h4>Deferred compensation</h4>' +
+        '<p class="hist-note">' + esc(c.deferred_compensation.summary) + '</p>' +
+        '<ul class="contract-notes">' + (c.deferred_compensation.vesting || []).map(function (n) {
+          return '<li>' + esc(n) + '</li>';
+        }).join('') + '</ul>'
+      : '';
+
     return '<div class="contract">' +
       '<h4>Employment contract' + (c.contract_type ? ': ' + esc(c.contract_type) : '') + '</h4>' +
       (c.stale
@@ -556,7 +571,7 @@ td.num.past { color: var(--ink-muted); }
       '<table class="history"><caption>Scheduled base salary, per the contract</caption>' +
       '<thead><tr><th scope="col">Period</th><th class="num" scope="col">Base salary</th>' +
       '<th scope="col">Note</th></tr></thead><tbody>' + rows + '</tbody></table>' +
-      notable +
+      notable + bonuses + deferred +
       (c.name_note ? '<p class="hist-note">' + esc(c.name_note) + '</p>' : '') +
       '</div>';
   }

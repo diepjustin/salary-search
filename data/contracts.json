@@ -17,9 +17,12 @@
       {"from": "2031-01-01", "to": "2031-12-31", "amount": 9375000},
       {"from": "2032-01-01", "to": "2033-01-31", "amount": 9375000}
     ],
-    "notable": [
-      "Base salary rises by $1,000,000 for the rest of the contract each time the team first qualifies for the College Football Playoff",
+    "bonuses": [
       "Three $1,000,000 retention bonuses if still employed on March 1, 2027, March 1, 2029, and December 31, 2030",
+      "Base salary rises by $1,000,000 for the rest of the contract each time the team first qualifies for the College Football Playoff, rather than a separate payout",
+      "Additional performance bonus criteria are set out in a bonus appendix not included in this document"
+    ],
+    "notable": [
       "Up to $7,000,000 of the assistant-coach salary pool is budgeted separately and does not count toward Rhule's own pay"
     ],
     "stale": false
@@ -39,8 +42,11 @@
       {"from": "2028-04-01", "to": "2029-03-31", "amount": 2000000},
       {"from": "2029-04-01", "to": "2030-03-31", "amount": 2100000}
     ],
-    "notable": [
+    "bonuses": [
       "$1,000,000 signing bonus paid by May 31, 2024",
+      "Eligible for performance bonuses tied to student-athlete and team academic/athletic achievement; specific criteria are set out in a bonus appendix not included in this document"
+    ],
+    "notable": [
       "University committed $1,500,000 toward the cost of terminating the previous Athletic Director's contract",
       "If Dannen resigns early, he owes the University a declining liquidated-damages payment (from $12,200,000 down to $0 by the end of the term)"
     ],
@@ -62,8 +68,12 @@
       {"from": "2030-04-01", "to": "2031-03-31", "amount": 5400000},
       {"from": "2031-04-01", "to": "2032-03-31", "amount": 5500000}
     ],
+    "bonuses": [
+      "Big Ten regular-season or tournament championship: $100,000",
+      "NCAA Tournament: $150,000 for making the field, plus $30,000 (Round of 32), $40,000 (Round of 16), $55,000 (Elite Eight), $75,000 (Final Four), or $300,000 (national champion) -- highest tier only, not cumulative",
+      "Also eligible for retention (\"stay\") bonuses defined in a separate appendix not included in this document"
+    ],
     "notable": [
-      "Includes retention (\"stay\") bonuses and performance bonuses defined in a separate appendix",
       "If Hoiberg resigns early, he owes a declining liquidated-damages payment (from $8,000,000 down to $0 by the end of the term)"
     ],
     "stale": false
@@ -83,6 +93,9 @@
       {"from": "2030-07-01", "to": "2031-06-30", "amount": 730000},
       {"from": "2031-07-01", "to": "2032-06-30", "amount": 750000}
     ],
+    "bonuses": [
+      "Bonus is a percentage of that year's base salary, highest tier only: Conference Championship 15%, Postseason Selection 5%, Postseason Advancement to the Round of 16 10%, Postseason Finals (Top 8) 20%, National Champion 25%"
+    ],
     "notable": [],
     "stale": false
   },
@@ -101,6 +114,9 @@
       {"from": "2027-05-01", "to": "2028-04-30", "amount": 1025000},
       {"from": "2028-05-01", "to": "2029-04-30", "amount": 1050000}
     ],
+    "bonuses": [
+      "Eligible for performance bonuses; specific criteria are set out in a bonus appendix not included in this document"
+    ],
     "notable": [],
     "stale": false
   },
@@ -118,6 +134,11 @@
       {"from": "2028-02-01", "to": "2029-01-31", "amount": 775000},
       {"from": "2029-02-01", "to": "2030-01-31", "amount": 800000},
       {"from": "2030-02-01", "to": "2031-01-31", "amount": 825000}
+    ],
+    "bonuses": [
+      "$50,000 for winning or co-winning the Big Ten Championship",
+      "$100,000 if named national Coach of the Year",
+      "$50,000 (Final Four) or $100,000 (national champion) for NCAA Tournament results -- highest tier only, not cumulative"
     ],
     "notable": [
       "Base salary rises $25,000 for each additional year the contract is automatically extended"
@@ -139,6 +160,9 @@
       {"from": "2029-07-01", "to": "2030-06-30", "amount": 405000},
       {"from": "2030-07-01", "to": "2031-06-30", "amount": 415000}
     ],
+    "bonuses": [
+      "Bonus is a percentage of that year's base salary, highest tier only: Conference Championship 15%, Postseason Selection 5%, Postseason Advancement 10%, Postseason Finals 20%, National Champion 25%"
+    ],
     "notable": [],
     "stale": false
   },
@@ -150,6 +174,9 @@
     "term_end": "2030-03-31",
     "salary_schedule": [
       {"from": null, "to": "2030-03-31", "amount": 200000}
+    ],
+    "bonuses": [
+      "Eligible for performance bonuses; specific criteria are set out in a bonus appendix not included in this document"
     ],
     "notable": [
       "If Carey resigns early, she owes the University a declining liquidated-damages payment (from $450,000 down to $75,000 by the end of the term)"
@@ -170,8 +197,11 @@
       {"from": "2027-05-01", "to": "2028-04-30", "amount": 345000},
       {"from": "2028-05-01", "to": "2029-04-30", "amount": 345000}
     ],
-    "notable": [
+    "bonuses": [
       "$20,000 signing bonus",
+      "Eligible for performance bonuses; specific criteria are set out in a bonus appendix not included in this document"
+    ],
+    "notable": [
       "Base salary rises up to $30,000 more for each year the contract is automatically extended by tournament results"
     ],
     "stale": false
@@ -187,6 +217,9 @@
       {"from": "2023-01-03", "to": "2024-08-31", "amount": 271256},
       {"from": "2024-09-01", "to": "2028-04-30", "amount": 365000}
     ],
+    "bonuses": [
+      "Eligible for performance bonuses; specific criteria are set out in a bonus appendix not included in this document"
+    ],
     "notable": [],
     "stale": false
   },
@@ -199,6 +232,16 @@
     "term_end": "2030-05-31",
     "salary_schedule": [
       {"from": "2025-07-01", "to": "2030-05-31", "amount": 125000}
+    ],
+    "bonuses": [
+      "$4,000 for winning or tying the regular-season conference championship",
+      "$6,000 for winning the conference tournament championship",
+      "$6,000 for an NCAA Tournament at-large berth",
+      "$3,000 for each NCAA Tournament win",
+      "$5,000 if named conference Coach of the Year",
+      "$7,500 for reaching the NCAA Super Regionals",
+      "$15,000 for reaching the Women's College World Series",
+      "All performance bonuses combined are capped at $50,000 per season"
     ],
     "notable": [
       "Includes a University-provided cellphone and an annually provided automobile for personal use"
@@ -215,6 +258,13 @@
     "salary_schedule": [
       {"from": "2024-07-01", "to": "2028-11-30", "amount": 350000}
     ],
+    "bonuses": [
+      "$10,000 one-time bonus on signing, covering the 2023-24 academic year's team-success bonus",
+      "Up to $10,000 if the athletic department's two-year Academic Progress Rate exceeds 970 or its Graduation Success Rate is at least 80%",
+      "$5,000 for each department team (of eight tracked) that wins its conference's regular-season or tournament championship, or earns an NCAA postseason berth, in a year",
+      "$1,000 for each NCAA postseason tournament win by a department team",
+      "All bonuses are conditioned on the department's Division I programs meeting the NCAA's minimum Academic Progress Rate"
+    ],
     "notable": [],
     "stale": false
   },
@@ -228,6 +278,16 @@
     "salary_schedule": [
       {"from": "2024-07-01", "to": "2029-06-30", "amount": 1062573}
     ],
+    "bonuses": [],
+    "deferred_compensation": {
+      "summary": "University credits 11.5% of Gold's annual base salary each Contract Year to a University-owned \"Chancellor Gold Deferred Compensation Account,\" continuing an account opened under a 2014 agreement",
+      "vesting": [
+        "Amounts already in the account as of the effective date: already vested",
+        "February 2025 credit: vests February 1, 2025",
+        "July 2025 credit: vests July 1, 2027",
+        "Each subsequent year's credit: vests July 1, 2029"
+      ]
+    },
     "notable": [],
     "stale": false
   },
@@ -242,6 +302,13 @@
     "salary_schedule": [
       {"from": "2025-07-01", "to": "2028-06-30", "amount": 355000}
     ],
+    "bonuses": [],
+    "deferred_compensation": {
+      "summary": "University credits 11.5% of Schnoor's annual base salary each fiscal year (starting July 2025) to a University-owned \"Chancellor Schnoor Deferred Compensation Account\"",
+      "vesting": [
+        "Fully vests and is paid out in a lump sum by July 31, 2028, if he remains Chancellor through June 30, 2028 (the end of the initial term)"
+      ]
+    },
     "notable": [],
     "stale": false
   },
@@ -255,9 +322,12 @@
     "salary_schedule": [
       {"from": "2019-05-01", "to": null, "amount": 137000}
     ],
-    "notable": [],
+    "bonuses": [],
+    "notable": [
+      "Also receives a $2,000 annual travel stipend and a $5,000 annual professional-development stipend, both funded by the University of Nebraska Foundation rather than the University itself"
+    ],
     "stale": true,
-    "stale_note": "Contract on file is the original 2019 hire letter ($137,000 base salary, no stated end date). Current budgeted salary is $156,509, so a later raise or amendment exists that is not in this document."
+    "stale_note": "Contract on file is the original 2019 hire letter ($137,000 base salary, no stated end date, no performance bonus clause). Current budgeted salary is $156,509, so a later raise or amendment exists that is not in this document."
   },
   "Li, Joanne W": {
     "name": "Li, Joanne W",
@@ -270,9 +340,16 @@
       {"from": "2021-06-01", "to": "2021-06-30", "amount": 430000, "note": "as Chancellor-Elect"},
       {"from": "2021-07-01", "to": null, "amount": 440000, "note": "raised effective the following July 1 per the contract's own terms"}
     ],
-    "notable": [
-      "A separate Deferred Compensation Agreement on file vests in stages tied to years served as Chancellor"
-    ],
+    "bonuses": [],
+    "deferred_compensation": {
+      "summary": "University credits 11.5% of Li's annual base salary each fiscal year to a University-owned \"Chancellor Li Deferred Compensation Account\"",
+      "vesting": [
+        "50% of assets credited through June 30, 2024: vested and paid out by July 31, 2024",
+        "Remaining assets credited through June 30, 2026: vested and paid out by July 31, 2026",
+        "A 2026 amendment extends the account with further vesting for service from July 1, 2026 onward"
+      ]
+    },
+    "notable": [],
     "stale": true,
     "stale_note": "Contract on file is from 2021 ($430,000-440,000 base salary). Current budgeted salary is $689,969, so at least one later restated contract exists that is not in this document."
   }
