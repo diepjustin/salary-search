@@ -38,6 +38,7 @@ like.
 
 import argparse
 import csv
+import hashlib
 import re
 import sys
 from collections import Counter, defaultdict
@@ -82,6 +83,47 @@ PEOPLE_FIELDS = [
 def to_int(text):
     digits = re.sub(r"[^0-9-]", "", text or "")
     return int(digits) if digits else 0
+
+
+def stable_hash(*parts):
+    """A Person ID that is the same person-year after person-year, run after run.
+
+    Python's built-in hash() randomizes string hashing per interpreter process
+    (on since Python 3.3, and PYTHONHASHSEED is unset everywhere in this repo),
+    so the id it used to produce here changed on every invocation of this
+    script -- rerunning the pipeline with not one byte of source data different
+    still reshuffled all 34,685 Person IDs, turning a one-row fix somewhere
+    upstream into a diff touching every row of current.csv and every entry in
+    every history shard. SHA-256 has no such per-process seed: the same input
+    always hashes to the same output, on this machine or any other.
+    """
+    digest = hashlib.sha256("\x1f".join(str(p) for p in parts).encode("utf-8")).hexdigest()
+    return int(digest[:12], 16)
+
+
+def unique_id(prefix, claimed, *parts):
+    """A 9-digit id for `parts`, salted and retried if it collides.
+
+    9 digits is only 10**9 slots for roughly 35,000 people and shared-name
+    records combined, and the birthday paradox makes a collision inside a
+    single run a real, not a tail, probability -- one has already happened:
+    "Gorman, Emily A" and "Ortiz, Alicia M" hashed to the same id, and their
+    two salary histories silently merged into one entry in build_site_data's
+    output, downstream of here where nothing would have flagged it. Retrying
+    with an incrementing salt, tried in the same order every run, guarantees
+    every id `claimed` this run is unique -- the cost is that a later new
+    hire whose name collides with an existing id gets a different one than
+    they would have on their own, which is a fine trade next to two people's
+    pay silently sharing one history.
+    """
+    salt = 0
+    while True:
+        seed = parts if salt == 0 else parts + (salt,)
+        candidate = f"{prefix}{stable_hash(*seed) % 10**9:09d}"
+        if candidate not in claimed:
+            claimed.add(candidate)
+            return candidate
+        salt += 1
 
 
 def campus_group(campus):
@@ -173,6 +215,7 @@ def main():
 
     history, people = [], []
     linked = solo = refused = 0
+    claimed_ids = set()
 
     for name, entries in sorted(by_name.items()):
         entries.sort(key=lambda e: e[0])
@@ -180,9 +223,7 @@ def main():
         if name in ambiguous:
             # Shared name: every record stands alone, with no history.
             for year, row in entries:
-                pid = "x{:09d}".format(
-                    abs(hash((name, year, row["Campus"], row["Position"]))) % 10**9
-                )
+                pid = unique_id("x", claimed_ids, name, year, row["Campus"], row["Position"])
                 history.append(record(pid, name, year, row, "not linked"))
                 people.append(summary(pid, name, [(year, row)], "not linked"))
                 refused += 1
@@ -190,7 +231,7 @@ def main():
 
         campuses = {campus_group(row["Campus"]) for _, row in entries}
         link = "same campus" if len(campuses) == 1 else "campus changed"
-        pid = "p{:09d}".format(abs(hash(name)) % 10**9)
+        pid = unique_id("p", claimed_ids, name)
 
         for year, row in entries:
             history.append(record(pid, name, year, row, link))

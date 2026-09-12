@@ -123,13 +123,26 @@ PAGE_FURNITURE_RE = re.compile(
 # The staff and cost-object indexes at the back of every volume repeat thousands
 # of names with page numbers. Useful for validation, but not payroll rows.
 #
-# Deliberately case-sensitive and anchored to a whole line: the table of
-# contents on page 1 lists these same indexes in title case ("Alphabetical
-# Index of Staff ......  1884"), and a case-insensitive match there ends the
-# parse before it starts.
+# Matched case-insensitively against the whole page, with \s+ standing in for
+# the gap between words so a heading split across lines still matches: the
+# 2020-21 volume's index opens with a two-column title page whose header reads
+# "Alphabetical Listing of\nCost Objects" -- three words, a linebreak, then the
+# rest -- rather than one clean line, and the old anchored single-line pattern
+# never matched it. 98 pages of cost-object index then got fed to feed_page()
+# as if they were payroll rows; one of them, with column headers positioned
+# where a wrapped job title is expected, welded itself onto the preceding real
+# person's row ("Moore, Nathan E" gained a 62,000-character title).
+#
+# The table of contents on page 1 lists these same indexes too ("Alphabetical
+# Listing of Cost Objects ..... 1670", "Alphabetical Index of Staff ..... 1769"),
+# so every alternative ends in a negative lookahead for the leader dots that
+# follow a ToC entry but never a real section header; the "Index" vs "Listing"
+# wording difference guards the staff line a second way.
 INDEX_START_RE = re.compile(
-    r"^(ALPHABETICAL LISTING OF (COST OBJECTS|STAFF)|NUMERICAL INDEX OF COST OBJECTS)\s*$",
-    re.M,
+    r"Alphabetical\s+Listing\s+of\s+(?:Cost\s+Objects|Staff)(?!\s*\.)"
+    r"|Numerical\s+Listing\s+of\s+Cost\s+Objects(?!\s*\.)"
+    r"|Numerical\s+Index\s+of\s+Cost\s+Objects(?!\s*\.)",
+    re.I,
 )
 
 
