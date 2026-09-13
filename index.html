@@ -3,6 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  // When this page is iframed into a real DN page (its eventual home), that
+  // outer page already has its own masthead, utility bar and nav -- showing
+  // this page's copy too would double them up. Runs before <body> so the
+  // class is already set by the time the chrome would otherwise paint.
+  if (window.self !== window.top) {
+    document.documentElement.className += ' embedded';
+  }
+</script>
 <title>University of Nebraska Salary Search</title>
 <meta name="description" content="Search public salary records for University of Nebraska system employees by name, title or campus.">
 <meta property="og:title" content="University of Nebraska Salary Search">
@@ -10,7 +19,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔎</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --red: #ba1f1f;
@@ -21,7 +30,6 @@
   --paper-base: #ffffff;
   --paper-subtle: #f7f7f7;
   --paper-border: #e5e5e5;
-  --font-serif: Domine, Georgia, "Times New Roman", serif;
   --font-sans: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 * { box-sizing: border-box; }
@@ -37,6 +45,43 @@ body {
 a { color: var(--red); }
 a:hover { color: var(--red-dark); }
 
+/* Site chrome, matching dailynebraskan.com: utility bar, masthead logo, section nav.
+   This page is meant to eventually live at dailynebraskan.com itself, where this
+   chrome and the real site's would be the same bar rather than two; until then,
+   this previews that. Hidden entirely when actually iframed (see the inline
+   script in <head>), since the outer DN page already has its own. */
+.dn-chrome { margin: -2rem -1.25rem 1.5rem; }
+html.embedded .dn-chrome { display: none; }
+html.embedded body { padding-top: 1.25rem; }
+.dn-utility {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: .5rem; padding: .5rem 1.25rem; border-bottom: 1px solid var(--paper-border);
+  font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em;
+}
+.dn-utility a { color: var(--ink-muted); text-decoration: none; }
+.dn-utility a:hover { color: var(--ink-black); }
+.dn-utility-left, .dn-utility-right { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+.dn-social { display: flex; gap: .5rem; color: var(--ink-muted); }
+.dn-btn-login {
+  background: var(--red); color: #fff !important; padding: .3rem .6rem; border-radius: 2px;
+}
+.dn-btn-login:hover { background: var(--red-dark); }
+.dn-masthead { padding: 1.1rem 1.25rem; text-align: center; }
+.dn-masthead img { max-height: 60px; max-width: 100%; width: auto; height: auto; }
+.dn-nav {
+  background: #333333; overflow-x: auto;
+}
+.dn-nav ul {
+  display: flex; list-style: none; margin: 0; padding: 0 1.25rem; max-width: 1100px; margin: 0 auto;
+}
+.dn-nav a {
+  display: block; padding: .95rem .75rem; color: #fff; text-decoration: none;
+  font-size: .82rem; font-weight: 700; white-space: nowrap;
+}
+.dn-nav a:hover { background: rgba(255,255,255,.08); color: #fff; }
+.dn-nav li.active a { background: var(--red); }
+.dn-nav a:focus-visible { outline: 2px solid #fff; outline-offset: -2px; }
+
 /* Masthead */
 header.masthead { border-bottom: 2px solid var(--ink-black); padding-bottom: .9rem; margin-bottom: 1.25rem; }
 .kicker { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-bottom: .4rem; }
@@ -47,7 +92,7 @@ header.masthead { border-bottom: 2px solid var(--ink-black); padding-bottom: .9r
 }
 .kicker .kicker-text { font-size: .68rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-muted); }
 h1 {
-  font-family: var(--font-serif); color: var(--ink-black); text-transform: uppercase;
+  font-family: var(--font-sans); color: var(--ink-black); text-transform: uppercase;
   font-size: 2.25rem; line-height: 1.1; letter-spacing: -.015em; margin: 0 0 .35rem;
 }
 .dek { color: var(--ink-charcoal); font-size: .95rem; margin: 0 0 1.1rem; max-width: 70ch; }
@@ -109,13 +154,13 @@ tr.detail > td { color: var(--ink-charcoal); font-size: .82rem; background: var(
 tbody tr.detail dl { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; margin: 0; }
 tbody tr.detail dt { font-weight: 700; display: inline; }
 tbody tr.detail dd { display: inline; margin: 0 0 0 .35rem; }
-.name { font-family: var(--font-serif); font-weight: 700; color: var(--ink-black); }
+.name { font-family: var(--font-sans); font-weight: 700; color: var(--ink-black); }
 .name .chevron { display: inline-block; margin-left: .3rem; color: var(--ink-muted); font-size: .7rem; transition: transform .15s; }
 tr.person[aria-expanded="true"] .chevron { transform: rotate(180deg); }
 .sub { display: block; font-family: var(--font-sans); font-weight: 400; font-size: .74rem; color: var(--ink-muted); margin-top: .1rem; }
 .sub.departed { color: var(--red); font-weight: 600; }
 td.salary-cell { text-align: right; }
-.salary-figure { font-family: var(--font-serif); font-weight: 700; font-size: 1rem; color: var(--red); }
+.salary-figure { font-family: var(--font-sans); font-weight: 700; font-size: 1rem; color: var(--red); }
 td.past .salary-figure { color: var(--ink-charcoal); }
 #more { margin: 1rem 0 0; text-align: center; }
 button.more {
@@ -126,7 +171,7 @@ button.more {
 button.more:hover { background: var(--red-dark); border-color: var(--red-dark); }
 footer { margin-top: 2.5rem; }
 footer h2 {
-  font-family: var(--font-serif); text-transform: uppercase; font-size: 1.2rem; letter-spacing: -.01em;
+  font-family: var(--font-sans); text-transform: uppercase; font-size: 1.2rem; letter-spacing: -.01em;
   color: var(--ink-black); border-left: 4px solid var(--red); padding-left: .75rem; margin: 0 0 .75rem;
 }
 footer p { font-size: .85rem; color: var(--ink-charcoal); max-width: 70ch; }
@@ -154,7 +199,7 @@ td.num.past { color: var(--ink-muted); }
    exists for. Its own scroll container, same reasoning as .hist. */
 .contract { margin-top: .9rem; padding-top: .7rem; border-top: 1px dashed var(--paper-border); overflow-x: auto; }
 .contract h4 {
-  font-family: var(--font-serif); font-size: .82rem; text-transform: uppercase;
+  font-family: var(--font-sans); font-size: .82rem; text-transform: uppercase;
   letter-spacing: .04em; color: var(--ink-black); margin: .9rem 0 .4rem;
 }
 .contract h4:first-child { margin-top: 0; }
@@ -173,6 +218,7 @@ td.num.past { color: var(--ink-muted); }
 }
 @media (max-width: 560px) {
   body { padding: 1.25rem .75rem 3rem; }
+  .dn-chrome { margin: -1.25rem -.75rem 1.5rem; }
   h1 { font-size: 1.5rem; }
   .col-campus { display: none; }
   th, td { padding: .55rem .45rem; font-size: .82rem; }
@@ -180,10 +226,50 @@ td.num.past { color: var(--ink-muted); }
   tbody tr.detail dl > div { display: block; }
   .search-row { flex-direction: column; }
   .filter-grid { grid-template-columns: 1fr; }
+  .dn-utility { justify-content: center; text-align: center; }
 }
 </style>
 </head>
 <body>
+
+<div class="dn-chrome">
+  <div class="dn-utility">
+    <div class="dn-utility-left">
+      <a href="https://www.dailynebraskan.com/about-us/" target="_blank" rel="noopener">About Us</a>
+      <a href="https://www.dailynebraskan.com/advertise/" target="_blank" rel="noopener">Advertise</a>
+      <a href="https://www.bonfire.com/store/daily-nebraskan/" target="_blank" rel="noopener">Merchandise</a>
+      <a href="https://www.dailynebraskan.com/site/forms/online_services/apply/apply_to_the_dn/" target="_blank" rel="noopener">Work For Us</a>
+    </div>
+    <div class="dn-utility-right">
+      <span class="dn-social">Facebook &middot; X &middot; YouTube &middot; TikTok &middot; Instagram</span>
+      <a href="https://www.dailynebraskan.com/users/signup/" target="_blank" rel="noopener">Sign Up</a>
+      <a class="dn-btn-login" href="https://www.dailynebraskan.com/users/login/" target="_blank" rel="noopener">Log In</a>
+    </div>
+  </div>
+  <div class="dn-masthead">
+    <a href="https://www.dailynebraskan.com/" target="_blank" rel="noopener">
+      <img
+        src="https://bloximages.newyork1.vip.townnews.com/dailynebraskan.com/content/tncms/custom/image/7977647a-bd51-11ed-9a1b-271c59e332ff.png?resize=400%2C63"
+        srcset="https://bloximages.newyork1.vip.townnews.com/dailynebraskan.com/content/tncms/custom/image/7977647a-bd51-11ed-9a1b-271c59e332ff.png?resize=400%2C63 400w, https://bloximages.newyork1.vip.townnews.com/dailynebraskan.com/content/tncms/custom/image/7977647a-bd51-11ed-9a1b-271c59e332ff.png?resize=640%2C100 640w"
+        sizes="(max-width: 480px) 300px, 400px"
+        alt="The Daily Nebraskan" width="400" height="63" loading="eager">
+    </a>
+  </div>
+  <nav class="dn-nav" aria-label="Daily Nebraskan sections">
+    <ul>
+      <li><a href="https://www.dailynebraskan.com/" target="_blank" rel="noopener">Home</a></li>
+      <li><a href="https://www.dailynebraskan.com/news" target="_blank" rel="noopener">News</a></li>
+      <li><a href="https://www.dailynebraskan.com/sports" target="_blank" rel="noopener">Sports</a></li>
+      <li><a href="https://www.dailynebraskan.com/culture/" target="_blank" rel="noopener">Culture</a></li>
+      <li><a href="https://www.dailynebraskan.com/opinion" target="_blank" rel="noopener">Opinion</a></li>
+      <li><a href="https://www.dailynebraskan.com/multimedia" target="_blank" rel="noopener">Multimedia</a></li>
+      <li><a href="https://www.dailynebraskan.com/archives/" target="_blank" rel="noopener">Archives</a></li>
+      <li><a href="https://www.dailynebraskan.com/diversity_inclusion/" target="_blank" rel="noopener">DEI</a></li>
+      <li><a href="https://www.dailynebraskan.com/curious/" target="_blank" rel="noopener">Curious Cornhusker</a></li>
+      <li class="active"><a href="index.html" aria-current="page">Salary Database</a></li>
+    </ul>
+  </nav>
+</div>
 
 <header class="masthead">
   <div class="kicker">
