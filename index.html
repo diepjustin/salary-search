@@ -151,6 +151,13 @@ td.num, th.num { text-align: right; white-space: nowrap; font-variant-numeric: t
 tbody tr.person { cursor: pointer; }
 tbody tr.person:hover { background: var(--paper-subtle); }
 tr.detail > td { color: var(--ink-charcoal); font-size: .82rem; background: var(--paper-subtle); border-left: 4px solid var(--red); }
+/* A 30rem-min-width history table inside this cell would otherwise report
+   that width as the cell's own content width, forcing the whole results
+   table wider than the screen on mobile -- not just the .hist/.contract
+   scroll containers meant to absorb it. width:0 makes this wrapper report
+   zero width while the table's columns are being sized; min-width:100%
+   then expands it to fill the cell once that sizing pass is done. */
+.detail-wrap { width: 0; min-width: 100%; }
 tbody tr.detail dl { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; margin: 0; }
 tbody tr.detail dt { font-weight: 700; display: inline; }
 tbody tr.detail dd { display: inline; margin: 0 0 0 .35rem; }
@@ -682,12 +689,12 @@ td.num.past { color: var(--ink-muted); }
     var contract = contracts[r.name];
     var detail = document.createElement('tr');
     detail.className = 'detail';
-    detail.innerHTML = '<td colspan="6"><dl>' +
+    detail.innerHTML = '<td colspan="6"><div class="detail-wrap"><dl>' +
       '<div><dt>Campus:</dt><dd>' + esc(r.campus || '—') + '</dd></div>' +
       '<div><dt>Department:</dt><dd>' + esc(r.department || '—') + '</dd></div>' +
       '<div><dt>FTE:</dt><dd>' + esc(r.fte || '—') + '</dd></div>' +
       '</dl>' + (contract ? contractHtml(contract) : '') +
-      '<div class="hist">Loading salary history…</div></td>';
+      '<div class="hist">Loading salary history…</div></div></td>';
     tr.after(detail);
 
     var slot = detail.querySelector('.hist');
